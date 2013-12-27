@@ -1,5 +1,5 @@
 //
-// VTAcknowledgementsViewController.h
+// VTAcknowledgement.m
 //
 // Copyright (c) 2013-2014 Vincent Tourraine (http://www.vtourraine.net)
 //
@@ -21,31 +21,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "VTAcknowledgement.h"
 
-@interface VTAcknowledgementsViewController : UITableViewController
-
-/**
- Custom font for the license main text view. If `nil` (default), the system font (size 17) is used.
- */
-@property (nonatomic, strong) UIFont *licenseTextViewFont;
-
-/**
- Array of `VTAcknowledgement`.
- */
-@property (nonatomic, strong) NSArray *acknowledgements;
-
-/**
- Creates a new acknowledgements view controller
- */
-+ (instancetype)acknowledgementsViewController;
-
-/**
- Initializes an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
- 
- @param acknowledgementsPlistPath The path to the `Pods-acknowledgements.plist`.
- */
-- (id)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
+@implementation VTAcknowledgement
 
 @end
 

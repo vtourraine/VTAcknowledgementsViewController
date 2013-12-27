@@ -23,10 +23,9 @@
 
 #import "VTAcknowledgementsViewController.h"
 #import "VTAcknowledgementViewController.h"
+#import "VTAcknowledgement.h"
 
 @interface VTAcknowledgementsViewController ()
-
-@property (nonatomic, strong) NSArray *acknowledgements;
 
 @end
 
@@ -44,11 +43,21 @@
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
-        self.acknowledgements = root[@"PreferenceSpecifiers"];
-        if (self.acknowledgements.count >= 2) {
+        NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
+        if (preferenceSpecifiers.count >= 2) {
             // Remove the header and footer
-            self.acknowledgements = [self.acknowledgements subarrayWithRange:NSMakeRange(1, self.acknowledgements.count - 2)];
+            NSRange range = NSMakeRange(1, preferenceSpecifiers.count - 2);
+            preferenceSpecifiers = [preferenceSpecifiers subarrayWithRange:range];
         }
+        
+        NSMutableArray *acknowledgements = [NSMutableArray array];
+        for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
+            VTAcknowledgement *acknowledgement = [VTAcknowledgement new];
+            acknowledgement.title = preferenceSpecifier[@"Title"];
+            acknowledgement.text  = preferenceSpecifier[@"FooterText"];
+            [acknowledgements addObject:acknowledgement];
+        }
+        self.acknowledgements = acknowledgements;
     }
     
     return self;
@@ -66,10 +75,10 @@
     label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     [label sizeToFit];
     
-    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(label.frame), 80)];
+    CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), 80);
+    UIView *footerView = [[UIView alloc] initWithFrame:footerFrame];
     [footerView addSubview:label];
-    label.frame = CGRectMake(0, 22,
-                             CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
+    label.frame = CGRectMake(0, 22, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
     self.tableView.tableFooterView = footerView;
 }
 
@@ -85,8 +94,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    NSDictionary *preferenceSpecifier = self.acknowledgements[indexPath.row];
-    cell.textLabel.text = preferenceSpecifier[@"Title"];
+    VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
+    cell.textLabel.text = acknowledgement.title;
     cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -94,8 +103,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *preferenceSpecifier = self.acknowledgements[indexPath.row];
-    VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:preferenceSpecifier[@"Title"] text:preferenceSpecifier[@"FooterText"]];
+    VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
+    VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
     viewController.textViewFont = self.licenseTextViewFont;
     [self.navigationController pushViewController:viewController animated:YES];
 }
