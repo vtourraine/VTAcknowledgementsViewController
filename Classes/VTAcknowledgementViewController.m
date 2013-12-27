@@ -47,8 +47,11 @@
 {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
     textView.alwaysBounceVertical = YES;
-    textView.font                 = self.textViewFont ?: [UIFont systemFontOfSize:16];
+    textView.font                 = self.textViewFont ?: [UIFont systemFontOfSize:17];
     textView.text                 = self.text;
+    textView.editable             = NO;
+    if ([textView respondsToSelector:@selector(setTextContainerInset:)])
+        textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
     
     self.view = textView;
 }

@@ -26,7 +26,7 @@
 @interface VTAcknowledgementViewController : UIViewController
 
 /**
- Custom font for the main text view. If `nil` (default), the system font (size 16) is used.
+ Custom font for the main text view. If `nil` (default), the system font (size 17) is used.
  */
 @property (nonatomic, strong) UIFont *textViewFont;
 
