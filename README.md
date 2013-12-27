@@ -1,6 +1,6 @@
 # VTAcknowledgementsViewController
 
-_Ready to use “Acknowledgements”/“Licenses” view controller for [CocoaPods](http://cocoapods.org/)._
+_Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/)._
 
 ## How to Install
 
