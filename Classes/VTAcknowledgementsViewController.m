@@ -96,6 +96,7 @@
 {
     NSDictionary *preferenceSpecifier = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:preferenceSpecifier[@"Title"] text:preferenceSpecifier[@"FooterText"]];
+    viewController.textViewFont = self.licenseTextViewFont;
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
