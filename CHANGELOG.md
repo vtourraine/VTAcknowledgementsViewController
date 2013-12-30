@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3 (wip)
+## 0.3 (30 December 2013)
 
 - `VTAcknowledgement` model class
 - Public `acknowledgements` property for `VTAcknowledgementsViewController`
