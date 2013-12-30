@@ -63,6 +63,8 @@
     return self;
 }
 
+#pragma mark - View lifecycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -82,6 +84,20 @@
     self.tableView.tableFooterView = footerView;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    if (self.acknowledgements.count == 0) {
+        NSLog(@"** VTAcknowledgementsViewController Warning **");
+        NSLog(@"No acknowledgements found.");
+        NSLog(@"This probably means that you didn’t import the `Pods-acknowledgements.plist` to your main target.");
+        NSLog(@"Please take a look at https://github.com/vtourraine/VTAcknowledgementsViewController for instructions.");
+    }
+}
+
+#pragma mark - Table view data source
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.acknowledgements.count;
@@ -100,6 +116,8 @@
     
     return cell;
 }
+
+#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

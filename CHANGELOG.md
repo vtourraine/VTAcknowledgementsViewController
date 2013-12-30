@@ -2,8 +2,9 @@
 
 ## 0.3 (wip)
 
-- Add `VTAcknowledgement` model class
-- Make `acknowledgements` property for `VTAcknowledgementsViewController` public
+- `VTAcknowledgement` model class
+- Public `acknowledgements` property for `VTAcknowledgementsViewController`
+- Instructions when no acknowledgements found at runtime
 
 ## 0.2 (27 December 2013)
 
