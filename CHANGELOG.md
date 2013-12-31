@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4 (wip)
+
+- Tappable links in license text view
+
 ## 0.3 (30 December 2013)
 
 - `VTAcknowledgement` model class

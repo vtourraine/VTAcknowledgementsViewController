@@ -50,6 +50,7 @@
     textView.font                 = self.textViewFont ?: [UIFont systemFontOfSize:17];
     textView.text                 = self.text;
     textView.editable             = NO;
+    textView.dataDetectorTypes    = UIDataDetectorTypeLink;
     if ([textView respondsToSelector:@selector(setTextContainerInset:)])
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
     
