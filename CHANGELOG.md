@@ -2,6 +2,7 @@
 
 ## 0.4 (wip)
 
+- Tappable CocoaPods URL
 - Tappable links in license text view
 - French localization
 
