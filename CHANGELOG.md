@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4 (wip)
+## 0.4 (6 January 2014)
 
 - Tappable CocoaPods URL
 - Tappable links in license text view
