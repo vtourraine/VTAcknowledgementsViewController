@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.summary  = 'Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for CocoaPods.'
   s.homepage = 'https://github.com/vtourraine/VTAcknowledgementsViewController'
   s.authors  = { 'Vincent Tourraine' => 'me@vtourraine.net' }
-  s.source   = { :git => 'https://github.com/vtourraine/VTAcknowledgementsViewController.git', :tag => '0.4' }
+  s.social_media_url    = 'https://twitter.com/vtourraine'
+  s.source              = { :git => 'https://github.com/vtourraine/VTAcknowledgementsViewController.git', :tag => '0.4' }
   s.source_files        = 'Classes/*.{h,m}'
   s.public_header_files = 'Classes/VTAcknowledgementsViewController.{h,m}', 'Classes/VTAcknowledgement.{h,m}'
   s.resources    = 'VTAcknowledgementsViewController.bundle'
