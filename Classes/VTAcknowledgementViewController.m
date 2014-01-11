@@ -39,7 +39,7 @@
         self.title = title;
         self.text  = text;
     }
-    
+
     return self;
 }
 
@@ -53,7 +53,7 @@
     textView.dataDetectorTypes    = UIDataDetectorTypeLink;
     if ([textView respondsToSelector:@selector(setTextContainerInset:)])
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
-    
+
     self.view = textView;
 }
 

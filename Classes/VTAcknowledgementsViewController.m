@@ -29,6 +29,9 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 
 @interface VTAcknowledgementsViewController ()
 
++ (NSString *)defaultAcknowledgementsPlistPath;
+
+- (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
 - (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)defaultString;
 - (void)openCocoaPodsWebsite:(id)sender;
 
@@ -37,33 +40,39 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 
 @implementation VTAcknowledgementsViewController
 
-+ (NSString *)defaultPlistPath
++ (NSString *)defaultAcknowledgementsPlistPath
 {
     return [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
 }
 
 + (instancetype)acknowledgementsViewController
 {
-    NSString *path = self.defaultPlistPath;
+    NSString *path = self.defaultAcknowledgementsPlistPath;
     return [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
-}
-
-- (void)awakeFromNib
-{
-    [self prepareWithPlistPath:self.class.defaultPlistPath];
 }
 
 - (id)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        [self prepareWithPlistPath:acknowledgementsPlistPath];
+        [self commonInitWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
     }
 
     return self;
 }
 
-- (void)prepareWithPlistPath:(NSString *)acknowledgementsPlistPath
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        NSString *path = self.class.defaultAcknowledgementsPlistPath;
+        [self commonInitWithAcknowledgementsPlistPath:path];
+    }
+
+    return self;
+}
+
+- (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
     NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
@@ -112,6 +121,7 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     self.title = [self localizedStringForKey:@"VTAckAcknowledgements" withDefault:@"Acknowledgements"];
 
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -143,7 +153,7 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
     if (self.acknowledgements.count == 0) {
         NSLog(@"** VTAcknowledgementsViewController Warning **");
         NSLog(@"No acknowledgements found.");
-        NSLog(@"This probably means that you didn't import the `Pods-acknowledgements.plist` to your main target.");
+        NSLog(@"This probably means that you didn’t import the `Pods-acknowledgements.plist` to your main target.");
         NSLog(@"Please take a look at https://github.com/vtourraine/VTAcknowledgementsViewController for instructions.");
     }
 }
