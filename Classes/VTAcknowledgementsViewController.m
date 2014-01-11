@@ -37,35 +37,50 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 
 @implementation VTAcknowledgementsViewController
 
++ (NSString *)defaultPlistPath
+{
+    return [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
+}
+
 + (instancetype)acknowledgementsViewController
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
+    NSString *path = self.defaultPlistPath;
     return [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
+}
+
+- (void)awakeFromNib
+{
+    [self prepareWithPlistPath:self.class.defaultPlistPath];
 }
 
 - (id)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
-        NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
-        if (preferenceSpecifiers.count >= 2) {
-            // Remove the header and footer
-            NSRange range = NSMakeRange(1, preferenceSpecifiers.count - 2);
-            preferenceSpecifiers = [preferenceSpecifiers subarrayWithRange:range];
-        }
-        
-        NSMutableArray *acknowledgements = [NSMutableArray array];
-        for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-            VTAcknowledgement *acknowledgement = [VTAcknowledgement new];
-            acknowledgement.title = preferenceSpecifier[@"Title"];
-            acknowledgement.text  = preferenceSpecifier[@"FooterText"];
-            [acknowledgements addObject:acknowledgement];
-        }
-        self.acknowledgements = acknowledgements;
+        [self prepareWithPlistPath:acknowledgementsPlistPath];
     }
-    
+
     return self;
+}
+
+- (void)prepareWithPlistPath:(NSString *)acknowledgementsPlistPath
+{
+    NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
+    NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
+    if (preferenceSpecifiers.count >= 2) {
+        // Remove the header and footer
+        NSRange range = NSMakeRange(1, preferenceSpecifiers.count - 2);
+        preferenceSpecifiers = [preferenceSpecifiers subarrayWithRange:range];
+    }
+
+    NSMutableArray *acknowledgements = [NSMutableArray array];
+    for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
+        VTAcknowledgement *acknowledgement = [VTAcknowledgement new];
+        acknowledgement.title = preferenceSpecifier[@"Title"];
+        acknowledgement.text  = preferenceSpecifier[@"FooterText"];
+        [acknowledgements addObject:acknowledgement];
+    }
+    self.acknowledgements = acknowledgements;
 }
 
 #pragma mark - Localization
@@ -76,7 +91,7 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
     if (!bundle) {
         NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"VTAcknowledgementsViewController" ofType:@"bundle"];
         bundle = [NSBundle bundleWithPath:bundlePath];
-        
+
         NSString *language = NSLocale.preferredLanguages.count? NSLocale.preferredLanguages.firstObject: @"en";
         if (![bundle.localizations containsObject:language]) {
             language = [language componentsSeparatedByString:@"-"].firstObject;
