@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5 (12 January 2014)
+
+- Storyboards support, by @yashigani
+- Japanese localization, by @yashigani
+
 ## 0.4 (6 January 2014)
 
 - Tappable CocoaPods URL
