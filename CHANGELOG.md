@@ -1,9 +1,13 @@
 # Changelog
 
+## 0.6 (16 January 2014)
+
+- German localization, by Sascha Schwabbauer (@sascha)
+
 ## 0.5 (12 January 2014)
 
-- Storyboards support, by @yashigani
-- Japanese localization, by @yashigani
+- Storyboards support, by Taiki Fukui (@yashigani)
+- Japanese localization, by Taiki Fukui (@yashigani)
 
 ## 0.4 (6 January 2014)
 
