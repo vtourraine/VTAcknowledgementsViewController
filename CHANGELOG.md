@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8 (work in progress)
+
+- New `localizedTitle` class property for `VTAcknowledgementsViewController`
+
 ## 0.7 (22 January 2014)
 
 - Traditional Chinese localization, by Ben (@bcylin)

@@ -41,6 +41,12 @@
 + (instancetype)acknowledgementsViewController;
 
 /**
+ The localized version of “Acknowledgements”.
+ You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
+ */
++ (NSString *)localizedTitle;
+
+/**
  Initializes an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
  
  @param acknowledgementsPlistPath The path to the `Pods-acknowledgements.plist`.
