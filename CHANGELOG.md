@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7 (22 January 2014)
+
+- Traditional Chinese localization, by Ben (@bcylin)
+
 ## 0.6 (16 January 2014)
 
 - German localization, by Sascha Schwabbauer (@sascha)
