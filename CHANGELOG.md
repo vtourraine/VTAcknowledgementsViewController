@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.8 (work in progress)
+## 0.8 (2 February 2014)
 
 - New `localizedTitle` class property for `VTAcknowledgementsViewController`
 - Update `VTAcknowledgementsViewController` to include a Done button when at bottom of the navigation controller
