@@ -75,6 +75,7 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 
 - (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
+    self.title = self.class.localizedTitle;    
     NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
     NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
     if (preferenceSpecifiers.count >= 2) {
@@ -135,8 +136,6 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.title = self.class.localizedTitle;
 
     if (self.navigationController.viewControllers.count <= 1) {
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
