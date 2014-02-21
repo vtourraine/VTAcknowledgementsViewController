@@ -90,6 +90,14 @@ static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
         acknowledgement.text  = preferenceSpecifier[@"FooterText"];
         [acknowledgements addObject:acknowledgement];
     }
+
+    [acknowledgements sortUsingComparator:^NSComparisonResult(VTAcknowledgement *obj1, VTAcknowledgement *obj2) {
+        return [obj1.title compare:obj2.title
+                           options:kNilOptions
+                             range:NSMakeRange(0, obj1.title.length)
+                            locale:[NSLocale currentLocale]];
+    }];
+
     self.acknowledgements = acknowledgements;
 }
 
