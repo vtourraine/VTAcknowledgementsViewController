@@ -1,9 +1,10 @@
 # Changelog
 
 
-## 0.9 (work in progress)
+## 0.9 (22 February 2014)
 
 - Acknowledgements titles sorted with user’s locale
+- Customizable title for `VTAcknowledgementsViewController`, by Christian Lobach (@DerLobi)
 
 
 ## 0.8 (2 February 2014)
