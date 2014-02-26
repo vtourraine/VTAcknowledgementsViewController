@@ -19,27 +19,10 @@ This project is only useful if you use CocoaPods, so let’s assume that you’r
 The `VTAcknowledgementsViewController` instance is usually pushed to an existing `UINavigationController`.
 
 ``` objc
-UIViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+viewController.headerText = NSLocalizedString(@"We love open source software.", nil); // optional
 [self.navigationController pushViewController:viewController animated:YES];
 ```
-
-
-### Info text in acknowledgements table header
-##### Variant 1 - in code 
-
-``` objc
-viewController.acknowledgementsInfoText = @"We love open source software."
-```
-_This need to be done befor pushing the view controller._
-
-##### Variant 2 - Localizable.strings
-Add the following to the default `Localizable.strings` files:
-
-``` objc
-// info text above the list of acknowledgements
-VTAckAcknowledgementsInfoText = "We love open source software.";
-```
-
 
 ## Requirements
 

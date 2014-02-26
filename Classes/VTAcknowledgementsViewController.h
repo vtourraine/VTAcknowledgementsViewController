@@ -36,11 +36,10 @@
 @property (nonatomic, strong) NSArray *acknowledgements;
 
 /**
- Optionally set a info text to be displayed above the list of the acknowledgements. It need to get set befor viewDidLoad gets called. Alternativly the info text can be set in the default Localizable.strings under the key 'VTAckAcknowledgementsInfoText'.
- 
- @param acknowledgementsInfoText The info text to display.
+ Header text to be displayed above the list of the acknowledgements. 
+ It needs to get set before `viewDidLoad` gets called.
  */
-@property (nonatomic, strong) NSString *acknowledgementsInfoText;
+@property (nonatomic, copy) NSString *headerText;
 
 /**
  Creates a new acknowledgements view controller

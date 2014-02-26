@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10 (work in progress)
+
+- New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle)
+
 
 ## 0.9 (22 February 2014)
 
