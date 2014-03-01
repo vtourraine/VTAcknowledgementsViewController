@@ -152,13 +152,22 @@ static const CGFloat VTLabelMargin          = 20;
 {
     UIFont *font = [UIFont systemFontOfSize:12];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
+    CGFloat labelHeight;
+    
+    if ([self.headerText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
+        NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
+        CGRect labelBounds = [self.headerText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX)
+                                                           options:options
+                                                        attributes:@{NSFontAttributeName: font}
+                                                           context:nil];
+        labelHeight = CGRectGetHeight(labelBounds);
+    } else {
+        CGSize size = [self.headerText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
+        labelHeight = size.height;
+    }
 
-    CGRect labelBounds = [self.headerText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX)
-                                                        options:options
-                                                     attributes:@{NSFontAttributeName: font}
-                                                        context:nil];
-    CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, CGRectGetHeight(labelBounds));
+
+    CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, labelHeight);
 
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.headerText;
