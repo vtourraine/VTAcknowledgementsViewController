@@ -141,13 +141,6 @@ static const CGFloat VTLabelMargin          = 20;
 {
     [super viewDidLoad];
 
-    if (self.navigationController.viewControllers.count <= 1) {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                              target:self
-                                                                              action:@selector(dismissViewController:)];
-        self.navigationItem.leftBarButtonItem = item;
-    }
-
     if (self.headerText) {
         [self configureHeaderView];
     }
@@ -204,6 +197,18 @@ static const CGFloat VTLabelMargin          = 20;
     [footerView addSubview:label];
     label.frame = CGRectMake(0, VTLabelMargin, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
     self.tableView.tableFooterView = footerView;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    if (self.navigationController.viewControllers.count <= 1) {
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                              target:self
+                                                                              action:@selector(dismissViewController:)];
+        self.navigationItem.leftBarButtonItem = item;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
