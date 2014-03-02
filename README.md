@@ -30,7 +30,7 @@ VTAcknowledgementsViewController requires iOS 5.0 and above, and uses ARC.
 
 ## Credits
 
-VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.vtourraine.net).
+VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.vtourraine.net), with help from [our contributors](https://github.com/vtourraine/VTAcknowledgementsViewController/contributors).
 
 ## License
 
