@@ -141,13 +141,6 @@ static const CGFloat VTLabelMargin          = 20;
 {
     [super viewDidLoad];
 
-    if (self.navigationController.viewControllers.count <= 1) {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                              target:self
-                                                                              action:@selector(dismissViewController:)];
-        self.navigationItem.leftBarButtonItem = item;
-    }
-
     if (self.headerText) {
         [self configureHeaderView];
     }
@@ -159,13 +152,22 @@ static const CGFloat VTLabelMargin          = 20;
 {
     UIFont *font = [UIFont systemFontOfSize:12];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
+    CGFloat labelHeight;
+    
+    if ([self.headerText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
+        NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
+        CGRect labelBounds = [self.headerText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX)
+                                                           options:options
+                                                        attributes:@{NSFontAttributeName: font}
+                                                           context:nil];
+        labelHeight = CGRectGetHeight(labelBounds);
+    } else {
+        CGSize size = [self.headerText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
+        labelHeight = size.height;
+    }
 
-    CGRect labelBounds = [self.headerText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX)
-                                                        options:options
-                                                     attributes:@{NSFontAttributeName: font}
-                                                        context:nil];
-    CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, CGRectGetHeight(labelBounds));
+
+    CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, labelHeight);
 
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.headerText;
@@ -204,6 +206,18 @@ static const CGFloat VTLabelMargin          = 20;
     [footerView addSubview:label];
     label.frame = CGRectMake(0, VTLabelMargin, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
     self.tableView.tableFooterView = footerView;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    if (self.navigationController.viewControllers.count <= 1) {
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                              target:self
+                                                                              action:@selector(dismissViewController:)];
+        self.navigationItem.leftBarButtonItem = item;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
