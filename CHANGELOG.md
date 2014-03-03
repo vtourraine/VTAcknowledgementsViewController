@@ -2,7 +2,9 @@
 
 ## 0.10 (work in progress)
 
-- New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle)
+- New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle) and André Mathlener (@macmannes)
+- Dutch localization, by André Mathlener (@macmannes)
+- Improved Storyboards support, by André Mathlener (@macmannes)
 
 
 ## 0.9 (22 February 2014)
