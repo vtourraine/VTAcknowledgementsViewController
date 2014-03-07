@@ -162,7 +162,10 @@ static const CGFloat VTLabelMargin          = 20;
                                                            context:nil];
         labelHeight = CGRectGetHeight(labelBounds);
     } else {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         CGSize size = [self.headerText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
+#pragma GCC diagnostic pop
         labelHeight = size.height;
     }
 
