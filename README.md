@@ -7,10 +7,10 @@ _Ready to use “Acknowledgements”/“Licenses”/“Credits” view controlle
 
 ## How to Install
 
-This project is only useful if you use CocoaPods, so let’s assume that you’re indeed using CocoaPods. 
+This project is only useful if you use CocoaPods, so let’s assume that you’re indeed using CocoaPods.
 
 1. Add `pod 'VTAcknowledgementsViewController'` in your `Podfile`.
-2. Import the `Pods-acknowledgements.plist` file from the generated `Pods` folder to your main app project (so you need to run `pod install` at least once before using this pod; don’t copy the file itself, just add a reference). 
+2. Import the `Pods-acknowledgements.plist` file from the generated `Pods` folder to your main app project (so you need to run `pod install` at least once before using this pod; don’t copy the file itself, just add a reference).
 
 **Note: if you know how to import this file automatically, as part of the `pod install` process, please let me know.**
 
@@ -22,6 +22,13 @@ The `VTAcknowledgementsViewController` instance is usually pushed to an existing
 VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
 viewController.headerText = NSLocalizedString(@"We love open source software.", nil); // optional
 [self.navigationController pushViewController:viewController animated:YES];
+```
+
+If your .plist file is named something other than `Pods-acknowledgements.plist` (e.g., if you're using fancy build targets), you can initialize the view controller with a custom path.
+
+``` objc
+NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-MyTarget-acknowledgements" ofType:@"plist"];
+VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
 ```
 
 ## Requirements
