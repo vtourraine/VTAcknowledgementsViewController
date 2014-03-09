@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.10 (work in progress)
+## 0.10 (9 March 2014)
 
 - New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle) and André Mathlener (@macmannes)
 - Dutch localization, by André Mathlener (@macmannes)
