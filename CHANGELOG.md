@@ -4,6 +4,7 @@
 
 - New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle) and André Mathlener (@macmannes)
 - Dutch localization, by André Mathlener (@macmannes)
+- Swedish localization, by Aron Manucheri (@manucheri)
 - Improved Storyboards support, by André Mathlener (@macmannes)
 
 
