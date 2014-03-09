@@ -6,6 +6,7 @@
 - Dutch localization, by André Mathlener (@macmannes)
 - Swedish localization, by Aron Manucheri (@manucheri)
 - Improved Storyboards support, by André Mathlener (@macmannes)
+- Improved documentation, by Paul Friedman (@paulfri)
 
 
 ## 0.9 (22 February 2014)

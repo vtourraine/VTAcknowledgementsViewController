@@ -24,7 +24,7 @@ viewController.headerText = NSLocalizedString(@"We love open source software.", 
 [self.navigationController pushViewController:viewController animated:YES];
 ```
 
-If your .plist file is named something other than `Pods-acknowledgements.plist` (e.g., if you're using fancy build targets), you can initialize the view controller with a custom path.
+If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using fancy build targets), you can initialize the view controller with a custom path.
 
 ``` objc
 NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-MyTarget-acknowledgements" ofType:@"plist"];
