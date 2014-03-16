@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.11 (work in progress)
+
+- Portuguese localization, by Michael Brown (@mluisbrown)
+
+
 ## 0.10 (9 March 2014)
 
 - New `headerText` property for `VTAcknowledgementsViewController`, by Martin Stemmle (@maremmle) and André Mathlener (@macmannes)
