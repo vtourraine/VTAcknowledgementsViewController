@@ -221,6 +221,8 @@ static const CGFloat VTLabelMargin          = 20;
                                                                               action:@selector(dismissViewController:)];
         self.navigationItem.leftBarButtonItem = item;
     }
+    
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
