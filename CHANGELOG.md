@@ -3,6 +3,7 @@
 ## 0.11 (work in progress)
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
+- Improved table view (de)selection, by Philip Kluz (@pkluz)
 
 
 ## 0.10 (9 March 2014)
