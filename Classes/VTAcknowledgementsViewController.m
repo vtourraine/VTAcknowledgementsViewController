@@ -146,6 +146,12 @@ static const CGFloat VTLabelMargin          = 20;
     }
 
     [self configureFooterView];
+
+    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                              target:self
+                                                                                              action:@selector(dismissViewController:)];
+    }
 }
 
 - (void)configureHeaderView
@@ -211,21 +217,6 @@ static const CGFloat VTLabelMargin          = 20;
     self.tableView.tableFooterView = footerView;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-
-    if (self.navigationController.viewControllers.count <= 1) {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                              target:self
-                                                                              action:@selector(dismissViewController:)];
-        self.navigationItem.leftBarButtonItem = item;
-    }
-
-    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow
-                                  animated:animated];
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -257,7 +248,7 @@ static const CGFloat VTLabelMargin          = 20;
 
 - (IBAction)dismissViewController:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
@@ -285,6 +276,7 @@ static const CGFloat VTLabelMargin          = 20;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
     viewController.textViewFont = self.licenseTextViewFont;
