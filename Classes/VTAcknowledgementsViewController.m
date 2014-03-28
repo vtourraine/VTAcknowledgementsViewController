@@ -146,6 +146,12 @@ static const CGFloat VTLabelMargin          = 20;
     }
 
     [self configureFooterView];
+
+    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                              target:self
+                                                                                              action:@selector(dismissViewController:)];
+    }
 }
 
 - (void)configureHeaderView
@@ -176,6 +182,7 @@ static const CGFloat VTLabelMargin          = 20;
     label.text             = self.headerText;
     label.font             = font;
     label.textColor        = [UIColor grayColor];
+    label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
     label.textAlignment    = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
@@ -194,6 +201,7 @@ static const CGFloat VTLabelMargin          = 20;
                               VTCocoaPodsURLString];
     label.font             = [UIFont systemFontOfSize:12];
     label.textColor        = [UIColor grayColor];
+    label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 2;
     label.textAlignment    = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
@@ -214,13 +222,6 @@ static const CGFloat VTLabelMargin          = 20;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
-    if (self.navigationController.viewControllers.count <= 1) {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                              target:self
-                                                                              action:@selector(dismissViewController:)];
-        self.navigationItem.leftBarButtonItem = item;
-    }
 
     [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow
                                   animated:animated];
