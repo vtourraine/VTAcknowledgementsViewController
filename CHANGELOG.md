@@ -4,6 +4,7 @@
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
 - Improved table view (de)selection, by Philip Kluz (@pkluz)
+- Improved iOS 6 support, by Ben (@bcylin)
 
 
 ## 0.10 (9 March 2014)
