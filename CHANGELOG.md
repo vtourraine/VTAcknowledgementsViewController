@@ -3,6 +3,7 @@
 ## 0.11 (work in progress)
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
+- Spanish localization, by Billy Tobon (@billyto)
 - Improved table view (de)selection, by Philip Kluz (@pkluz)
 - Improved iOS 6 support, by Ben (@bcylin)
 
