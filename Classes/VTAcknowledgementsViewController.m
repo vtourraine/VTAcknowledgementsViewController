@@ -25,6 +25,7 @@
 #import "VTAcknowledgementViewController.h"
 #import "VTAcknowledgement.h"
 
+static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgements";
 static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 static const CGFloat VTLabelMargin          = 20;
 
@@ -53,7 +54,7 @@ static const CGFloat VTLabelMargin          = 20;
 
 + (NSString *)defaultAcknowledgementsPlistPath
 {
-    return [self acknowledgementsPlistPathForName:@"Pods-acknowledgements"];
+    return [self acknowledgementsPlistPathForName:VTDefaultAcknowledgementsPlistName];
 }
 
 + (instancetype)acknowledgementsViewController
