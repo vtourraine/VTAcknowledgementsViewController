@@ -4,6 +4,7 @@
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
 - Spanish localization, by Billy Tobon (@billyto)
+- Danish localization, by Morten Gregersen (@mortengregersen)
 - Improved table view (de)selection, by Philip Kluz (@pkluz)
 - Improved iOS 6 support, by Ben (@bcylin)
 
