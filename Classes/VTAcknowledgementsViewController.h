@@ -42,6 +42,12 @@
 @property (nonatomic, copy) NSString *headerText;
 
 /**
+ Acknowledgements plist file name whose contents to be loaded.
+ It expects to get set by "User Defined Runtime Attributes" in Interface Builder.
+ */
+@property (nonatomic, copy) NSString *acknowledgementsPlistName;
+
+/**
  Creates a new acknowledgements view controller
  */
 + (instancetype)acknowledgementsViewController;

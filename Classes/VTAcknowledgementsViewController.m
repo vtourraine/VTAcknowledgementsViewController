@@ -25,11 +25,13 @@
 #import "VTAcknowledgementViewController.h"
 #import "VTAcknowledgement.h"
 
+static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgements";
 static NSString *const VTCocoaPodsURLString = @"http://cocoapods.org";
 static const CGFloat VTLabelMargin          = 20;
 
 @interface VTAcknowledgementsViewController ()
 
++ (NSString *)acknowledgementsPlistPathForName:(NSString *)name;
 + (NSString *)defaultAcknowledgementsPlistPath;
 + (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)defaultString;
 
@@ -45,9 +47,14 @@ static const CGFloat VTLabelMargin          = 20;
 
 @implementation VTAcknowledgementsViewController
 
++ (NSString *)acknowledgementsPlistPathForName:(NSString *)name
+{
+    return [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
+}
+
 + (NSString *)defaultAcknowledgementsPlistPath
 {
-    return [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
+    return [self acknowledgementsPlistPathForName:VTDefaultAcknowledgementsPlistName];
 }
 
 + (instancetype)acknowledgementsViewController
@@ -66,15 +73,15 @@ static const CGFloat VTLabelMargin          = 20;
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)coder
+- (void)awakeFromNib
 {
-    self = [super initWithCoder:coder];
-    if (self) {
-        NSString *path = self.class.defaultAcknowledgementsPlistPath;
-        [self commonInitWithAcknowledgementsPlistPath:path];
-    }
+    [super awakeFromNib];
 
-    return self;
+    NSString *path = self.class.defaultAcknowledgementsPlistPath;
+    if (self.acknowledgementsPlistName) {
+        path = [self.class acknowledgementsPlistPathForName:self.acknowledgementsPlistName];
+    }
+    [self commonInitWithAcknowledgementsPlistPath:path];
 }
 
 - (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
