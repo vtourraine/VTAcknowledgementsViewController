@@ -77,10 +77,14 @@ static const CGFloat VTLabelMargin          = 20;
 {
     [super awakeFromNib];
 
-    NSString *path = self.class.defaultAcknowledgementsPlistPath;
+    NSString *path;
     if (self.acknowledgementsPlistName) {
         path = [self.class acknowledgementsPlistPathForName:self.acknowledgementsPlistName];
     }
+    else {
+        path = self.class.defaultAcknowledgementsPlistPath;
+    }
+
     [self commonInitWithAcknowledgementsPlistPath:path];
 }
 
