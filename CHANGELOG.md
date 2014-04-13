@@ -7,6 +7,7 @@
 - Danish localization, by Morten Gregersen (@mortengregersen)
 - Improved table view (de)selection, by Philip Kluz (@pkluz)
 - Improved iOS 6 support, by Ben (@bcylin)
+- Improved Storyboards support, by Syo Ikeda (@ikesyo)
 
 
 ## 0.10 (9 March 2014)
