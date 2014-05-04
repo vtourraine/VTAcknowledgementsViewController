@@ -10,7 +10,7 @@ _Ready to use “Acknowledgements”/“Licenses”/“Credits” view controlle
 This project is only useful if you use CocoaPods, so let’s assume that you’re indeed using CocoaPods.
 
 1. Add `pod 'VTAcknowledgementsViewController'` in your `Podfile`.
-2. Import the `Pods-acknowledgements.plist` file from the generated `Pods` folder to your main app project (so you need to run `pod install` at least once before using this pod; don’t copy the file itself, just add a reference).
+2. Import the `Pods-acknowledgements.plist` file from the generated `Pods` folder to your main app project (so you need to run `pod install` at least once before using this pod; don’t copy the file itself, just add a reference). You can automate that step from your Podfile, [as pointed out by @billyto](https://github.com/vtourraine/VTAcknowledgementsViewController/issues/20).
 
 **Note: if you know how to import this file automatically, as part of the `pod install` process, please let me know.**
 

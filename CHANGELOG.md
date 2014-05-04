@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.11 (work in progress)
+## 0.11 (4 May 2014)
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
 - Spanish localization, by Billy Tobon (@billyto)
