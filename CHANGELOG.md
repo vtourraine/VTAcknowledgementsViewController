@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.12 (work in progress)
+
+- Italian localization, by Mouhcine El Amine (@mouhcine)
+
+
 ## 0.11 (4 May 2014)
 
 - Portuguese localization, by Michael Brown (@mluisbrown)
