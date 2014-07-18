@@ -25,8 +25,14 @@
 
 @interface VTAcknowledgement : NSObject
 
+/**
+ The acknowledgement title (for instance the pod’s name).
+ */
 @property (nonatomic, copy) NSString *title;
+
+/**
+ The acknowledgement body text (for instance the pod’s license).
+ */
 @property (nonatomic, copy) NSString *text;
 
 @end
-
