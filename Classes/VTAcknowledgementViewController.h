@@ -30,7 +30,12 @@
  */
 @property (nonatomic, strong) UIFont *textViewFont;
 
+/**
+ Initializes an acknowledgement view controller with a title and a body text.
+
+ @param title The acknowledgement title.
+ @param text The acknowledgement body text.
+ */
 - (id)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @end
-
