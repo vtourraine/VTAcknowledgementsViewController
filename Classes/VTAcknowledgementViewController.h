@@ -35,7 +35,9 @@
 
  @param title The acknowledgement title.
  @param text The acknowledgement body text.
+
+ @return A newly created `VTAcknowledgementViewController`.
  */
-- (id)initWithTitle:(NSString *)title text:(NSString *)text;
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @end

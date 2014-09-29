@@ -23,6 +23,12 @@
 
 #import <UIKit/UIKit.h>
 
+// Only available with Xcode 6+, so we need to handle older versions too.
+#ifndef IBInspectable
+#define IBInspectable
+#endif
+
+
 @interface VTAcknowledgementsViewController : UITableViewController
 
 /**
@@ -39,13 +45,13 @@
  Header text to be displayed above the list of the acknowledgements. 
  It needs to get set before `viewDidLoad` gets called.
  */
-@property (nonatomic, copy) NSString *headerText;
+@property (nonatomic, copy) IBInspectable NSString *headerText;
 
 /**
  Acknowledgements plist file name whose contents to be loaded.
  It expects to get set by "User Defined Runtime Attributes" in Interface Builder.
  */
-@property (nonatomic, copy) NSString *acknowledgementsPlistName;
+@property (nonatomic, copy) IBInspectable NSString *acknowledgementsPlistName;
 
 /**
  Creates a new acknowledgements view controller
@@ -63,7 +69,6 @@
  
  @param acknowledgementsPlistPath The path to the `Pods-acknowledgements.plist`.
  */
-- (id)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
+- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
 
 @end
-

@@ -32,7 +32,7 @@
 
 @implementation VTAcknowledgementViewController
 
-- (id)initWithTitle:(NSString *)title text:(NSString *)text
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text
 {
     self = [super init];
     if (self) {
@@ -51,8 +51,9 @@
     textView.text                 = self.text;
     textView.editable             = NO;
     textView.dataDetectorTypes    = UIDataDetectorTypeLink;
-    if ([textView respondsToSelector:@selector(setTextContainerInset:)])
+    if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
+    }
 
     self.view = textView;
 }

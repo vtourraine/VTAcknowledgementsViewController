@@ -3,6 +3,7 @@
 ## 0.12 (work in progress)
 
 - Italian localization, by Mouhcine El Amine (@mouhcine)
+- Support for IBInspectable properties
 
 
 ## 0.11 (4 May 2014)

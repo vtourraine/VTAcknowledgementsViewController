@@ -29,7 +29,8 @@ static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgeme
 static NSString *const VTCocoaPodsURLString               = @"http://cocoapods.org";
 static NSString *const VTCellIdentifier                   = @"Cell";
 
-static const CGFloat VTLabelMargin          = 20;
+static const CGFloat VTLabelMargin = 20;
+
 
 @interface VTAcknowledgementsViewController ()
 
@@ -65,7 +66,7 @@ static const CGFloat VTLabelMargin          = 20;
     return [[self.class alloc] initWithAcknowledgementsPlistPath:path];
 }
 
-- (id)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
+- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
@@ -306,4 +307,3 @@ static const CGFloat VTLabelMargin          = 20;
 }
 
 @end
-
