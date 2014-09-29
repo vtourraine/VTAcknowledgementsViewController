@@ -29,6 +29,10 @@
 #endif
 
 
+/**
+ `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
+ a list of acknowledgements.
+ */
 @interface VTAcknowledgementsViewController : UITableViewController
 
 /**
@@ -55,19 +59,25 @@
 
 /**
  Creates a new acknowledgements view controller
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
  */
 + (instancetype)acknowledgementsViewController;
 
 /**
  The localized version of “Acknowledgements”.
  You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
+
+ @return The localized title.
  */
 + (NSString *)localizedTitle;
 
 /**
  Initializes an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
- 
+
  @param acknowledgementsPlistPath The path to the `Pods-acknowledgements.plist`.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
  */
 - (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
 

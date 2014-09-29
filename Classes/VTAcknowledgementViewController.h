@@ -23,6 +23,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `VTAcknowledgementViewController` is a subclass of `UIViewController` that displays
+ a single acknowledgement.
+ */
 @interface VTAcknowledgementViewController : UIViewController
 
 /**
@@ -36,7 +40,7 @@
  @param title The acknowledgement title.
  @param text The acknowledgement body text.
 
- @return A newly created `VTAcknowledgementViewController`.
+ @return A newly created `VTAcknowledgementViewController` instance.
  */
 - (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 

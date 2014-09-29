@@ -23,6 +23,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ `VTAcknowledgement` is a subclass of `NSObject` that represents a single acknowledgement.
+ */
 @interface VTAcknowledgement : NSObject
 
 /**
