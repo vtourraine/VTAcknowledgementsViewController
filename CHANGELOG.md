@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.12 (work in progress)
+## 0.12 (4 October 2014)
 
 - Italian localization, by Mouhcine El Amine (@mouhcine)
 - Support for IBInspectable properties
