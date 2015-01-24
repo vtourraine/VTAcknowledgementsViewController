@@ -57,7 +57,9 @@ static const CGFloat VTLabelMargin = 20;
 
 + (NSString *)defaultAcknowledgementsPlistPath
 {
-    return [self acknowledgementsPlistPathForName:VTDefaultAcknowledgementsPlistName];
+    NSBundle* plistBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:VTDefaultAcknowledgementsPlistName ofType:@"bundle"]];
+    
+    return [plistBundle pathForResource:VTDefaultAcknowledgementsPlistName ofType:@"plist"];
 }
 
 + (instancetype)acknowledgementsViewController
