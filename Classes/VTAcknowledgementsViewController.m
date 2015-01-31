@@ -282,6 +282,11 @@ static const CGFloat VTLabelMargin = 20;
     return self.acknowledgements.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VTCellIdentifier];
