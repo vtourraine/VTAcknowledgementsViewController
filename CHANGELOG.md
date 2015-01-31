@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.13 (in progress)
+
+- Improved Dynamic Type support, by Moritz Venn (@ritzmo)
+
+
 ## 0.12 (4 October 2014)
 
 - Italian localization, by Mouhcine El Amine (@mouhcine)
