@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FDD9DA81A9A766D000BAFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DA51A9A766D000BAFF0 /* Main.storyboard */; };
+		1FDD9DAD1A9A7674000BAFF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DAA1A9A7674000BAFF0 /* AppDelegate.m */; };
+		1FDD9DAE1A9A7674000BAFF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DAC1A9A7674000BAFF0 /* ViewController.m */; };
+		1FDD9DB01A9A767D000BAFF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DAF1A9A767D000BAFF0 /* main.m */; };
+		1FDD9DB81A9A7928000BAFF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DB71A9A7928000BAFF0 /* Images.xcassets */; };
+		1FDD9DBA1A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */; };
+		1FDD9DBC1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */; };
+		1FDD9DBE1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */; };
+		76B9FF6C61A26D25854BBFAE /* libPods-VTAck Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F5C72CC394A8E289008810 /* libPods-VTAck Tests.a */; };
+		CBDF86C4A6FA5076FF08084D /* libPods-VTAck App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF690CD7F98E91D54BDB69 /* libPods-VTAck App.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FDD9D941A9A757B000BAFF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDD9D721A9A757A000BAFF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FDD9D791A9A757A000BAFF0;
+			remoteInfo = "VTAck Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07D96A82EA2E670E7F726329 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1C3F1FDF2E270BE79B2113C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1FDD9D7A1A9A757B000BAFF0 /* VTAck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VTAck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDD9D931A9A757B000BAFF0 /* VTAck Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VTAck Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDD9DA61A9A766D000BAFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "VTAck App/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		1FDD9DA91A9A7674000BAFF0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "VTAck App/Classes/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		1FDD9DAA1A9A7674000BAFF0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "VTAck App/Classes/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		1FDD9DAB1A9A7674000BAFF0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "VTAck App/Classes/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		1FDD9DAC1A9A7674000BAFF0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "VTAck App/Classes/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		1FDD9DAF1A9A767D000BAFF0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "VTAck App/main.m"; sourceTree = SOURCE_ROOT; };
+		1FDD9DB11A9A76C4000BAFF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "VTAck App/Info.plist"; sourceTree = SOURCE_ROOT; };
+		1FDD9DB31A9A76D1000BAFF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "VTAck Tests/Info.plist"; sourceTree = SOURCE_ROOT; };
+		1FDD9DB71A9A7928000BAFF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VTAck App/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsViewControllerTests.m; path = Tests/VTAcknowledgementsViewControllerTests.m; sourceTree = SOURCE_ROOT; };
+		1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-VTAck App-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-acknowledgements.plist"; path = "Resources/Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		240C5A955C4F26658BC33EE3 /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2F749A07D0C95089ECF84AB8 /* Pods-VTAck App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App.debug.xcconfig"; sourceTree = "<group>"; };
+		85F5C72CC394A8E289008810 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0ADFBA4A8034E558258A974 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52BD78744F14DC7B87D13BE /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
+		C8FE11D43E5A380F3FE15729 /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1EF690CD7F98E91D54BDB69 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FDD9D771A9A757A000BAFF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDF86C4A6FA5076FF08084D /* libPods-VTAck App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDD9D901A9A757B000BAFF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B9FF6C61A26D25854BBFAE /* libPods-VTAck Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FDD9D711A9A757A000BAFF0 = {
+			isa = PBXGroup;
+			children = (
+				1FDD9D7C1A9A757B000BAFF0 /* VTAck App */,
+				1FDD9D961A9A757B000BAFF0 /* VTAck Tests */,
+				1FDD9D7B1A9A757B000BAFF0 /* Products */,
+				686B5394C165E55B0BC9FCB5 /* Pods */,
+				FA5078DF650EA529ECD55BE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FDD9D7B1A9A757B000BAFF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD9D7A1A9A757B000BAFF0 /* VTAck App.app */,
+				1FDD9D931A9A757B000BAFF0 /* VTAck Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FDD9D7C1A9A757B000BAFF0 /* VTAck App */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD9DA91A9A7674000BAFF0 /* AppDelegate.h */,
+				1FDD9DAA1A9A7674000BAFF0 /* AppDelegate.m */,
+				1FDD9DAB1A9A7674000BAFF0 /* ViewController.h */,
+				1FDD9DAC1A9A7674000BAFF0 /* ViewController.m */,
+				1FDD9DA51A9A766D000BAFF0 /* Main.storyboard */,
+				1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */,
+				1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */,
+				1FDD9DB71A9A7928000BAFF0 /* Images.xcassets */,
+				1FDD9D7D1A9A757B000BAFF0 /* Supporting Files */,
+			);
+			name = "VTAck App";
+			path = "VTAck Tests";
+			sourceTree = "<group>";
+		};
+		1FDD9D7D1A9A757B000BAFF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD9DAF1A9A767D000BAFF0 /* main.m */,
+				1FDD9DB11A9A76C4000BAFF0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FDD9D961A9A757B000BAFF0 /* VTAck Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */,
+				1FDD9D971A9A757B000BAFF0 /* Supporting Files */,
+			);
+			name = "VTAck Tests";
+			path = "VTAck TestsTests";
+			sourceTree = "<group>";
+		};
+		1FDD9D971A9A757B000BAFF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD9DB31A9A76D1000BAFF0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		686B5394C165E55B0BC9FCB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C3F1FDF2E270BE79B2113C3 /* Pods.debug.xcconfig */,
+				07D96A82EA2E670E7F726329 /* Pods.release.xcconfig */,
+				2F749A07D0C95089ECF84AB8 /* Pods-VTAck App.debug.xcconfig */,
+				C52BD78744F14DC7B87D13BE /* Pods-VTAck App.release.xcconfig */,
+				C8FE11D43E5A380F3FE15729 /* Pods-VTAck Tests.debug.xcconfig */,
+				240C5A955C4F26658BC33EE3 /* Pods-VTAck Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA5078DF650EA529ECD55BE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0ADFBA4A8034E558258A974 /* libPods.a */,
+				F1EF690CD7F98E91D54BDB69 /* libPods-VTAck App.a */,
+				85F5C72CC394A8E289008810 /* libPods-VTAck Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FDD9D791A9A757A000BAFF0 /* VTAck App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDD9D9D1A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck App" */;
+			buildPhases = (
+				2476626A6C7B21D04BDB056D /* Check Pods Manifest.lock */,
+				1FDD9D761A9A757A000BAFF0 /* Sources */,
+				1FDD9D771A9A757A000BAFF0 /* Frameworks */,
+				1FDD9D781A9A757A000BAFF0 /* Resources */,
+				86AD6859B7EE06B8F8E9F3A5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VTAck App";
+			productName = "VTAck Tests";
+			productReference = 1FDD9D7A1A9A757B000BAFF0 /* VTAck App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FDD9D921A9A757B000BAFF0 /* VTAck Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDD9DA01A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck Tests" */;
+			buildPhases = (
+				FF3960BA523BC5A7B7D50FA4 /* Check Pods Manifest.lock */,
+				1FDD9D8F1A9A757B000BAFF0 /* Sources */,
+				1FDD9D901A9A757B000BAFF0 /* Frameworks */,
+				1FDD9D911A9A757B000BAFF0 /* Resources */,
+				01AA6E724AA57E25CA632CCD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FDD9D951A9A757B000BAFF0 /* PBXTargetDependency */,
+			);
+			name = "VTAck Tests";
+			productName = "VTAck TestsTests";
+			productReference = 1FDD9D931A9A757B000BAFF0 /* VTAck Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FDD9D721A9A757A000BAFF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Vincent Tourraine";
+				TargetAttributes = {
+					1FDD9D791A9A757A000BAFF0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1FDD9D921A9A757B000BAFF0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1FDD9D791A9A757A000BAFF0;
+					};
+				};
+			};
+			buildConfigurationList = 1FDD9D751A9A757A000BAFF0 /* Build configuration list for PBXProject "VTAck Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FDD9D711A9A757A000BAFF0;
+			productRefGroup = 1FDD9D7B1A9A757B000BAFF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FDD9D791A9A757A000BAFF0 /* VTAck App */,
+				1FDD9D921A9A757B000BAFF0 /* VTAck Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FDD9D781A9A757A000BAFF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDD9DB81A9A7928000BAFF0 /* Images.xcassets in Resources */,
+				1FDD9DA81A9A766D000BAFF0 /* Main.storyboard in Resources */,
+				1FDD9DBC1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist in Resources */,
+				1FDD9DBE1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDD9D911A9A757B000BAFF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AA6E724AA57E25CA632CCD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2476626A6C7B21D04BDB056D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86AD6859B7EE06B8F8E9F3A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF3960BA523BC5A7B7D50FA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FDD9D761A9A757A000BAFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDD9DAE1A9A7674000BAFF0 /* ViewController.m in Sources */,
+				1FDD9DB01A9A767D000BAFF0 /* main.m in Sources */,
+				1FDD9DAD1A9A7674000BAFF0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDD9D8F1A9A757B000BAFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDD9DBA1A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FDD9D951A9A757B000BAFF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FDD9D791A9A757A000BAFF0 /* VTAck App */;
+			targetProxy = 1FDD9D941A9A757B000BAFF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FDD9DA51A9A766D000BAFF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FDD9DA61A9A766D000BAFF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FDD9D9B1A9A757B000BAFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1FDD9D9C1A9A757B000BAFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FDD9D9E1A9A757B000BAFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F749A07D0C95089ECF84AB8 /* Pods-VTAck App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_WARNINGS = NO;
+				INFOPLIST_FILE = "VTAck App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FDD9D9F1A9A757B000BAFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52BD78744F14DC7B87D13BE /* Pods-VTAck App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_WARNINGS = NO;
+				INFOPLIST_FILE = "VTAck App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FDD9DA11A9A757B000BAFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FE11D43E5A380F3FE15729 /* Pods-VTAck Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VTAck Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VTAck App.app/VTAck App";
+			};
+			name = Debug;
+		};
+		1FDD9DA21A9A757B000BAFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240C5A955C4F26658BC33EE3 /* Pods-VTAck Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VTAck Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VTAck App.app/VTAck App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FDD9D751A9A757A000BAFF0 /* Build configuration list for PBXProject "VTAck Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDD9D9B1A9A757B000BAFF0 /* Debug */,
+				1FDD9D9C1A9A757B000BAFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FDD9D9D1A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDD9D9E1A9A757B000BAFF0 /* Debug */,
+				1FDD9D9F1A9A757B000BAFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FDD9DA01A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDD9DA11A9A757B000BAFF0 /* Debug */,
+				1FDD9DA21A9A757B000BAFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FDD9D721A9A757A000BAFF0 /* Project object */;
+}

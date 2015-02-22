@@ -1,0 +1,14 @@
+PODS:
+  - VTAcknowledgementsViewController (0.12)
+
+DEPENDENCIES:
+  - VTAcknowledgementsViewController (from `../`)
+
+EXTERNAL SOURCES:
+  VTAcknowledgementsViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VTAcknowledgementsViewController: 5ef73fca3a6179a5488a86ea99d3c7018e8e2fcb
+
+COCOAPODS: 0.34.1

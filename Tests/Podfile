@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs'
+
+target 'VTAck App' do
+  pod 'VTAcknowledgementsViewController', :path => '../'
+end
+
+target 'VTAck Tests' do
+  pod 'VTAcknowledgementsViewController', :path => '../'
+end
+
