@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: Tests/VTAck Tests.xcworkspace
+xcode_scheme: VTAck Tests
