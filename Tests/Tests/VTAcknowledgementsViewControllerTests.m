@@ -37,18 +37,30 @@
 - (void)testLoadAcknowledgementsWithDefaultFileName {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
     XCTAssertEqual(viewController.acknowledgements.count, 1,
-                         @"should have loaded the one acknowledgement from the default file (Pods-acknowledgements.plist)");
+                         @"should load the one acknowledgement from the default file (Pods-acknowledgements.plist)");
 }
 
 - (void)testConfigureTableViewBasedOnAcknowledgements {
     VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
 
     VTAcknowledgement *ack1 = [VTAcknowledgement new];
+    ack1.title = @"ack1";
     VTAcknowledgement *ack2 = [VTAcknowledgement new];
+    ack2.title = @"ack2";
     viewController.acknowledgements = @[ack1, ack2];
 
-    XCTAssertEqual([viewController tableView:nil numberOfRowsInSection:0], 2,
+    XCTAssertEqual([viewController tableView:viewController.tableView numberOfRowsInSection:0], 2,
                    @"should have a table view row for each acknowledgement");
+
+    UITableViewCell *cell1 = [viewController tableView:viewController.tableView
+                                 cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    XCTAssertEqualObjects(cell1.textLabel.text, @"ack1",
+                          @"should configure the cell text label with the acknowledgement title");
+
+    UITableViewCell *cell2 = [viewController tableView:viewController.tableView
+                                 cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+    XCTAssertEqualObjects(cell2.textLabel.text, @"ack2",
+                          @"should configure the cell text label with the acknowledgement title");
 }
 
 @end
