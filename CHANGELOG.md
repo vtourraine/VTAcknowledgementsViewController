@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.13 (in progress)
+## 0.13 (23 February 2015)
 
 - Improved Dynamic Type support, by Moritz Venn (@ritzmo)
+- Unit tests, by Vincent Tourraine (@vtourraine)
 
 
 ## 0.12 (4 October 2014)
