@@ -293,6 +293,9 @@ static const CGFloat VTLabelMargin = 20;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:VTCellIdentifier];
     }
+    if (self.acknowledgementCellSetup) {
+        self.acknowledgementCellSetup(cell);
+    }
 
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     cell.textLabel.text = acknowledgement.title;
@@ -308,6 +311,7 @@ static const CGFloat VTLabelMargin = 20;
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
     viewController.textViewFont = self.licenseTextViewFont;
+    viewController.textViewSetup = self.licenseTextViewSetup;
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

@@ -35,6 +35,15 @@
 @property (nonatomic, strong) UIFont *textViewFont;
 
 /**
+ A block which is used to custom the style of the `UITextView`.
+ It will be called when the view controller is loading its `UITextView`
+ 
+ Also, when `VTAcknowledgementsViewController` is instantiating a `VTAcknowledgementViewController`
+ it copies its `licenseTextViewSetup` block to the `textViewSetup` of the new created `VTAcknowledgementViewController`
+ */
+@property (nonatomic, copy) void(^textViewSetup)(UITextView *textView);
+
+/**
  Initializes an acknowledgement view controller with a title and a body text.
 
  @param title The acknowledgement title.
