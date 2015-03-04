@@ -63,6 +63,11 @@
  */
 @property (nonatomic, copy) IBInspectable NSString *headerText;
 
+ /**
+ The color of header and footer text label
+ */
+@property (nonatomic, strong) UIColor *headerFooterTextColor;
+
 /**
  Acknowledgements plist file name whose contents to be loaded.
  It expects to get set by "User Defined Runtime Attributes" in Interface Builder.
