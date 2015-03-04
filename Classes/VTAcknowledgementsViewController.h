@@ -41,6 +41,18 @@
 @property (nonatomic, strong) UIFont *licenseTextViewFont;
 
 /**
+ A block which is used to custom the style of the `UITextView` in `VTAcknowledgementViewController`
+ It will be called when a `VTAcknowledgementViewController` is loading its `UITextView`
+ */
+@property (nonatomic, copy) void(^licenseTextViewSetup)(UITextView *textView);
+
+/**
+ A block which is used to custom the style of the `UITableViewCell` in `VTAcknowledgementsViewController`
+ It will be called when a `VTAcknowledgementsViewController` is loading a `UITableViewCell`
+ */
+@property (nonatomic, copy) void(^acknowledgementCellSetup)(UITableViewCell *cell);
+
+/**
  Array of `VTAcknowledgement`.
  */
 @property (nonatomic, strong) NSArray *acknowledgements;
@@ -50,6 +62,11 @@
  It needs to get set before `viewDidLoad` gets called.
  */
 @property (nonatomic, copy) IBInspectable NSString *headerText;
+
+ /**
+ The color of header and footer text label
+ */
+@property (nonatomic, strong) UIColor *headerFooterTextColor;
 
 /**
  Acknowledgements plist file name whose contents to be loaded.
