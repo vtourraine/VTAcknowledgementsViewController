@@ -1,5 +1,12 @@
 # Changelog
 
+
+## 0.14 (work in progress)
+
+- Added customizable footer text, by Tamás Tímár (@tamastimar)
+- Updated customizable header text to load from acknowledgements file, by Tamás Tímár (@tamastimar)
+ 
+
 ## 0.13 (23 February 2015)
 
 - Improved Dynamic Type support, by Moritz Venn (@ritzmo)
