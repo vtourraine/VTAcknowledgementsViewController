@@ -237,7 +237,7 @@ static const CGFloat VTLabelMargin = 20;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     label.userInteractionEnabled = YES;
 
-    if ([self.footerText containsString:[NSURL URLWithString:VTCocoaPodsURLString].host]) {
+    if ([self.footerText rangeOfString:[NSURL URLWithString:VTCocoaPodsURLString].host].location != NSNotFound) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCocoaPodsWebsite:)];
         [label addGestureRecognizer:tapGestureRecognizer];
     }
