@@ -3,6 +3,7 @@
 
 ## 0.14 (work in progress)
 
+- Simplified Chinese localization, by Chihya Tsang (@simpleapples)
 - Added customizable footer text, by Tamás Tímár (@tamastimar)
 - Updated customizable header text to load from acknowledgements file, by Tamás Tímár (@tamastimar)
  
