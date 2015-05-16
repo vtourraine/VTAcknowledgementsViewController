@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 0.14 (work in progress)
+## 0.14 (16 May 2015)
 
 - Simplified Chinese localization, by Chihya Tsang (@simpleapples)
 - Added customizable footer text, by Tamás Tímár (@tamastimar)
