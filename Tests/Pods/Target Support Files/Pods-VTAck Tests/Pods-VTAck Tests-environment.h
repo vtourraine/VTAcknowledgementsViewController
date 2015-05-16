@@ -9,6 +9,6 @@
 // VTAcknowledgementsViewController
 #define COCOAPODS_POD_AVAILABLE_VTAcknowledgementsViewController
 #define COCOAPODS_VERSION_MAJOR_VTAcknowledgementsViewController 0
-#define COCOAPODS_VERSION_MINOR_VTAcknowledgementsViewController 12
+#define COCOAPODS_VERSION_MINOR_VTAcknowledgementsViewController 13
 #define COCOAPODS_VERSION_PATCH_VTAcknowledgementsViewController 0
 

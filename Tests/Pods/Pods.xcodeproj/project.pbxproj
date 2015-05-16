@@ -1,1745 +1,687 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>04E3CE6BC86BC4F687A2DA05</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9158FCB3B7377DD39661143A</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BCF07F27BBCD563022C0893B</string>
-			<key>productRefGroup</key>
-			<string>53F540C9FCA2CAF364A5969D</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FBAAFB87D42C91C2FFA7AC73</string>
-				<string>D147FDE74BBF1824D5D671AD</string>
-				<string>DF9EFB6D756764E6A19D1340</string>
-				<string>1B78460ABDF16026D71B321F</string>
-			</array>
-		</dict>
-		<key>051738CF9862A5A03A9163CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BD8C7CB4CC9C61E69B8F8F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>055CC6197C19E9CA36F2570E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09117889E95DD41D6412F1DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FD2E01346BB31D0B141825A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0921443963F0E97E636C0B7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5D52A002259E54A76ADC7D74</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0926EBEB37ABD234313ADFAA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>230FF92FD7EF0F41A536B904</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0B204C1E37F40B98D26B96AF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F8490E153ECE6B3638AE26D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0B7AFF34CD0EA37879C7DA31</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-VTAck App.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0BD8C7CB4CC9C61E69B8F8F8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>0F4F1C451C590AAC0D5C3AB9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>60724D27A30475BBFD0B699B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>103FFC3A98D606FE315ED00F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>VTAcknowledgementsViewController.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>167A5DD87881036DE07A4DEF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-VTAck Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1B2BC7F7F78603325A2A3AFB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D54E42FB35818E81DA3652E6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController/Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1B78460ABDF16026D71B321F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EED5EFEAC7D28693FCCC77B0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>76EF17182CBE22B7E39F1278</string>
-				<string>650A2ABC174672088DDE33F4</string>
-				<string>6BC71F609291E891045D9D9C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController</string>
-			<key>productName</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController</string>
-			<key>productReference</key>
-			<string>35A1FD6AB6D6CEB8F38B1CE9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>1C9A620221EE1CC3548BE224</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>44C2FECABA9861425B3EFB46</string>
-				<string>C4B7D906F6EB8C6270FA598E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F9E1336349634CD834596BA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0BD8C7CB4CC9C61E69B8F8F8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>230FF92FD7EF0F41A536B904</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>29B52BFA601BE8C25CB6B7FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>396289B5063A7DB0032150EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2DFF645D74970908191EA786</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1B2BC7F7F78603325A2A3AFB</string>
-				<string>484F114E575B4F221F864E3B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30523F419ABD88AD4FA69B22</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-VTAck App-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30A858348195FF1CDECC021C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VTAcknowledgementViewController.m</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgementViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>33BAEE9DC6B2711D2773EFE4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D8C31C40ED3155E26F645E71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>35A1FD6AB6D6CEB8F38B1CE9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-VTAck Tests-VTAcknowledgementsViewController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>381047E7D0B3D287A6165824</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0926EBEB37ABD234313ADFAA</string>
-				<string>0F4F1C451C590AAC0D5C3AB9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>396289B5063A7DB0032150EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VTAcknowledgementsViewController.h</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgementsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A301AF02E363FA0753C95A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BD8C7CB4CC9C61E69B8F8F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F0B28E2A1642CEE18B5E23A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>490B57C47E0D5E2D7EC70402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>3FDF5F78EF47D47346F50E6A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-VTAck App-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4168B04B5BBFCFCD524DA9A0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>1B78460ABDF16026D71B321F</string>
-			<key>targetProxy</key>
-			<string>6877503CFF4EE05B653FED85</string>
-		</dict>
-		<key>425B165F9DC7BF85053733BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>396289B5063A7DB0032150EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>44C2FECABA9861425B3EFB46</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAEB80AC5C41C0592755203F</string>
-				<string>3FDF5F78EF47D47346F50E6A</string>
-				<string>30523F419ABD88AD4FA69B22</string>
-				<string>8C9ECBBE3381B94C1FC8E390</string>
-				<string>BBA861B6414F972D4131325F</string>
-				<string>4A18B071B3F7F92C653B6A8F</string>
-				<string>CD6F8B3B4D926054DA445BE4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-VTAck App</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-VTAck App</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484F114E575B4F221F864E3B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D54E42FB35818E81DA3652E6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController/Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>490B57C47E0D5E2D7EC70402</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VTAcknowledgement.m</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgement.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4A18B071B3F7F92C653B6A8F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck App.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53F540C9FCA2CAF364A5969D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0B7AFF34CD0EA37879C7DA31</string>
-				<string>61842E3EEE66BABD04BDA4BC</string>
-				<string>167A5DD87881036DE07A4DEF</string>
-				<string>35A1FD6AB6D6CEB8F38B1CE9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54C771BEDFDA3E7213867E12</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4A18B071B3F7F92C653B6A8F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>54DEAE5D6812FC1D7F5CBF51</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30A858348195FF1CDECC021C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5D52A002259E54A76ADC7D74</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5FD2E01346BB31D0B141825A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VTAcknowledgementViewController.h</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgementViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>60724D27A30475BBFD0B699B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>61842E3EEE66BABD04BDA4BC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-VTAck App-VTAcknowledgementsViewController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>63498C6DD9CB48F1103F1DD1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FD2E01346BB31D0B141825A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63D3D056190DCB680BF12A49</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>650A2ABC174672088DDE33F4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A301AF02E363FA0753C95A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6877503CFF4EE05B653FED85</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>04E3CE6BC86BC4F687A2DA05</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1B78460ABDF16026D71B321F</string>
-			<key>remoteInfo</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController</string>
-		</dict>
-		<key>68D4826D9A9D85CC5D51E107</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>695D1FEF45320DF9FFCF5550</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VTAcknowledgement.h</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgement.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6BC71F609291E891045D9D9C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DCA9EB89D3E26FF979BCD6A6</string>
-				<string>63498C6DD9CB48F1103F1DD1</string>
-				<string>29B52BFA601BE8C25CB6B7FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>76EF17182CBE22B7E39F1278</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0B204C1E37F40B98D26B96AF</string>
-				<string>3F0B28E2A1642CEE18B5E23A</string>
-				<string>54DEAE5D6812FC1D7F5CBF51</string>
-				<string>33BAEE9DC6B2711D2773EFE4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>78F5C7150B3864C9C19D2932</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DD5BA6D85DAD0842B34B262</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30523F419ABD88AD4FA69B22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>802F7911C4E2FE9C5BE80653</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7DD5BA6D85DAD0842B34B262</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>818AB8C9AE94FA5B6E1B45B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BD8C7CB4CC9C61E69B8F8F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>825D1B814593B0E3665A30A1</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FC50CEA49280B17DD19D0D1B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8718378FD112A3540D833B1D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>695D1FEF45320DF9FFCF5550</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8C9ECBBE3381B94C1FC8E390</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-VTAck App-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DE2CF8D5B5003148F437B4C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CD6F8B3B4D926054DA445BE4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8E3287B7FC117F16E07BAA5E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>54C771BEDFDA3E7213867E12</string>
-				<string>8DE2CF8D5B5003148F437B4C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9122632B25B7665D8158D27C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9158FCB3B7377DD39661143A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>63D3D056190DCB680BF12A49</string>
-				<string>F1D115B1B954607C55079DD2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A3492905BA563FFF26E0E24C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>103FFC3A98D606FE315ED00F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B2D824E2A44141110C703442</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B8A1C18CAA22C0EDD8F727D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B990F6B78E6D9143BDD0D90E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B990F6B78E6D9143BDD0D90E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>055CC6197C19E9CA36F2570E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BBA861B6414F972D4131325F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-VTAck App-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BCF07F27BBCD563022C0893B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0B27C7EEE299185A5E3B74D</string>
-				<string>F990B4CA54D112BD881B849B</string>
-				<string>C95FEEC6C93619B58CA9429D</string>
-				<string>53F540C9FCA2CAF364A5969D</string>
-				<string>1C9A620221EE1CC3548BE224</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE981B53A7154E708992A693</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8718378FD112A3540D833B1D</string>
-				<string>09117889E95DD41D6412F1DE</string>
-				<string>425B165F9DC7BF85053733BA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C0B27C7EEE299185A5E3B74D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>C40228617F18F7BF0AEF323D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FC50CEA49280B17DD19D0D1B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C4B7D906F6EB8C6270FA598E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DC133039E752C3BDC493D8B5</string>
-				<string>9122632B25B7665D8158D27C</string>
-				<string>055CC6197C19E9CA36F2570E</string>
-				<string>B2D824E2A44141110C703442</string>
-				<string>68D4826D9A9D85CC5D51E107</string>
-				<string>230FF92FD7EF0F41A536B904</string>
-				<string>60724D27A30475BBFD0B699B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-VTAck Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C778ABE14863833D3DE836BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D8C31C40ED3155E26F645E71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C951C8CD4E7ED6462E82FCC1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>490B57C47E0D5E2D7EC70402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C95FEEC6C93619B58CA9429D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1F9E1336349634CD834596BA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CD6F8B3B4D926054DA445BE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck App.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D147FDE74BBF1824D5D671AD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2DFF645D74970908191EA786</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F818D86D1DB98BB6472B64CC</string>
-				<string>DE8970BF969C7FEE471BE6D3</string>
-				<string>BE981B53A7154E708992A693</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController</string>
-			<key>productName</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController</string>
-			<key>productReference</key>
-			<string>61842E3EEE66BABD04BDA4BC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>D1609ACE2F4A012771BD278B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D147FDE74BBF1824D5D671AD</string>
-			<key>targetProxy</key>
-			<string>DA57D508BFCA3F68CCE2319B</string>
-		</dict>
-		<key>D19C82BB2FF2631AF3570AE6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D54E42FB35818E81DA3652E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8C31C40ED3155E26F645E71</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>VTAcknowledgementsViewController.m</string>
-			<key>path</key>
-			<string>Classes/VTAcknowledgementsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA57D508BFCA3F68CCE2319B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>04E3CE6BC86BC4F687A2DA05</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D147FDE74BBF1824D5D671AD</string>
-			<key>remoteInfo</key>
-			<string>Pods-VTAck App-VTAcknowledgementsViewController</string>
-		</dict>
-		<key>DC133039E752C3BDC493D8B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-VTAck Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DCA9EB89D3E26FF979BCD6A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>695D1FEF45320DF9FFCF5550</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DCC4B8847B2586620048CF09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>695D1FEF45320DF9FFCF5550</string>
-				<string>490B57C47E0D5E2D7EC70402</string>
-				<string>5FD2E01346BB31D0B141825A</string>
-				<string>30A858348195FF1CDECC021C</string>
-				<string>396289B5063A7DB0032150EE</string>
-				<string>D8C31C40ED3155E26F645E71</string>
-				<string>A3492905BA563FFF26E0E24C</string>
-				<string>E3915F2C437C07F7DAF9DDFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>VTAcknowledgementsViewController</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE8970BF969C7FEE471BE6D3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E139FD4AB3E2C573A0FE9298</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DF9EFB6D756764E6A19D1340</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>381047E7D0B3D287A6165824</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B8A1C18CAA22C0EDD8F727D7</string>
-				<string>EDD302150DF6910A29361853</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>4168B04B5BBFCFCD524DA9A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests</string>
-			<key>productName</key>
-			<string>Pods-VTAck Tests</string>
-			<key>productReference</key>
-			<string>167A5DD87881036DE07A4DEF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E0C583D87E20F95972F81394</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch</string>
-			<key>path</key>
-			<string>../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E139FD4AB3E2C573A0FE9298</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BD8C7CB4CC9C61E69B8F8F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E3915F2C437C07F7DAF9DDFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>78F5C7150B3864C9C19D2932</string>
-				<string>D54E42FB35818E81DA3652E6</string>
-				<string>5D52A002259E54A76ADC7D74</string>
-				<string>D19C82BB2FF2631AF3570AE6</string>
-				<string>EA8CC5FE5CF7FE72B8459395</string>
-				<string>FC50CEA49280B17DD19D0D1B</string>
-				<string>F8490E153ECE6B3638AE26D6</string>
-				<string>E0C583D87E20F95972F81394</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Tests/Pods/Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA8CC5FE5CF7FE72B8459395</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB40A99B955FC7CBD12A1962</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30A858348195FF1CDECC021C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EDD302150DF6910A29361853</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>051738CF9862A5A03A9163CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EED5EFEAC7D28693FCCC77B0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C40228617F18F7BF0AEF323D</string>
-				<string>825D1B814593B0E3665A30A1</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F1D115B1B954607C55079DD2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F818D86D1DB98BB6472B64CC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0921443963F0E97E636C0B7F</string>
-				<string>C951C8CD4E7ED6462E82FCC1</string>
-				<string>EB40A99B955FC7CBD12A1962</string>
-				<string>C778ABE14863833D3DE836BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F8490E153ECE6B3638AE26D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m</string>
-			<key>path</key>
-			<string>../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F990B4CA54D112BD881B849B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DCC4B8847B2586620048CF09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAEB80AC5C41C0592755203F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-VTAck App-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FBAAFB87D42C91C2FFA7AC73</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8E3287B7FC117F16E07BAA5E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>802F7911C4E2FE9C5BE80653</string>
-				<string>FCDD3BD52E96A7248773CE61</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D1609ACE2F4A012771BD278B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-VTAck App</string>
-			<key>productName</key>
-			<string>Pods-VTAck App</string>
-			<key>productReference</key>
-			<string>0B7AFF34CD0EA37879C7DA31</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>FC50CEA49280B17DD19D0D1B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCDD3BD52E96A7248773CE61</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>818AB8C9AE94FA5B6E1B45B1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>04E3CE6BC86BC4F687A2DA05</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		136C264D5CF688CD1264BDEA /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF89E9189E17028C202A98 /* VTAcknowledgementViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2E7D7516188D24802FDB1A01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C91B50CA8E605B2998F462 /* Foundation.framework */; };
+		2E9857549A6A27DB602E970B /* Pods-VTAck App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0D74CB60D554BC7E86B22 /* Pods-VTAck App-dummy.m */; };
+		2F00A358132C21DE50FD2199 /* Pods-VTAck Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EADD565FDE3A1DA2AC65E /* Pods-VTAck Tests-dummy.m */; };
+		418CF36298764921827889D1 /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F50076DA7C3620EBBF09D877 /* VTAcknowledgementsViewController.h */; };
+		6D4C0B9AF1F732462F3AC8EE /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D41D74FE6F852AD772E4BE /* VTAcknowledgementsViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		819E23C1A3A0981E94C04BDA /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A20B1DDC1D2F189E52E0B65C /* VTAcknowledgementViewController.h */; };
+		930F2939A80595FF342C5D93 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FDECCA03AE174C020E80EF /* VTAcknowledgement.h */; };
+		9792B52266CD5562E2B3189D /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B26F704A11E3C7DE2D0506 /* VTAcknowledgement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A21AC291FA08A1B3082322D1 /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A20B1DDC1D2F189E52E0B65C /* VTAcknowledgementViewController.h */; };
+		A6A33787AF51ABABBA6B60A5 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FDECCA03AE174C020E80EF /* VTAcknowledgement.h */; };
+		BDAF6B3053D1D3986A1BC2F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C91B50CA8E605B2998F462 /* Foundation.framework */; };
+		C16BCDF961D0F82C85518382 /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B26F704A11E3C7DE2D0506 /* VTAcknowledgement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8D2A0FA1E64E8439EE2F69E /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F50076DA7C3620EBBF09D877 /* VTAcknowledgementsViewController.h */; };
+		CE84260954FC5FECEC40FDB2 /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D41D74FE6F852AD772E4BE /* VTAcknowledgementsViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF866D1DA8C035088272E773 /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF89E9189E17028C202A98 /* VTAcknowledgementViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DD67F2F16DA0519C6A6F03B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C91B50CA8E605B2998F462 /* Foundation.framework */; };
+		E293BF042406AA0DA3F4A737 /* Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 572C414678DFC71D83516CF4 /* Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m */; };
+		E5F12B3DA8A534E8884B517E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C91B50CA8E605B2998F462 /* Foundation.framework */; };
+		F613BC031326045F5FF77BC8 /* Pods-VTAck App-VTAcknowledgementsViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A04FBF3D2FF8D9CC053788E0 /* Pods-VTAck App-VTAcknowledgementsViewController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38A39B91F826A1C74392C8F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98FEE00973086F88A53FB7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA755247EC529C9A8CD8F61;
+			remoteInfo = "Pods-VTAck App-VTAcknowledgementsViewController";
+		};
+		C65D2DB031D6E3EA982A44BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98FEE00973086F88A53FB7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37705ACADF02E27D74BAB8BD;
+			remoteInfo = "Pods-VTAck Tests-VTAcknowledgementsViewController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F591340C043EC7D53CD3A9 /* Pods-VTAck App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.debug.xcconfig"; sourceTree = "<group>"; };
+		0B6C2A9B9853BDAAA82D4106 /* Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch"; path = "../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch"; sourceTree = "<group>"; };
+		11B26F704A11E3C7DE2D0506 /* VTAcknowledgement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VTAcknowledgement.m; sourceTree = "<group>"; };
+		172DB01B334B0009418F7874 /* Pods-VTAck Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		193F3787BE63D8A82A8CB68D /* Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig"; path = "../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig"; sourceTree = "<group>"; };
+		1C5E84C68ECDACE24FF5348E /* Pods-VTAck App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		232DD688EABCB76B73DB812C /* libPods-VTAck App-VTAcknowledgementsViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App-VTAcknowledgementsViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3383BBDE13E6663076CB8DA0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		365EADD565FDE3A1DA2AC65E /* Pods-VTAck Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck Tests-dummy.m"; sourceTree = "<group>"; };
+		41F5563CE36ED08DF15B728A /* Pods-VTAck App-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VTAck App-environment.h"; sourceTree = "<group>"; };
+		445FB01A2630101B80891ADE /* Pods-VTAck Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VTAck Tests-environment.h"; sourceTree = "<group>"; };
+		464C0A4D6B194E464EFC16A7 /* Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch"; sourceTree = "<group>"; };
+		4CF9BCF0ADBFF3FC5173705C /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
+		4F245C06030F96F0E4B7FCF6 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		572C414678DFC71D83516CF4 /* Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m"; path = "../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m"; sourceTree = "<group>"; };
+		59D41D74FE6F852AD772E4BE /* VTAcknowledgementsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VTAcknowledgementsViewController.m; sourceTree = "<group>"; };
+		74FDECCA03AE174C020E80EF /* VTAcknowledgement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VTAcknowledgement.h; sourceTree = "<group>"; };
+		798BB84CF7F6B496C4A8D37B /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC1D3BDE7DF89AF16ED4384 /* Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		85FBE450A5EA0A59544D7A3F /* Pods-VTAck Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86C91B50CA8E605B2998F462 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8BC980D58D6D01A72AB196F3 /* Pods-VTAck App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck App-acknowledgements.plist"; sourceTree = "<group>"; };
+		8FCF89E9189E17028C202A98 /* VTAcknowledgementViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VTAcknowledgementViewController.m; sourceTree = "<group>"; };
+		99E62782A1CC8D03A94D1D2E /* Pods-VTAck Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-resources.sh"; sourceTree = "<group>"; };
+		A04FBF3D2FF8D9CC053788E0 /* Pods-VTAck App-VTAcknowledgementsViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck App-VTAcknowledgementsViewController-dummy.m"; sourceTree = "<group>"; };
+		A20B1DDC1D2F189E52E0B65C /* VTAcknowledgementViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VTAcknowledgementViewController.h; sourceTree = "<group>"; };
+		A44C00D077DB8B9CD5974439 /* libPods-VTAck Tests-VTAcknowledgementsViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests-VTAcknowledgementsViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F83E165BD71154038798B0 /* VTAcknowledgementsViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = VTAcknowledgementsViewController.bundle; sourceTree = "<group>"; };
+		B3B97DE2BF64804A29D227B4 /* Pods-VTAck App-VTAcknowledgementsViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App-VTAcknowledgementsViewController.xcconfig"; sourceTree = "<group>"; };
+		B3E61C799DD26C7CE0B92A6A /* Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig"; path = "../Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		B62D12429A57BED2F6A4430D /* Pods-VTAck App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck App-resources.sh"; sourceTree = "<group>"; };
+		CD671442FD3CD16EC9CE0B8A /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CDCD336C4EF62D7B6DBE0D2E /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F50076DA7C3620EBBF09D877 /* VTAcknowledgementsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VTAcknowledgementsViewController.h; sourceTree = "<group>"; };
+		FCC0D74CB60D554BC7E86B22 /* Pods-VTAck App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck App-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F669C58C8A066D032C4E48B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAF6B3053D1D3986A1BC2F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E3107B2494C7CF523BDCEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F12B3DA8A534E8884B517E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89992E527BBD0C9DD1EF298A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7D7516188D24802FDB1A01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0309B5A7C3D2CA81DDE740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD67F2F16DA0519C6A6F03B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C84CADBA753C2C47BBD9EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				86C91B50CA8E605B2998F462 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		136766A772C63D7ADF977FF4 = {
+			isa = PBXGroup;
+			children = (
+				3383BBDE13E6663076CB8DA0 /* Podfile */,
+				F579FBB3E8E46EE39F3CC60D /* Development Pods */,
+				18E3E386F8877549029625DD /* Frameworks */,
+				CE6BCCD05DD97C78ACD551FB /* Products */,
+				28BCF744182B958A272CCA1E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		18E3E386F8877549029625DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C84CADBA753C2C47BBD9EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28BCF744182B958A272CCA1E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				834C4C3F011A1F524A1112B0 /* Pods-VTAck App */,
+				AAA3893F963C90A6BE9CCC52 /* Pods-VTAck Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4AF0E2CAF417A88174C4DB28 /* VTAcknowledgementsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B6171665CFFA0E2068CA0E7 /* Classes */,
+				4D79DCBECB6027BD73E91B19 /* Resources */,
+				F588715CDF376F54CB9DAB9D /* Support Files */,
+			);
+			name = VTAcknowledgementsViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4D79DCBECB6027BD73E91B19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F83E165BD71154038798B0 /* VTAcknowledgementsViewController.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6B6171665CFFA0E2068CA0E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				74FDECCA03AE174C020E80EF /* VTAcknowledgement.h */,
+				11B26F704A11E3C7DE2D0506 /* VTAcknowledgement.m */,
+				A20B1DDC1D2F189E52E0B65C /* VTAcknowledgementViewController.h */,
+				8FCF89E9189E17028C202A98 /* VTAcknowledgementViewController.m */,
+				F50076DA7C3620EBBF09D877 /* VTAcknowledgementsViewController.h */,
+				59D41D74FE6F852AD772E4BE /* VTAcknowledgementsViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		834C4C3F011A1F524A1112B0 /* Pods-VTAck App */ = {
+			isa = PBXGroup;
+			children = (
+				1C5E84C68ECDACE24FF5348E /* Pods-VTAck App-acknowledgements.markdown */,
+				8BC980D58D6D01A72AB196F3 /* Pods-VTAck App-acknowledgements.plist */,
+				FCC0D74CB60D554BC7E86B22 /* Pods-VTAck App-dummy.m */,
+				41F5563CE36ED08DF15B728A /* Pods-VTAck App-environment.h */,
+				B62D12429A57BED2F6A4430D /* Pods-VTAck App-resources.sh */,
+				08F591340C043EC7D53CD3A9 /* Pods-VTAck App.debug.xcconfig */,
+				4CF9BCF0ADBFF3FC5173705C /* Pods-VTAck App.release.xcconfig */,
+			);
+			name = "Pods-VTAck App";
+			path = "Target Support Files/Pods-VTAck App";
+			sourceTree = "<group>";
+		};
+		AAA3893F963C90A6BE9CCC52 /* Pods-VTAck Tests */ = {
+			isa = PBXGroup;
+			children = (
+				85FBE450A5EA0A59544D7A3F /* Pods-VTAck Tests-acknowledgements.markdown */,
+				172DB01B334B0009418F7874 /* Pods-VTAck Tests-acknowledgements.plist */,
+				365EADD565FDE3A1DA2AC65E /* Pods-VTAck Tests-dummy.m */,
+				445FB01A2630101B80891ADE /* Pods-VTAck Tests-environment.h */,
+				99E62782A1CC8D03A94D1D2E /* Pods-VTAck Tests-resources.sh */,
+				CDCD336C4EF62D7B6DBE0D2E /* Pods-VTAck Tests.debug.xcconfig */,
+				CD671442FD3CD16EC9CE0B8A /* Pods-VTAck Tests.release.xcconfig */,
+			);
+			name = "Pods-VTAck Tests";
+			path = "Target Support Files/Pods-VTAck Tests";
+			sourceTree = "<group>";
+		};
+		CE6BCCD05DD97C78ACD551FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F245C06030F96F0E4B7FCF6 /* libPods-VTAck App.a */,
+				232DD688EABCB76B73DB812C /* libPods-VTAck App-VTAcknowledgementsViewController.a */,
+				798BB84CF7F6B496C4A8D37B /* libPods-VTAck Tests.a */,
+				A44C00D077DB8B9CD5974439 /* libPods-VTAck Tests-VTAcknowledgementsViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F579FBB3E8E46EE39F3CC60D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AF0E2CAF417A88174C4DB28 /* VTAcknowledgementsViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F588715CDF376F54CB9DAB9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3B97DE2BF64804A29D227B4 /* Pods-VTAck App-VTAcknowledgementsViewController.xcconfig */,
+				7DC1D3BDE7DF89AF16ED4384 /* Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig */,
+				A04FBF3D2FF8D9CC053788E0 /* Pods-VTAck App-VTAcknowledgementsViewController-dummy.m */,
+				464C0A4D6B194E464EFC16A7 /* Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch */,
+				193F3787BE63D8A82A8CB68D /* Pods-VTAck Tests-VTAcknowledgementsViewController.xcconfig */,
+				B3E61C799DD26C7CE0B92A6A /* Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig */,
+				572C414678DFC71D83516CF4 /* Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m */,
+				0B6C2A9B9853BDAAA82D4106 /* Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Tests/Pods/Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		432002A9A3270B7059F21565 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A33787AF51ABABBA6B60A5 /* VTAcknowledgement.h in Headers */,
+				A21AC291FA08A1B3082322D1 /* VTAcknowledgementViewController.h in Headers */,
+				C8D2A0FA1E64E8439EE2F69E /* VTAcknowledgementsViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78FD0969B702672D4D339D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930F2939A80595FF342C5D93 /* VTAcknowledgement.h in Headers */,
+				819E23C1A3A0981E94C04BDA /* VTAcknowledgementViewController.h in Headers */,
+				418CF36298764921827889D1 /* VTAcknowledgementsViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17F5AEC3D6A4776C0C54BB8B /* Pods-VTAck Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C09D3763A6F984F37D87EA8 /* Build configuration list for PBXNativeTarget "Pods-VTAck Tests" */;
+			buildPhases = (
+				D298F0DA945A3F99430912E0 /* Sources */,
+				41E3107B2494C7CF523BDCEF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0DB4C6CF5C78F48B7134CD /* PBXTargetDependency */,
+			);
+			name = "Pods-VTAck Tests";
+			productName = "Pods-VTAck Tests";
+			productReference = 798BB84CF7F6B496C4A8D37B /* libPods-VTAck Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		37705ACADF02E27D74BAB8BD /* Pods-VTAck Tests-VTAcknowledgementsViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4CF49A95029688BE9D08B9 /* Build configuration list for PBXNativeTarget "Pods-VTAck Tests-VTAcknowledgementsViewController" */;
+			buildPhases = (
+				A98F10733ADEE42005EC0F47 /* Sources */,
+				1F669C58C8A066D032C4E48B /* Frameworks */,
+				C78FD0969B702672D4D339D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VTAck Tests-VTAcknowledgementsViewController";
+			productName = "Pods-VTAck Tests-VTAcknowledgementsViewController";
+			productReference = A44C00D077DB8B9CD5974439 /* libPods-VTAck Tests-VTAcknowledgementsViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5CAC591AD02C7609668416FF /* Pods-VTAck App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1D20D419BA2D78C9F4FB6B /* Build configuration list for PBXNativeTarget "Pods-VTAck App" */;
+			buildPhases = (
+				C6D0ADBB0DEF656472100875 /* Sources */,
+				8D0309B5A7C3D2CA81DDE740 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B97A4E7ABDEF14E9D83A3B /* PBXTargetDependency */,
+			);
+			name = "Pods-VTAck App";
+			productName = "Pods-VTAck App";
+			productReference = 4F245C06030F96F0E4B7FCF6 /* libPods-VTAck App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BBA755247EC529C9A8CD8F61 /* Pods-VTAck App-VTAcknowledgementsViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D1F3A1371ED275A9508D69 /* Build configuration list for PBXNativeTarget "Pods-VTAck App-VTAcknowledgementsViewController" */;
+			buildPhases = (
+				748B581A1F9829D2571480AC /* Sources */,
+				89992E527BBD0C9DD1EF298A /* Frameworks */,
+				432002A9A3270B7059F21565 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VTAck App-VTAcknowledgementsViewController";
+			productName = "Pods-VTAck App-VTAcknowledgementsViewController";
+			productReference = 232DD688EABCB76B73DB812C /* libPods-VTAck App-VTAcknowledgementsViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98FEE00973086F88A53FB7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 27888A0BF1D637AE8302A40E /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 136766A772C63D7ADF977FF4;
+			productRefGroup = CE6BCCD05DD97C78ACD551FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CAC591AD02C7609668416FF /* Pods-VTAck App */,
+				BBA755247EC529C9A8CD8F61 /* Pods-VTAck App-VTAcknowledgementsViewController */,
+				17F5AEC3D6A4776C0C54BB8B /* Pods-VTAck Tests */,
+				37705ACADF02E27D74BAB8BD /* Pods-VTAck Tests-VTAcknowledgementsViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748B581A1F9829D2571480AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613BC031326045F5FF77BC8 /* Pods-VTAck App-VTAcknowledgementsViewController-dummy.m in Sources */,
+				9792B52266CD5562E2B3189D /* VTAcknowledgement.m in Sources */,
+				CF866D1DA8C035088272E773 /* VTAcknowledgementViewController.m in Sources */,
+				CE84260954FC5FECEC40FDB2 /* VTAcknowledgementsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98F10733ADEE42005EC0F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E293BF042406AA0DA3F4A737 /* Pods-VTAck Tests-VTAcknowledgementsViewController-dummy.m in Sources */,
+				C16BCDF961D0F82C85518382 /* VTAcknowledgement.m in Sources */,
+				136C264D5CF688CD1264BDEA /* VTAcknowledgementViewController.m in Sources */,
+				6D4C0B9AF1F732462F3AC8EE /* VTAcknowledgementsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D0ADBB0DEF656472100875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9857549A6A27DB602E970B /* Pods-VTAck App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D298F0DA945A3F99430912E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F00A358132C21DE50FD2199 /* Pods-VTAck Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0DB4C6CF5C78F48B7134CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VTAck Tests-VTAcknowledgementsViewController";
+			target = 37705ACADF02E27D74BAB8BD /* Pods-VTAck Tests-VTAcknowledgementsViewController */;
+			targetProxy = C65D2DB031D6E3EA982A44BC /* PBXContainerItemProxy */;
+		};
+		27B97A4E7ABDEF14E9D83A3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VTAck App-VTAcknowledgementsViewController";
+			target = BBA755247EC529C9A8CD8F61 /* Pods-VTAck App-VTAcknowledgementsViewController */;
+			targetProxy = 38A39B91F826A1C74392C8F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09BF2A0C9B380AF24FAF2221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E61C799DD26C7CE0B92A6A /* Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		374E643B2DC4C5C2AEF255B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC1D3BDE7DF89AF16ED4384 /* Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController/Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		51A2034A0136BC9C3B54A7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F591340C043EC7D53CD3A9 /* Pods-VTAck App.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67B0948E05DE246CE6382C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E61C799DD26C7CE0B92A6A /* Pods-VTAck Tests-VTAcknowledgementsViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VTAck Tests-VTAcknowledgementsViewController/Pods-VTAck Tests-VTAcknowledgementsViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		915EC9B4DE5FCD80E1E54D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6658CDE0179A59C731AD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB2B5AA9B08C6975C7940DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC1D3BDE7DF89AF16ED4384 /* Pods-VTAck App-VTAcknowledgementsViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VTAck App-VTAcknowledgementsViewController/Pods-VTAck App-VTAcknowledgementsViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA2E79F3A40551E6BCA429D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF9BCF0ADBFF3FC5173705C /* Pods-VTAck App.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DF444E6A52BB4A3955243F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCD336C4EF62D7B6DBE0D2E /* Pods-VTAck Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F820FA5E33EBAB85512B3CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD671442FD3CD16EC9CE0B8A /* Pods-VTAck Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27888A0BF1D637AE8302A40E /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6658CDE0179A59C731AD77 /* Debug */,
+				915EC9B4DE5FCD80E1E54D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D1F3A1371ED275A9508D69 /* Build configuration list for PBXNativeTarget "Pods-VTAck App-VTAcknowledgementsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2B5AA9B08C6975C7940DE3 /* Debug */,
+				374E643B2DC4C5C2AEF255B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1D20D419BA2D78C9F4FB6B /* Build configuration list for PBXNativeTarget "Pods-VTAck App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51A2034A0136BC9C3B54A7DE /* Debug */,
+				DA2E79F3A40551E6BCA429D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4CF49A95029688BE9D08B9 /* Build configuration list for PBXNativeTarget "Pods-VTAck Tests-VTAcknowledgementsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BF2A0C9B380AF24FAF2221 /* Debug */,
+				67B0948E05DE246CE6382C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C09D3763A6F984F37D87EA8 /* Build configuration list for PBXNativeTarget "Pods-VTAck Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF444E6A52BB4A3955243F30 /* Debug */,
+				F820FA5E33EBAB85512B3CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B98FEE00973086F88A53FB7B /* Project object */;
+}
