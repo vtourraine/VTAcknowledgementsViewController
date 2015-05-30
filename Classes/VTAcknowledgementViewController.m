@@ -47,7 +47,7 @@
 {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
     textView.alwaysBounceVertical = YES;
-    textView.font                 = self.textViewFont ?: [UIFont systemFontOfSize:17];
+    textView.font                 = [UIFont systemFontOfSize:17];
     textView.text                 = self.text;
     textView.editable             = NO;
     textView.dataDetectorTypes    = UIDataDetectorTypeLink;
@@ -56,6 +56,8 @@
     }
 
     self.view = textView;
+
+    self.textView = textView;
 }
 
 @end

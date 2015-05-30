@@ -36,11 +36,6 @@
 @interface VTAcknowledgementsViewController : UITableViewController
 
 /**
- Custom font for the license main text view. If `nil` (default), the system font (size 17) is used.
- */
-@property (nonatomic, strong) UIFont *licenseTextViewFont;
-
-/**
  Array of `VTAcknowledgement`.
  */
 @property (nonatomic, strong) NSArray *acknowledgements;
