@@ -33,8 +33,32 @@ static NSString *const VTCellIdentifier                   = @"Cell";
 
 static const CGFloat VTLabelMargin = 20;
 
+NSString *const VTHeaderLabelFontKey            = @"VTHeaderLabelFontKey";
+NSString *const VTFooterLabelFontKey            = @"VTFooterLabelFontKey";
+NSString *const VTHeaderLabelTextColorKey       = @"VTHeaderLabelTextColorKey";
+NSString *const VTFooterLabelTextColorKey       = @"VTFooterLabelTextColorKey";
+NSString *const VTCellTextLabelFontKey          = @"VTCellTextLabelFontKey";
+NSString *const VTCellTextLabelColorKey         = @"VTCellTextLabelColorKey";
+NSString *const VTCellDetailTextLabelFontKey    = @"VTCellDetailTextLabelFontKey";
+NSString *const VTCellDetailTextLabelColorKey   = @"VTCellDetailTextLabelColorKey";
+NSString *const VTTextViewFontKey               = @"VTTextViewFontKey";
+NSString *const VTTextViewColorKey              = @"VTTextViewColorKey";
+NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey";
+
 
 @interface VTAcknowledgementsViewController ()
+
+@property (nonatomic, copy) UIFont *headerLabelFont;
+@property (nonatomic, copy) IBInspectable UIColor *headerLabelTextColor;
+@property (nonatomic, copy) UIFont *footerLabelFont;
+@property (nonatomic, copy) IBInspectable UIColor *footerLabelTextColor;
+@property (nonatomic, copy) UIFont *cellTextLabelFont;
+@property (nonatomic, copy) IBInspectable UIColor *cellTextLabelColor;
+@property (nonatomic, copy) UIFont *cellDetailTextLabelFont;
+@property (nonatomic, copy) IBInspectable UIColor *cellDetailTextLabelColor;
+@property (nonatomic, copy) UIFont *textViewFont;
+@property (nonatomic, copy) UIColor *textViewColor;
+@property (nonatomic, copy) UIColor *textViewBackgroundColor;
 
 + (NSString *)acknowledgementsPlistPathForName:(NSString *)name;
 + (NSString *)defaultAcknowledgementsPlistPath;
@@ -43,7 +67,7 @@ static const CGFloat VTLabelMargin = 20;
 
 - (void)configureHeaderView;
 - (void)configureFooterView;
-- (CGFloat)heightForLabelWithText:(NSString *)labelText andWidth:(CGFloat)labelWidth;
+- (CGFloat)heightForLabelWithText:(NSString *)labelText font:(UIFont *)font andWidth:(CGFloat)labelWidth;
 
 - (IBAction)dismissViewController:(id)sender;
 - (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
@@ -70,13 +94,41 @@ static const CGFloat VTLabelMargin = 20;
     return [[self.class alloc] initWithAcknowledgementsPlistPath:path];
 }
 
++ (instancetype)acknowledgementsViewControllerWithSettings:(NSDictionary *)settings
+{
+    NSString *path = self.defaultAcknowledgementsPlistPath;
+    return [[self.class alloc] initWithAcknowledgementsPlistPath:path settings:settings];
+}
+
 - (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         [self commonInitWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
     }
+    
+    return self;
+}
 
+- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath settings:(NSDictionary *)settings
+{
+    self = [self initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
+    if (self) {
+        if (settings) {
+            self.headerLabelFont            = settings[VTHeaderLabelFontKey];
+            self.headerLabelTextColor       = settings[VTHeaderLabelTextColorKey];
+            self.footerLabelFont            = settings[VTFooterLabelFontKey];
+            self.footerLabelTextColor       = settings[VTFooterLabelTextColorKey];
+            self.cellTextLabelFont          = settings[VTCellTextLabelFontKey];
+            self.cellTextLabelColor         = settings[VTCellTextLabelColorKey];
+            self.cellDetailTextLabelFont    = settings[VTCellDetailTextLabelFontKey];
+            self.cellDetailTextLabelColor   = settings[VTCellDetailTextLabelColorKey];
+            self.textViewFont               = settings[VTTextViewFontKey];
+            self.textViewColor              = settings[VTTextViewColorKey];
+            self.textViewBackgroundColor    = settings[VTTextViewBackgroundColorKey];
+        }
+    }
+    
     return self;
 }
 
@@ -97,7 +149,7 @@ static const CGFloat VTLabelMargin = 20;
 
 - (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
-    self.title = self.class.localizedTitle;    
+    self.title = self.class.localizedTitle;
     NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
     NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
     if (preferenceSpecifiers.count >= 2) {
@@ -202,16 +254,16 @@ static const CGFloat VTLabelMargin = 20;
 
 - (void)configureHeaderView
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
+    UIFont *font = self.headerLabelFont ? self.headerLabelFont : [UIFont systemFontOfSize:12];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    CGFloat labelHeight = [self heightForLabelWithText:self.headerText andWidth:labelWidth];
+    CGFloat labelHeight = [self heightForLabelWithText:self.headerText font:font andWidth:labelWidth];
 
     CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, labelHeight);
 
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.headerText;
     label.font             = font;
-    label.textColor        = [UIColor grayColor];
+    label.textColor        = self.headerLabelTextColor ? self.headerLabelTextColor : [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
     label.textAlignment    = NSTextAlignmentCenter;
@@ -225,16 +277,16 @@ static const CGFloat VTLabelMargin = 20;
 
 - (void)configureFooterView
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
+    UIFont *font = self.footerLabelFont ? self.footerLabelFont : [UIFont systemFontOfSize:12];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    CGFloat labelHeight = [self heightForLabelWithText:self.footerText andWidth:labelWidth];
+    CGFloat labelHeight = [self heightForLabelWithText:self.footerText font:font andWidth:labelWidth];
 
     CGRect labelFrame = CGRectMake(VTLabelMargin, 0, labelWidth, labelHeight);
 
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.footerText;
     label.font             = font;
-    label.textColor        = [UIColor grayColor];
+    label.textColor        = self.footerLabelTextColor ? self.footerLabelTextColor : [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
     label.textAlignment    = NSTextAlignmentCenter;
@@ -254,9 +306,8 @@ static const CGFloat VTLabelMargin = 20;
     self.tableView.tableFooterView = footerView;
 }
 
-- (CGFloat)heightForLabelWithText:(NSString *)labelText andWidth:(CGFloat)labelWidth
+- (CGFloat)heightForLabelWithText:(NSString *)labelText font:(UIFont *)font andWidth:(CGFloat)labelWidth
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
     CGFloat labelHeight;
 
     if ([labelText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
@@ -342,11 +393,24 @@ static const CGFloat VTLabelMargin = 20;
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VTCellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:VTCellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:VTCellIdentifier];
     }
-
+    if (self.cellTextLabelFont) {
+        cell.textLabel.font = self.cellTextLabelFont;
+    }
+    if (self.cellTextLabelColor) {
+        cell.textLabel.textColor = self.cellTextLabelColor;
+    }
+    if (self.cellDetailTextLabelFont) {
+        cell.detailTextLabel.font = self.cellDetailTextLabelFont;
+    }
+    if (self.cellDetailTextLabelColor) {
+        cell.detailTextLabel.textColor = self.cellDetailTextLabelColor;
+    }
+    
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     cell.textLabel.text = acknowledgement.title;
+    cell.detailTextLabel.text = acknowledgement.subtitle;
     cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
 
     return cell;
@@ -359,7 +423,13 @@ static const CGFloat VTLabelMargin = 20;
 {
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
-
+    viewController.textView.font = self.textViewFont;
+    viewController.textView.textColor = self.textViewColor;
+    
+    if (self.textViewBackgroundColor) {
+        viewController.view.backgroundColor = self.textViewBackgroundColor;
+    }
+    
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
