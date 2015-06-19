@@ -7,6 +7,7 @@ Tested on Travis CI: [![Build Status](https://travis-ci.org/vtourraine/VTAcknowl
 ![iPhone screenshot 1](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-01.png)
 ![iPhone screenshot 2](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-02.png)
 
+
 ## How to Install
 
 This project is only useful if you use CocoaPods, so let’s assume that you’re indeed using CocoaPods.
@@ -27,6 +28,9 @@ viewController.headerText = NSLocalizedString(@"We love open source software.", 
 [self.navigationController pushViewController:viewController animated:YES];
 ```
 
+
+## Customization
+
 If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using fancy build targets), you can initialize the view controller with a custom path.
 
 ``` objc
@@ -34,13 +38,26 @@ NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-MyTarget-acknowle
 VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
 ```
 
+If you need to include licenses that are not part of the generated `plist`, or if you don’t want to use the generated `plist` at all, you can easily create new `VTAcknowledgement` instances, and add them to the acknowledgements array of the controller.
+
+``` objc
+VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] init];
+customLicense.title = NSLocalizedString(@"...", nil);
+customLicense.text  = NSLocalizedString(@"...", nil);
+
+viewController.acknowledgements = @[customLicense];
+```
+
+
 ## Requirements
 
 VTAcknowledgementsViewController requires iOS 5.0 and above, and uses ARC.
 
+
 ## Credits
 
 VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.vtourraine.net), with help from [our contributors](https://github.com/vtourraine/VTAcknowledgementsViewController/contributors).
+
 
 ## License
 
