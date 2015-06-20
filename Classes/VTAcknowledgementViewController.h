@@ -32,7 +32,7 @@
 /**
  The main text view.
  */
-@property (nonatomic, weak) UITextView *textView;
+@property (nonatomic, weak, nullable) UITextView *textView;
 
 /**
  Initializes an acknowledgement view controller with a title and a body text.
@@ -42,6 +42,6 @@
 
  @return A newly created `VTAcknowledgementViewController` instance.
  */
-- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
+- (nullable instancetype)initWithTitle:(nonnull NSString *)title text:(nonnull NSString *)text;
 
 @end

@@ -2,7 +2,8 @@
 
 ## 0.15 (work in progress)
 
-- Remove `textViewFont` property, add `textView` property for `VTAcknowledgementViewController`
+- Removed `textViewFont` property, added `textView` property for `VTAcknowledgementViewController`
+- Added nullability annotations
 
 
 ## 0.14 (16 May 2015)

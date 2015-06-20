@@ -31,11 +31,11 @@
 /**
  The acknowledgement title (for instance the pod’s name).
  */
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy, nonnull) NSString *title;
 
 /**
  The acknowledgement body text (for instance the pod’s license).
  */
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy, nonnull) NSString *text;
 
 @end

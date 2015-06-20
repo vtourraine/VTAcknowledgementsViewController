@@ -67,7 +67,7 @@ If you need to further customize the appearance or behavior of this pod, feel fr
 
 ## Requirements
 
-VTAcknowledgementsViewController requires iOS 5.0 and above, and uses ARC.
+VTAcknowledgementsViewController requires iOS 5.0 and above, Xcode 6.3 and above, and uses ARC.
 
 
 ## Credits
