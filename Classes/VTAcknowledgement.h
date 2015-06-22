@@ -34,6 +34,13 @@
 @property (nonatomic, copy, nonnull) NSString *title;
 
 /**
+ The acknowledgement subtitle (for instance the name of the creator).
+ Currently the Pods-Acknowledgements.plist does not have a subtitle,
+ but it can still be useful to add a custom value.
+ */
+@property (nonatomic, copy) NSString *subtitle;
+
+/**
  The acknowledgement body text (for instance the pod’s license).
  */
 @property (nonatomic, copy, nonnull) NSString *text;

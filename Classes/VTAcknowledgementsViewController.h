@@ -23,6 +23,20 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const VTHeaderLabelFontKey;
+extern NSString *const VTFooterLabelFontKey;
+extern NSString *const VTHeaderLabelTextColorKey;
+extern NSString *const VTFooterLabelTextColorKey;
+extern NSString *const VTHeaderLabelTextAlignmentKey;
+extern NSString *const VTFooterLabelTextAlignmentKey;
+extern NSString *const VTCellTextLabelFontKey;
+extern NSString *const VTCellTextLabelColorKey;
+extern NSString *const VTCellDetailTextLabelFontKey;
+extern NSString *const VTCellDetailTextLabelColorKey;
+extern NSString *const VTTextViewFontKey;
+extern NSString *const VTTextViewColorKey;
+extern NSString *const VTTextViewBackgroundColorKey;
+
 // Only available with Xcode 6+, so we need to handle older versions too.
 #ifndef IBInspectable
 #define IBInspectable
@@ -41,7 +55,7 @@
 @property (nonatomic, strong, nullable) NSArray *acknowledgements;
 
 /**
- Header text to be displayed above the list of the acknowledgements. 
+ Header text to be displayed above the list of the acknowledgements.
  It needs to get set before `viewDidLoad` gets called.
  Its value can be defined in the header of the plist file.
  */
@@ -67,6 +81,13 @@
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
 + (nullable instancetype)acknowledgementsViewController;
+
+/**
+ Creates a new acknowledgements view controller configured with a settings dictionary.
+ 
+ @return A newly created `VTAcknowledgementsViewController` instance configured with settings dictionary.
+ */
++ (instancetype)acknowledgementsViewControllerWithSettings:(NSDictionary *)settings;
 
 /**
  The localized version of “Acknowledgements”.

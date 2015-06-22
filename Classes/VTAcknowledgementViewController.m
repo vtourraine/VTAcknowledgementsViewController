@@ -23,13 +23,6 @@
 
 #import "VTAcknowledgementViewController.h"
 
-@interface VTAcknowledgementViewController ()
-
-@property (nonatomic, copy) NSString *text;
-
-@end
-
-
 @implementation VTAcknowledgementViewController
 
 - (instancetype)initWithTitle:(NSString *)title text:(NSString *)text
@@ -37,27 +30,22 @@
     self = [super init];
     if (self) {
         self.title = title;
-        self.text  = text;
+        
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
+        textView.alwaysBounceVertical = YES;
+        textView.font                 = [UIFont systemFontOfSize:17];
+        textView.text                 = text;
+        textView.editable             = NO;
+        textView.dataDetectorTypes    = UIDataDetectorTypeLink;
+        if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
+            textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
+        }
+        
+        self.view = textView;
+        self.textView = textView;
     }
 
     return self;
-}
-
-- (void)loadView
-{
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
-    textView.alwaysBounceVertical = YES;
-    textView.font                 = [UIFont systemFontOfSize:17];
-    textView.text                 = self.text;
-    textView.editable             = NO;
-    textView.dataDetectorTypes    = UIDataDetectorTypeLink;
-    if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
-        textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
-    }
-
-    self.view = textView;
-
-    self.textView = textView;
 }
 
 @end
