@@ -37,8 +37,6 @@ NSString *const VTHeaderLabelFontKey            = @"VTHeaderLabelFontKey";
 NSString *const VTFooterLabelFontKey            = @"VTFooterLabelFontKey";
 NSString *const VTHeaderLabelTextColorKey       = @"VTHeaderLabelTextColorKey";
 NSString *const VTFooterLabelTextColorKey       = @"VTFooterLabelTextColorKey";
-NSString *const VTHeaderLabelTextAlignmentKey   = @"VTHeaderLabelTextAlignmentKey";
-NSString *const VTFooterLabelTextAlignmentKey   = @"VTFooterLabelTextAlignmentKey";
 NSString *const VTCellTextLabelFontKey          = @"VTCellTextLabelFontKey";
 NSString *const VTCellTextLabelColorKey         = @"VTCellTextLabelColorKey";
 NSString *const VTCellDetailTextLabelFontKey    = @"VTCellDetailTextLabelFontKey";
@@ -52,10 +50,8 @@ NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey
 
 @property (nonatomic, copy) UIFont *headerLabelFont;
 @property (nonatomic, copy) IBInspectable UIColor *headerLabelTextColor;
-@property (nonatomic, assign) NSTextAlignment headerTextAlignment;
 @property (nonatomic, copy) UIFont *footerLabelFont;
 @property (nonatomic, copy) IBInspectable UIColor *footerLabelTextColor;
-@property (nonatomic, assign) NSTextAlignment footerTextAlignment;
 @property (nonatomic, copy) UIFont *cellTextLabelFont;
 @property (nonatomic, copy) IBInspectable UIColor *cellTextLabelColor;
 @property (nonatomic, copy) UIFont *cellDetailTextLabelFont;
@@ -121,10 +117,8 @@ NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey
         if (settings) {
             self.headerLabelFont            = settings[VTHeaderLabelFontKey];
             self.headerLabelTextColor       = settings[VTHeaderLabelTextColorKey];
-            self.headerTextAlignment        = [settings[VTHeaderLabelTextAlignmentKey] integerValue];
             self.footerLabelFont            = settings[VTFooterLabelFontKey];
             self.footerLabelTextColor       = settings[VTFooterLabelTextColorKey];
-            self.footerTextAlignment        = [settings[VTFooterLabelTextAlignmentKey] integerValue];
             self.cellTextLabelFont          = settings[VTCellTextLabelFontKey];
             self.cellTextLabelColor         = settings[VTCellTextLabelColorKey];
             self.cellDetailTextLabelFont    = settings[VTCellDetailTextLabelFontKey];
@@ -272,7 +266,7 @@ NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey
     label.textColor        = self.headerLabelTextColor ? self.headerLabelTextColor : [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
-    label.textAlignment    = self.headerTextAlignment ? self.headerTextAlignment : NSTextAlignmentCenter;
+    label.textAlignment    = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
 
     CGRect headerFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(label.frame) + 2 * VTLabelMargin);
@@ -295,7 +289,7 @@ NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey
     label.textColor        = self.footerLabelTextColor ? self.footerLabelTextColor : [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
-    label.textAlignment    = self.footerTextAlignment ? self.footerTextAlignment : NSTextAlignmentCenter;
+    label.textAlignment    = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     label.userInteractionEnabled = YES;
 
