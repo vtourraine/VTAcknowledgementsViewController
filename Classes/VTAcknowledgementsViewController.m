@@ -121,10 +121,10 @@ NSString *const VTTextViewBackgroundColorKey    = @"VTTextViewBackgroundColorKey
         if (settings) {
             self.headerLabelFont            = settings[VTHeaderLabelFontKey];
             self.headerLabelTextColor       = settings[VTHeaderLabelTextColorKey];
-            self.headerTextAlignment        = settings[VTHeaderLabelTextAlignmentKey];
+            self.headerTextAlignment        = [settings[VTHeaderLabelTextAlignmentKey] integerValue];
             self.footerLabelFont            = settings[VTFooterLabelFontKey];
             self.footerLabelTextColor       = settings[VTFooterLabelTextColorKey];
-            self.footerTextAlignment        = settings[VTFooterLabelTextAlignmentKey];
+            self.footerTextAlignment        = [settings[VTFooterLabelTextAlignmentKey] integerValue];
             self.cellTextLabelFont          = settings[VTCellTextLabelFontKey];
             self.cellTextLabelColor         = settings[VTCellTextLabelColorKey];
             self.cellDetailTextLabelFont    = settings[VTCellDetailTextLabelFontKey];
