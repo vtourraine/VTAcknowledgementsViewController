@@ -27,6 +27,8 @@ extern NSString *const VTHeaderLabelFontKey;
 extern NSString *const VTFooterLabelFontKey;
 extern NSString *const VTHeaderLabelTextColorKey;
 extern NSString *const VTFooterLabelTextColorKey;
+extern NSString *const VTHeaderLabelTextAlignmentKey;
+extern NSString *const VTFooterLabelTextAlignmentKey;
 extern NSString *const VTCellTextLabelFontKey;
 extern NSString *const VTCellTextLabelColorKey;
 extern NSString *const VTCellDetailTextLabelFontKey;
