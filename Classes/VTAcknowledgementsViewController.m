@@ -32,6 +32,7 @@ static NSString *const VTCocoaPodsURLString               = @"http://cocoapods.o
 static NSString *const VTCellIdentifier                   = @"Cell";
 
 static const CGFloat VTLabelMargin = 20;
+static const CGFloat VTFooterBottomMargin = 20;
 
 
 @interface VTAcknowledgementsViewController ()
@@ -246,7 +247,7 @@ static const CGFloat VTLabelMargin = 20;
         [label addGestureRecognizer:tapGestureRecognizer];
     }
 
-    CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
+    CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame) + VTFooterBottomMargin);
     UIView *footerView = [[UIView alloc] initWithFrame:footerFrame];
     footerView.userInteractionEnabled = YES;
     [footerView addSubview:label];
