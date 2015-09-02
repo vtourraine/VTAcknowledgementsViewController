@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.15 (work in progress)
+## 0.15 (2 September 2015)
 
 - Removed `textViewFont` property, added `textView` property for `VTAcknowledgementViewController`
 - Improved footer layout, by 柳东原 (@xhacker)
