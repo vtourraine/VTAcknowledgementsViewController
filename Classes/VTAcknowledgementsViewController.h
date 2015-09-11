@@ -28,6 +28,8 @@
 #define IBInspectable
 #endif
 
+@class VTAcknowledgement;
+
 
 /**
  `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
@@ -38,7 +40,7 @@
 /**
  Array of `VTAcknowledgement`.
  */
-@property (nonatomic, strong, nullable) NSArray *acknowledgements;
+@property (nonatomic, strong, nullable) NSArray <VTAcknowledgement *> *acknowledgements;
 
 /**
  Header text to be displayed above the list of the acknowledgements. 
