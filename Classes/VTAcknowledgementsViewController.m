@@ -126,9 +126,9 @@ static const CGFloat VTFooterBottomMargin = 20;
 
     NSMutableArray *acknowledgements = [NSMutableArray array];
     for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-        VTAcknowledgement *acknowledgement = [VTAcknowledgement new];
-        acknowledgement.title = preferenceSpecifier[@"Title"];
-        acknowledgement.text  = preferenceSpecifier[@"FooterText"];
+        VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc]
+                                              initWithTitle:preferenceSpecifier[@"Title"]
+                                              text:preferenceSpecifier[@"FooterText"]];
         [acknowledgements addObject:acknowledgement];
     }
 

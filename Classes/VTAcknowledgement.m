@@ -23,7 +23,30 @@
 
 #import "VTAcknowledgement.h"
 
-@implementation VTAcknowledgement
+@interface VTAcknowledgement ()
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
+
+@implementation VTAcknowledgement
+
+- (instancetype)init
+{
+    @throw nil;
+}
+
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text
+{
+    self = [super init];
+
+    if (self) {
+        _title = title;
+        _text = text;
+    }
+
+    return self;
+}
+
+@end
