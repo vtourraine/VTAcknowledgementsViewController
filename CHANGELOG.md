@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.16 (work in progress)
+
+- Requires Xcode 7
+- Added `VTAcknowledgement` designated initializer
+- Added generics annotations
+
+
 ## 0.15 (2 September 2015)
 
 - Removed `textViewFont` property, added `textView` property for `VTAcknowledgementViewController`
