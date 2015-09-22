@@ -1,6 +1,6 @@
 # VTAcknowledgementsViewController
 
-_Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/)._
+_Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/). Now also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
 Tested on Travis CI: [![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
 
