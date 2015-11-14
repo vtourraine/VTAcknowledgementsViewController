@@ -54,6 +54,7 @@
     if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
     }
+    textView.contentOffset = CGPointZero;
 
     self.view = textView;
 
