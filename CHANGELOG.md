@@ -5,6 +5,7 @@
 - Requires Xcode 7
 - Added `VTAcknowledgement` designated initializer
 - Added generics annotations
+- Fixed acknowledgement initial scrolling offset, by Levi Brown (@levigroker)
 
 
 ## 0.15 (2 September 2015)
