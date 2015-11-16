@@ -68,7 +68,7 @@
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-+ (nullable instancetype)acknowledgementsViewController;
++ (nullable instancetype)acknowledgementsViewController NS_SWIFT_NAME(acknowledgementsViewController());
 
 /**
  The localized version of “Acknowledgements”.
