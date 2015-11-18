@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.16 (work in progress)
+## 0.16 (18 November 2015)
 
 - Requires Xcode 7
 - Added `VTAcknowledgement` designated initializer
