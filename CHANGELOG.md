@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.17 (work in progress)
+
+- Updated imports to compile when modules are disabled, by Ryota Hayashi (@hayashi311)
+
+
 ## 0.16 (18 November 2015)
 
 - Requires Xcode 7
