@@ -23,6 +23,7 @@
 
 #import "VTAcknowledgementsViewController.h"
 #import "VTAcknowledgementViewController.h"
+#import "VTAcknowledgementsParser.h"
 #import "VTAcknowledgement.h"
 
 static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgements";
@@ -98,39 +99,25 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
-    self.title = self.class.localizedTitle;    
-    NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:acknowledgementsPlistPath];
-    NSArray *preferenceSpecifiers = root[@"PreferenceSpecifiers"];
-    if (preferenceSpecifiers.count >= 2) {
-        NSString *headerText = preferenceSpecifiers.firstObject[@"FooterText"];
-        NSString *footerText = preferenceSpecifiers.lastObject[@"FooterText"];
+    self.title = self.class.localizedTitle;
 
-        if ([headerText isEqualToString:VTDefaultHeaderText]) {
-            self.headerText = nil;
-        }
-        else if (![headerText isEqualToString:@""]) {
-            self.headerText = headerText;
-        }
+    VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
 
-        if ([footerText isEqualToString:VTDefaultFooterText]) {
-            self.footerText = [VTAcknowledgementsViewController localizedCocoaPodsFooterText];
-        }
-        else if (![footerText isEqualToString:@""]) {
-            self.footerText = footerText;
-        }
-
-        // Remove the header and footer
-        NSRange range = NSMakeRange(1, preferenceSpecifiers.count - 2);
-        preferenceSpecifiers = [preferenceSpecifiers subarrayWithRange:range];
+    if ([parser.header isEqualToString:VTDefaultHeaderText]) {
+        self.headerText = nil;
+    }
+    else if (![parser.header isEqualToString:@""]) {
+        self.headerText = parser.header;
     }
 
-    NSMutableArray *acknowledgements = [NSMutableArray array];
-    for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-        VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc]
-                                              initWithTitle:preferenceSpecifier[@"Title"]
-                                              text:preferenceSpecifier[@"FooterText"]];
-        [acknowledgements addObject:acknowledgement];
+    if ([parser.footer isEqualToString:VTDefaultFooterText]) {
+        self.footerText = [VTAcknowledgementsViewController localizedCocoaPodsFooterText];
     }
+    else if (![parser.footer isEqualToString:@""]) {
+        self.footerText = parser.footer;
+    }
+
+    NSMutableArray *acknowledgements = [parser.acknowledgements mutableCopy];
 
     [acknowledgements sortUsingComparator:^NSComparisonResult(VTAcknowledgement *obj1, VTAcknowledgement *obj2) {
         return [obj1.title compare:obj2.title

@@ -1,5 +1,5 @@
 //
-// VTAcknowledgement.h
+// VTAcknowledgementsParser.h
 //
 // Copyright (c) 2013-2015 Vincent Tourraine (http://www.vtourraine.net)
 //
@@ -27,35 +27,38 @@
 #import <Foundation/Foundation.h>
 #endif
 
-NS_ASSUME_NONNULL_BEGIN
-
-/**
- `VTAcknowledgement` is a subclass of `NSObject` that represents a single acknowledgement.
- */
-@interface VTAcknowledgement : NSObject
-
-/**
- The acknowledgement title (for instance the pod’s name).
- */
-@property (nonatomic, copy, nonnull) NSString *title;
-
-/**
- The acknowledgement body text (for instance the pod’s license).
- */
-@property (nonatomic, copy, nonnull) NSString *text;
+@class VTAcknowledgement;
 
 
 /**
- Initializes an acknowledgement with a title and a body text.
-
- @param title The acknowledgement title.
- @param text The acknowledgement body text.
-
- @return The newly initialized acknowledgement.
+ `VTAcknowledgementsParser` is a subclass of `NSObject` that parses a CocoaPods
+ acknowledgements plist file.
  */
-- (nonnull instancetype)initWithTitle:(nonnull NSString *)title
-                                 text:(nonnull NSString *)text NS_DESIGNATED_INITIALIZER;
+@interface VTAcknowledgementsParser : NSObject
+
+/**
+ The header parsed from the plist file.
+ */
+@property (readonly, copy, nullable) NSString *header;
+
+/**
+ The footer parsed from the plist file.
+ */
+@property (readonly, copy, nullable) NSString *footer;
+
+/**
+ The acknowledgements parsed from the plist file.
+ */
+@property (readonly, copy, nullable) NSArray <VTAcknowledgement *> *acknowledgements;
+
+
+/**
+ Initializes a parser and parses the content of an acknowledgements plist file.
+
+ @param acknowledgementsPlistPath The path to the acknowledgements plist file.
+
+ @return A newly created `VTAcknowledgementsParser` instance.
+ */
+- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath NS_DESIGNATED_INITIALIZER;
 
 @end
-
-NS_ASSUME_NONNULL_END

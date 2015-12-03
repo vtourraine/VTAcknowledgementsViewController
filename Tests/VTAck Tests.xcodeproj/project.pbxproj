@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148FE7801C10483600228898 /* VTAcknowledgementsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE77F1C10483600228898 /* VTAcknowledgementsParserTests.m */; };
 		1F6CD01B1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */; };
 		1FDD9DA81A9A766D000BAFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DA51A9A766D000BAFF0 /* Main.storyboard */; };
 		1FDD9DAD1A9A7674000BAFF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DAA1A9A7674000BAFF0 /* AppDelegate.m */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		07D96A82EA2E670E7F726329 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		148FE77F1C10483600228898 /* VTAcknowledgementsParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsParserTests.m; path = Tests/VTAcknowledgementsParserTests.m; sourceTree = SOURCE_ROOT; };
 		1C3F1FDF2E270BE79B2113C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementViewControllerTests.m; path = Tests/VTAcknowledgementViewControllerTests.m; sourceTree = SOURCE_ROOT; };
 		1FDD9D7A1A9A757B000BAFF0 /* VTAck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VTAck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			children = (
 				1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */,
 				1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */,
+				148FE77F1C10483600228898 /* VTAcknowledgementsParserTests.m */,
 				1FDD9D971A9A757B000BAFF0 /* Supporting Files */,
 			);
 			name = "VTAck Tests";
@@ -177,6 +180,7 @@
 				1FDD9D771A9A757A000BAFF0 /* Frameworks */,
 				1FDD9D781A9A757A000BAFF0 /* Resources */,
 				86AD6859B7EE06B8F8E9F3A5 /* Copy Pods Resources */,
+				EBF521BAF3CE606D26BF6CDF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +200,7 @@
 				1FDD9D901A9A757B000BAFF0 /* Frameworks */,
 				1FDD9D911A9A757B000BAFF0 /* Resources */,
 				01AA6E724AA57E25CA632CCD /* Copy Pods Resources */,
+				30469388300A43D47554A1B6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +301,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		30469388300A43D47554A1B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		86AD6859B7EE06B8F8E9F3A5 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +329,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF521BAF3CE606D26BF6CDF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF3960BA523BC5A7B7D50FA4 /* Check Pods Manifest.lock */ = {
@@ -345,6 +380,7 @@
 			files = (
 				1FDD9DBA1A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m in Sources */,
 				1F6CD01B1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m in Sources */,
+				148FE7801C10483600228898 /* VTAcknowledgementsParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_WARNINGS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "VTAck App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.vtourraine.$(PRODUCT_NAME:rfc1034identifier)";
@@ -464,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_WARNINGS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "VTAck App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.vtourraine.$(PRODUCT_NAME:rfc1034identifier)";
@@ -482,7 +520,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "VTAck Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.vtourraine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VTAck App.app/VTAck App";
@@ -496,7 +534,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VTAck Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.vtourraine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VTAck App.app/VTAck App";

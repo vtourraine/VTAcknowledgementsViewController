@@ -27,11 +27,6 @@
 #import <UIKit/UIKit.h>
 #endif
 
-// Only available with Xcode 6+, so we need to handle older versions too.
-#ifndef IBInspectable
-#define IBInspectable
-#endif
-
 @class VTAcknowledgement;
 
 
