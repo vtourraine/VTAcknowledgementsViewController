@@ -41,6 +41,10 @@
                    @"should load a text view as the main view");
     XCTAssertEqualObjects(textView.text, @"text",
                           @"should set the text view text with the text content value from the initializer");
+    XCTAssertTrue(textView.isSelectable);
+    XCTAssertTrue(textView.isScrollEnabled);
+    XCTAssertFalse(textView.isEditable);
+    XCTAssertEqual(textView.dataDetectorTypes, UIDataDetectorTypeLink);
 }
 
 - (void)testConfigureTitle {

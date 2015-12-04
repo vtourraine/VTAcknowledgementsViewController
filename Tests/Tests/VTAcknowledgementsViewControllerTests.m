@@ -34,6 +34,11 @@
 
 @implementation VTAcknowledgementsViewControllerTests
 
+- (void)testGeneralInitialization {
+    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+    XCTAssertNotNil(viewController.title);
+}
+
 - (void)testLoadAcknowledgementsWithDefaultFileName {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
     XCTAssertEqual(viewController.acknowledgements.count, 1,
@@ -54,11 +59,13 @@
                                  cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     XCTAssertEqualObjects(cell1.textLabel.text, @"ack1",
                           @"should configure the cell text label with the acknowledgement title");
+    XCTAssertEqual(cell1.accessoryType, UITableViewCellAccessoryDisclosureIndicator);
 
     UITableViewCell *cell2 = [viewController tableView:viewController.tableView
                                  cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
     XCTAssertEqualObjects(cell2.textLabel.text, @"ack2",
                           @"should configure the cell text label with the acknowledgement title");
+    XCTAssertEqual(cell2.accessoryType, UITableViewCellAccessoryDisclosureIndicator);
 }
 
 - (void)testConfigureHeaderText {
