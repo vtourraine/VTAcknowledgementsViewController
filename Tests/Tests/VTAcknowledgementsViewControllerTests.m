@@ -61,4 +61,44 @@
                           @"should configure the cell text label with the acknowledgement title");
 }
 
+- (void)testConfigureHeaderText {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
+    viewController.headerText = @"bla";
+
+    [viewController viewDidLoad];
+
+    XCTAssertNotNil(viewController.tableView.tableHeaderView);
+
+    UILabel *headerLabel;
+    for (UIView *subview in viewController.tableView.tableHeaderView.subviews) {
+        if ([subview isKindOfClass:UILabel.class]) {
+            headerLabel = (UILabel *)subview;
+            break;
+        }
+    }
+
+    XCTAssertNotNil(headerLabel);
+    XCTAssertEqualObjects(headerLabel.text, @"bla");
+}
+
+- (void)testConfigureFooterText {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
+    viewController.footerText = @"123abc";
+
+    [viewController viewDidLoad];
+
+    XCTAssertNotNil(viewController.tableView.tableFooterView);
+
+    UILabel *footerLabel;
+    for (UIView *subview in viewController.tableView.tableFooterView.subviews) {
+        if ([subview isKindOfClass:UILabel.class]) {
+            footerLabel = (UILabel *)subview;
+            break;
+        }
+    }
+
+    XCTAssertNotNil(footerLabel);
+    XCTAssertEqualObjects(footerLabel.text, @"123abc");
+}
+
 @end
