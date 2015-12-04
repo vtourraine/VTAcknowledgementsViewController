@@ -37,12 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The acknowledgement title (for instance the pod’s name).
  */
-@property (nonatomic, copy, nonnull) NSString *title;
+@property (nonatomic, copy) NSString *title;
 
 /**
  The acknowledgement body text (for instance the pod’s license).
  */
-@property (nonatomic, copy, nonnull) NSString *text;
+@property (nonatomic, copy) NSString *text;
 
 
 /**
@@ -53,8 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The newly initialized acknowledgement.
  */
-- (nonnull instancetype)initWithTitle:(nonnull NSString *)title
-                                 text:(nonnull NSString *)text NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithTitle:(NSString *)title
+                         text:(NSString *)text NS_DESIGNATED_INITIALIZER;
 
 @end
 

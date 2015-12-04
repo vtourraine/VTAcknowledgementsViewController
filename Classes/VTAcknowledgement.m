@@ -37,8 +37,8 @@
     @throw nil;
 }
 
-- (nonnull instancetype)initWithTitle:(nonnull NSString *)title
-                                 text:(nonnull NSString *)text
+- (instancetype)initWithTitle:(NSString *)title
+                         text:(NSString *)text
 {
     self = [super init];
 
