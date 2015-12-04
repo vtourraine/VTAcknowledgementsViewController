@@ -46,8 +46,13 @@
 - (void)loadView
 {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
+    if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
+        textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    }
+    else {
+        textView.font = [UIFont systemFontOfSize:17];
+    }
     textView.alwaysBounceVertical = YES;
-    textView.font                 = [UIFont systemFontOfSize:17];
     textView.text                 = self.text;
     textView.editable             = NO;
     textView.dataDetectorTypes    = UIDataDetectorTypeLink;
