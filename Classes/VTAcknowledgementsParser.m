@@ -69,7 +69,10 @@
                                                   text:preferenceSpecifier[@"FooterText"]];
             [acknowledgements addObject:acknowledgement];
         }
-        self.acknowledgements = acknowledgements;
+
+        if (preferenceSpecifiers) {
+            self.acknowledgements = acknowledgements;
+        }
     }
 
     return self;
