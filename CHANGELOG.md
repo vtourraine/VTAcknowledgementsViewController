@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.17 (work in progress)
+## 0.17 (7 December 2015)
 
 - Updated imports to compile when modules are disabled, by Ryota Hayashi (@hayashi311)
 - Added `VTAcknowledgementsParser` to extract the plist parser out of the controller, by Vincent Tourraine (@vtourraine)
