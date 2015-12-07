@@ -52,6 +52,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)configureHeaderView;
 - (void)configureFooterView;
+- (UIFont *)headerFooterFont;
 - (CGFloat)heightForLabelWithText:(NSString *)labelText andWidth:(CGFloat)labelWidth;
 
 - (IBAction)dismissViewController:(id)sender;
@@ -195,9 +196,19 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 }
 
+- (UIFont *)headerFooterFont
+{
+    if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
+        return [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
+    }
+    else {
+        return [UIFont systemFontOfSize:12];
+    }
+}
+
 - (void)configureHeaderView
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
+    UIFont *font = [self headerFooterFont];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
     CGFloat labelHeight = [self heightForLabelWithText:self.headerText andWidth:labelWidth];
 
@@ -220,7 +231,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)configureFooterView
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
+    UIFont *font = [self headerFooterFont];
     CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
     CGFloat labelHeight = [self heightForLabelWithText:self.footerText andWidth:labelWidth];
 
@@ -251,7 +262,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (CGFloat)heightForLabelWithText:(NSString *)labelText andWidth:(CGFloat)labelWidth
 {
-    UIFont *font = [UIFont systemFontOfSize:12];
+    UIFont *font = self.headerFooterFont;
     CGFloat labelHeight;
 
     if ([labelText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
