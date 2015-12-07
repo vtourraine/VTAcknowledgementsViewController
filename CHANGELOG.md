@@ -6,7 +6,7 @@
 - Added `VTAcknowledgementsParser` to extract the plist parser out of the controller, by Vincent Tourraine (@vtourraine)
 - Independently builds through Xcode (a.k.a. Carthage support), by Vincent Tourraine (@vtourraine)
 - Switched to `SFSafariViewController` when available for CocoaPods website, by Vincent Tourraine (@vtourraine)
-- Added Dynamic Type support for acknowledgement text view, by Vincent Tourraine (@vtourraine)
+- Added Dynamic Type support for header and footer labels and acknowledgement text view, by Vincent Tourraine (@vtourraine)
 
 
 ## 0.16 (18 November 2015)
