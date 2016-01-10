@@ -91,6 +91,12 @@ static const CGFloat VTFooterBottomMargin = 20;
     return self;
 }
 
+- (nullable instancetype)initWithAcknowledgementsFileNamed:(nullable NSString *)acknowledgementsFileName
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:acknowledgementsFileName ofType:@"plist"];
+    return [self initWithAcknowledgementsPlistPath:path];
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];

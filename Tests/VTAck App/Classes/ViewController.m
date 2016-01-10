@@ -28,8 +28,7 @@
 @implementation ViewController
 
 - (IBAction)pushAckViewController:(id)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-VTAck App-acknowledgements" ofType:@"plist"];
-    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsFileNamed:@"Pods-VTAck App-acknowledgements"];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

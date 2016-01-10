@@ -63,7 +63,7 @@
 
 
 /**
- Creates a new acknowledgements view controller
+ Creates an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
@@ -78,12 +78,21 @@
 + (nonnull NSString *)localizedTitle;
 
 /**
- Initializes an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
+ Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
 
- @param acknowledgementsPlistPath The path to the `Pods-acknowledgements.plist`.
+ @param acknowledgementsPlistPath The path to the acknowledgements `.plist` file.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
 - (nullable instancetype)initWithAcknowledgementsPlistPath:(nullable NSString *)acknowledgementsPlistPath;
+
+/**
+ Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).
+
+ @param acknowledgementsFileName The file name for the acknowledgements `.plist` file from the main bundle.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
+ */
+- (nullable instancetype)initWithAcknowledgementsFileNamed:(nullable NSString *)acknowledgementsFileName;
 
 @end
