@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0 (work in progress)
+
+- Update default footer text for CocoaPods 1.0
+- Update default CocoaPods URL for CocoaPods 1.0
+
+
 ## 0.17 (7 December 2015)
 
 - Updated imports to compile when modules are disabled, by Ryota Hayashi (@hayashi311)
