@@ -72,7 +72,7 @@ VTAcknowledgementsViewController requires iOS 5.0 and above, Xcode 7.0 and above
 
 ## Credits
 
-VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.vtourraine.net), with help from [our contributors](https://github.com/vtourraine/VTAcknowledgementsViewController/contributors).
+VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.vtourraine.net), and improved by a growing [list of contributors](https://github.com/vtourraine/VTAcknowledgementsViewController/contributors).
 
 
 ## License
