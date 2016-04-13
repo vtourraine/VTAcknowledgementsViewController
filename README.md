@@ -2,7 +2,10 @@
 
 _Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/). Now also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
-![Platform iOS](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController) [![CocoaPods compatible](https://img.shields.io/badge/pod-0.17-blue.svg)](https://cocoapods.org/pods/VTAcknowledgementsViewController) [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/vtourraine/VTAcknowledgementsViewController/raw/master/LICENSE)
+![Platform iOS](https://img.shields.io/badge/platform-iOS-blue.svg)
+[![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/VTAcknowledgementsViewController.svg)](https://cocoapods.org/pods/VTAcknowledgementsViewController)
+[![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vtourraine/VTAcknowledgementsViewController/raw/master/LICENSE)
 
 ![iPhone screenshot 1](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-01.png)
 ![iPhone screenshot 2](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-02.png)
