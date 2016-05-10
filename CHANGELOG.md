@@ -1,7 +1,8 @@
 # Changelog
 
-## 1.0 (work in progress)
+## 1.0 (10 May 2016)
 
+- Ready for CocoaPods 1.0.0
 - Update default footer text for CocoaPods 1.0
 - Update default CocoaPods URL for CocoaPods 1.0
 - Add `initWithAcknowledgementsFileNamed:` convenience initializer on `VTAcknowledgementsViewController`
