@@ -199,7 +199,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 
 #if TARGET_OS_TV
-    self.view.layoutMargins = UIEdgeInsetsMake(90.0, 60.0, 90.0, 60.0); // Margins from tvOS HIG
+    self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
 #endif
     
     if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
@@ -213,7 +213,7 @@ static const CGFloat VTFooterBottomMargin = 20;
         UIBarButtonItem* spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                     target:self
                                                                                     action:nil];
-        spacerItem.width = 60.0;
+        spacerItem.width = 90.0;
         self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:spacerItem, doneItem, nil];
 #endif
     }
