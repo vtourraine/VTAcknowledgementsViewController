@@ -1,11 +1,16 @@
 # Changelog
 
+## 1.1 (work in progress)
+
+- Added tvOS support, by Alex Palman (@alexpalman)
+
+
 ## 1.0 (10 May 2016)
 
 - Ready for CocoaPods 1.0.0
-- Update default footer text for CocoaPods 1.0
-- Update default CocoaPods URL for CocoaPods 1.0
-- Add `initWithAcknowledgementsFileNamed:` convenience initializer on `VTAcknowledgementsViewController`
+- Updated default footer text for CocoaPods 1.0.0
+- Updated default CocoaPods URL for CocoaPods 1.0.0
+- Added `initWithAcknowledgementsFileNamed:` convenience initializer on `VTAcknowledgementsViewController`
 
 
 ## 0.17 (7 December 2015)

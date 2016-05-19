@@ -2,7 +2,7 @@
 
 _Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/). Now also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
-![Platform iOS](https://img.shields.io/badge/platform-iOS-blue.svg)
+![Platform iOS](https://img.shields.io/cocoapods/p/VTAcknowledgementsViewController.svg)
 [![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/VTAcknowledgementsViewController.svg)](https://cocoapods.org/pods/VTAcknowledgementsViewController)
 [![CocoaPods documentation](https://img.shields.io/cocoapods/metrics/doc-percent/VTAcknowledgementsViewController.svg)](http://cocoadocs.org/docsets/VTAcknowledgementsViewController)
