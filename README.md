@@ -85,4 +85,4 @@ VTAcknowledgementsViewController was created by [Vincent Tourraine](http://www.v
 
 ## License
 
-VTAcknowledgementsViewController is available under the MIT license. See the LICENSE file for more info.
+VTAcknowledgementsViewController is available under the MIT license. See the [LICENSE.md](./LICENSE.md) file for more info.
