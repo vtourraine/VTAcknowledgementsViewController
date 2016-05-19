@@ -26,12 +26,13 @@
 #import "VTAcknowledgementsParser.h"
 #import "VTAcknowledgement.h"
 
+#if !TARGET_OS_TV
 #if __has_feature(modules)
 @import SafariServices;
 #else
 #import <SafariServices/SafariServices.h>
 #endif
-
+#endif
 
 static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgements";
 static NSString *const VTDefaultHeaderText                = @"This application makes use of the following third party libraries:";
@@ -197,10 +198,24 @@ static const CGFloat VTFooterBottomMargin = 20;
         [self configureFooterView];
     }
 
+#if TARGET_OS_TV
+    self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
+#endif
+    
     if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                              target:self
-                                                                                              action:@selector(dismissViewController:)];
+        UIBarButtonItem* doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                  target:self
+                                                                                  action:@selector(dismissViewController:)];
+#if !TARGET_OS_TV
+        self.navigationItem.leftBarButtonItem = doneItem;
+#else
+        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
+        UIBarButtonItem* spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                    target:self
+                                                                                    action:nil];
+        spacerItem.width = 90.0;
+        self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:spacerItem, doneItem, nil];
+#endif
     }
 }
 
@@ -284,7 +299,11 @@ static const CGFloat VTFooterBottomMargin = 20;
     else {
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#if !TARGET_OS_TV
         CGSize size = [labelText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
+#else
+        CGSize size = CGSizeMake(labelWidth, font.pointSize); // This is probably wrong logically, but it works/looks fine on tvOS
+#endif
 #pragma GCC diagnostic pop
         labelHeight = size.height;
     }
@@ -330,6 +349,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)openCocoaPodsWebsite:(id)sender
 {
+#if !TARGET_OS_TV
     NSURL *URL = [NSURL URLWithString:VTCocoaPodsURLString];
 
     if ([SFSafariViewController class]) {
@@ -339,6 +359,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     else {
         [[UIApplication sharedApplication] openURL:URL];
     }
+#endif
 }
 
 - (IBAction)dismissViewController:(id)sender

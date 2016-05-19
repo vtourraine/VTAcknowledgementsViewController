@@ -54,10 +54,21 @@
     }
     textView.alwaysBounceVertical = YES;
     textView.text                 = self.text;
+#if !TARGET_OS_TV
     textView.editable             = NO;
     textView.dataDetectorTypes    = UIDataDetectorTypeLink;
+#else
+    // Allow scrolling on tvOS
+    textView.userInteractionEnabled = YES;
+    textView.selectable             = YES;
+    textView.panGestureRecognizer.allowedTouchTypes = [NSArray arrayWithObjects:[NSNumber numberWithInteger:UITouchTypeIndirect], nil];
+#endif
     if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
+#if !TARGET_OS_TV
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
+#else
+        textView.textContainerInset = UIEdgeInsetsMake(0.0, 60.0, 90.0, 60.0); // Margins from tvOS HIG
+#endif
     }
     textView.contentOffset = CGPointZero;
 
@@ -65,5 +76,12 @@
 
     self.textView = textView;
 }
+
+#if TARGET_OS_TV
+- (UIView*)preferredFocusedView
+{
+    return self.textView;
+}
+#endif
 
 @end
