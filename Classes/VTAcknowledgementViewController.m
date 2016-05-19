@@ -61,7 +61,7 @@
     // Allow scrolling on tvOS
     textView.userInteractionEnabled = YES;
     textView.selectable             = YES;
-    textView.panGestureRecognizer.allowedTouchTypes = [NSArray arrayWithObjects:[NSNumber numberWithInteger:UITouchTypeIndirect], nil];
+    textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
     if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
 #if !TARGET_OS_TV
@@ -78,7 +78,7 @@
 }
 
 #if TARGET_OS_TV
-- (UIView*)preferredFocusedView
+- (UIView *)preferredFocusedView
 {
     return self.textView;
 }

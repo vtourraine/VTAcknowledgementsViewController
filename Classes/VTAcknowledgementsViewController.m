@@ -203,18 +203,18 @@ static const CGFloat VTFooterBottomMargin = 20;
 #endif
     
     if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
-        UIBarButtonItem* doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                   target:self
                                                                                   action:@selector(dismissViewController:)];
 #if !TARGET_OS_TV
         self.navigationItem.leftBarButtonItem = doneItem;
 #else
         // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
-        UIBarButtonItem* spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                     target:self
                                                                                     action:nil];
         spacerItem.width = 90.0;
-        self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:spacerItem, doneItem, nil];
+        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
 #endif
     }
 }
