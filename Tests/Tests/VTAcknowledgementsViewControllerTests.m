@@ -39,6 +39,17 @@
     XCTAssertNotNil(viewController.title);
 }
 
+- (void)testInitializationWithFileName {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-acknowledgements"];
+    XCTAssertNotNil(viewController.acknowledgements);
+}
+
+- (void)testInitializationWithFilePath {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path];
+    XCTAssertNotNil(viewController.acknowledgements);
+}
+
 - (void)testLoadAcknowledgementsWithDefaultFileName {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
     XCTAssertEqual(viewController.acknowledgements.count, 1,

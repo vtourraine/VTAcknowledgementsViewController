@@ -28,7 +28,7 @@
 @implementation ViewController
 
 - (IBAction)pushAckViewController:(id)sender {
-    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsFileNamed:@"Pods-VTAck App-acknowledgements"];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-VTAck App-acknowledgements"];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

@@ -3,6 +3,10 @@
 ## 1.1 (work in progress)
 
 - Added tvOS support, by Alex Palman (@alexpalman)
+- Added `initWithPath:` initializer on `VTAcknowledgementsViewController`
+- Added `initWithFileNamed:` convenience initializer on `VTAcknowledgementsViewController`
+- Deprecated `initWithAcknowledgementsPlistPath:` on `VTAcknowledgementsViewController` (use `initWithPath` instead)
+- Deprecated `initWithAcknowledgementsFileNamed:` on `VTAcknowledgementsViewController` (use `initWithFileNamed` instead)
 
 
 ## 1.0 (10 May 2016)
