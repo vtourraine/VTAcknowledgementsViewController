@@ -26,13 +26,12 @@
 #import "VTAcknowledgementsParser.h"
 #import "VTAcknowledgement.h"
 
-#if !TARGET_OS_TV
 #if __has_feature(modules)
 @import SafariServices;
 #else
 #import <SafariServices/SafariServices.h>
 #endif
-#endif
+
 
 static NSString *const VTDefaultAcknowledgementsPlistName = @"Pods-acknowledgements";
 static NSString *const VTDefaultHeaderText                = @"This application makes use of the following third party libraries:";
@@ -82,7 +81,16 @@ static const CGFloat VTFooterBottomMargin = 20;
     return [[self.class alloc] initWithAcknowledgementsPlistPath:path];
 }
 
-- (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath
+- (instancetype)initWithPaths:(NSArray *)acknowledgementsPlistPaths {
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self) {
+        [self initWithAcknowledgementsPlistPaths:acknowledgementsPlistPaths];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
@@ -92,20 +100,10 @@ static const CGFloat VTFooterBottomMargin = 20;
     return self;
 }
 
-- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath
-{
-    return [self initWithPath:acknowledgementsPlistPath];
-}
-
-- (nullable instancetype)initWithFileNamed:(nonnull NSString *)acknowledgementsFileName
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:acknowledgementsFileName ofType:@"plist"];
-    return [self initWithPath:path];
-}
-
 - (nullable instancetype)initWithAcknowledgementsFileNamed:(nullable NSString *)acknowledgementsFileName
 {
-    return [self initWithFileNamed:acknowledgementsFileName];
+    NSString *path = [[NSBundle mainBundle] pathForResource:acknowledgementsFileName ofType:@"plist"];
+    return [self initWithAcknowledgementsPlistPath:path];
 }
 
 - (void)awakeFromNib
@@ -156,6 +154,49 @@ static const CGFloat VTFooterBottomMargin = 20;
     self.acknowledgements = acknowledgements;
 }
 
+- (void)initWithAcknowledgementsPlistPaths:(NSArray *)acknowledgementsPlistPaths {
+    self.title = self.class.localizedTitle;
+    
+    NSMutableArray *mutableAcknowledgements = NSMutableArray.new;
+    int index = 0;
+    for (NSString *plistPathName in acknowledgementsPlistPaths) {
+        mutableAcknowledgements = [self addPListPathToAcknowledgements:plistPathName acknowledgements:mutableAcknowledgements index:index];
+        index += 1;
+    }
+    
+    [mutableAcknowledgements sortUsingComparator:^NSComparisonResult(VTAcknowledgement *obj1, VTAcknowledgement *obj2) {
+        return [obj1.title compare:obj2.title
+                           options:kNilOptions
+                             range:NSMakeRange(0, obj1.title.length)
+                            locale:[NSLocale currentLocale]];
+    }];
+    
+    self.acknowledgements = [mutableAcknowledgements copy];
+}
+
+- (NSMutableArray *)addPListPathToAcknowledgements:(NSString *)plistPathName acknowledgements:(NSMutableArray *)acknowledgements index:(int)index {
+    NSString *plistPath = [self.class acknowledgementsPlistPathForName:plistPathName];
+    VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:plistPath];
+    if (index == 0) {
+        if ([parser.header isEqualToString:VTDefaultHeaderText]) {
+            self.headerText = parser.header;
+        }
+        else if (![parser.header isEqualToString:@""]) {
+            self.headerText = parser.header;
+        }
+        
+        if ([parser.footer isEqualToString:VTDefaultFooterText] ||
+            [parser.footer isEqualToString:VTDefaultFooterTextLegacy]) {
+            self.footerText = [VTAcknowledgementsViewController localizedCocoaPodsFooterText];
+        }
+        else if (![parser.footer isEqualToString:@""]) {
+            self.footerText = parser.footer;
+        }
+    }
+    [acknowledgements addObjectsFromArray:parser.acknowledgements];
+    return acknowledgements;
+}
+
 
 #pragma mark - Localization
 
@@ -199,6 +240,8 @@ static const CGFloat VTFooterBottomMargin = 20;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
 
     if (self.headerText) {
         [self configureHeaderView];
@@ -208,24 +251,10 @@ static const CGFloat VTFooterBottomMargin = 20;
         [self configureFooterView];
     }
 
-#if TARGET_OS_TV
-    self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
-#endif
-    
     if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
-        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                  target:self
-                                                                                  action:@selector(dismissViewController:)];
-#if !TARGET_OS_TV
-        self.navigationItem.leftBarButtonItem = doneItem;
-#else
-        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
-        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                                    target:self
-                                                                                    action:nil];
-        spacerItem.width = 90.0;
-        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
-#endif
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                              target:self
+                                                                                              action:@selector(dismissViewController:)];
     }
 }
 
@@ -309,11 +338,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     else {
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-#if !TARGET_OS_TV
         CGSize size = [labelText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
-#else
-        CGSize size = CGSizeMake(labelWidth, font.pointSize); // This is probably wrong logically, but it works/looks fine on tvOS
-#endif
 #pragma GCC diagnostic pop
         labelHeight = size.height;
     }
@@ -359,7 +384,6 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)openCocoaPodsWebsite:(id)sender
 {
-#if !TARGET_OS_TV
     NSURL *URL = [NSURL URLWithString:VTCocoaPodsURLString];
 
     if ([SFSafariViewController class]) {
@@ -369,7 +393,6 @@ static const CGFloat VTFooterBottomMargin = 20;
     else {
         [[UIApplication sharedApplication] openURL:URL];
     }
-#endif
 }
 
 - (IBAction)dismissViewController:(id)sender
