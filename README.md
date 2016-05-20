@@ -38,12 +38,12 @@ viewController.headerText = NSLocalizedString(@"We love open source software.", 
 If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using fancy build targets), you can initialize the view controller with a custom file name or path.
 
 ``` objc
-VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsFileNamed:@"Pods-MyTarget-acknowledgements"];
+viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-MyTarget-acknowledgements"];
 ```
 
 ``` objc
 NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-MyTarget-acknowledgements" ofType:@"plist"];
-VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgementsPlistPath:path];
+viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path];
 ```
 
 The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values.
