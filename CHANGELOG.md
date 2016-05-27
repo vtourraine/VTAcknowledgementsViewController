@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1 (work in progress)
+## 1.1 (27 May 2016)
 
 - Added tvOS support, by Alex Palman (@alexpalman)
 - Added `initWithPath:` initializer on `VTAcknowledgementsViewController`
