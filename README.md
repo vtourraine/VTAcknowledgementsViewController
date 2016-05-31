@@ -8,6 +8,9 @@ _Ready to use “Acknowledgements”/“Licenses”/“Credits” view controlle
 [![CocoaPods documentation](https://img.shields.io/cocoapods/metrics/doc-percent/VTAcknowledgementsViewController.svg)](http://cocoadocs.org/docsets/VTAcknowledgementsViewController)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vtourraine/VTAcknowledgementsViewController/raw/master/LICENSE)
 
+<img alt="iPhone screenshot 1" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-6s-01.png" width="300px">
+<img alt="iPhone screenshot 2" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-6s-02.png" width="300px">
+
 ![iPhone screenshot 1](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-01.png)
 ![iPhone screenshot 2](http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-300-02.png)
 
