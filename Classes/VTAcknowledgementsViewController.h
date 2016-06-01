@@ -78,35 +78,13 @@
 + (nonnull NSString *)localizedTitle;
 
 /**
- **Deprecated** Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
-
- @param acknowledgementsPlistPath The path to the acknowledgements `.plist` file.
-
- @return A newly created `VTAcknowledgementsViewController` instance.
-
- @see -initWithPlistPath:
- */
-- (nullable instancetype)initWithAcknowledgementsPlistPath:(nullable NSString *)acknowledgementsPlistPath DEPRECATED_MSG_ATTRIBUTE("use -initWithPath: method instead");
-
-/**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
 
  @param acknowledgementsPlistPath The path to the acknowledgements `.plist` file.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (nullable instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath;
-
-/**
- **Deprecated** Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).
-
- @param acknowledgementsFileName The file name for the acknowledgements `.plist` file from the main bundle.
-
- @return A newly created `VTAcknowledgementsViewController` instance.
-
- @see -initWithFileNamed:
- */
-- (nullable instancetype)initWithAcknowledgementsFileNamed:(nullable NSString *)acknowledgementsFileName DEPRECATED_MSG_ATTRIBUTE("use -initWithFileNamed: method instead");
+- (nullable instancetype)initWithAcknowledgementsPlistPath:(nullable NSString *)acknowledgementsPlistPath;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).
@@ -115,6 +93,16 @@
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (nullable instancetype)initWithFileNamed:(nonnull NSString *)acknowledgementsFileName;
+- (nullable instancetype)initWithAcknowledgementsFileNamed:(nullable NSString *)acknowledgementsFileName;
+
+/**
+ Initializes an acknowledgements view controller with the contents of multiple acknowledgements files (by their names).
+ 
+ @param acknowledgementsPlistPaths An NSArray containing the file names for the acknowledgements `.plist` files from the main bundle.
+ The first name in the list represents the 'main' acknowledgement file.
+ 
+ @return A newly created `VTAcknowledgementsViewController` instance.
+ */
+- (nullable instancetype)initWithPaths:(nullable NSArray *)acknowledgementsPlistPaths;
 
 @end
