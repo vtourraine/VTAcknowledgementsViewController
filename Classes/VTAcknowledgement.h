@@ -44,17 +44,24 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) NSString *text;
 
+/**
+ The acknowledgement license text (for instance the pod’s license type).
+ */
+@property (nonatomic, copy, nullable) NSString *license;
+
 
 /**
  Initializes an acknowledgement with a title and a body text.
 
  @param title The acknowledgement title.
  @param text The acknowledgement body text.
+ @param license The acknowledgement license type.
 
  @return The newly initialized acknowledgement.
  */
 - (instancetype)initWithTitle:(NSString *)title
-                         text:(NSString *)text NS_DESIGNATED_INITIALIZER;
+                         text:(NSString *)text
+                      license:(nullable NSString *)license NS_DESIGNATED_INITIALIZER;
 
 @end
 

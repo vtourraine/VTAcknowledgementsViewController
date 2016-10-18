@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2 (work in progress)
+
+- Added `license` property on `VTAcknowledgement`
+
+
 ## 1.1 (27 May 2016)
 
 - Added tvOS support, by Alex Palman (@alexpalman)

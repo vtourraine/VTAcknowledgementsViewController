@@ -34,11 +34,12 @@
 @implementation VTAcknowledgementTests
 
 - (void)testInitialization {
-    VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:@"Abc" text:@"def."];
+    VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:@"Abc" text:@"def." license:@"GhI"];
 
     XCTAssertNotNil(acknowledgement);
     XCTAssertEqualObjects(acknowledgement.title, @"Abc");
     XCTAssertEqualObjects(acknowledgement.text, @"def.");
+    XCTAssertEqualObjects(acknowledgement.license, @"GhI");
 }
 
 @end

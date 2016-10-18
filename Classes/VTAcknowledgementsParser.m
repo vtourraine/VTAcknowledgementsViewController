@@ -66,7 +66,8 @@
         for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
             VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc]
                                                   initWithTitle:preferenceSpecifier[@"Title"]
-                                                  text:preferenceSpecifier[@"FooterText"]];
+                                                  text:preferenceSpecifier[@"FooterText"]
+                                                  license:preferenceSpecifier[@"License"]];
             [acknowledgements addObject:acknowledgement];
         }
 

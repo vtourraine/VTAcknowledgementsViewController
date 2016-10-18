@@ -59,8 +59,8 @@
 - (void)testConfigureTableViewBasedOnAcknowledgements {
     VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
 
-    VTAcknowledgement *ack1 = [[VTAcknowledgement alloc] initWithTitle:@"ack1" text:@""];
-    VTAcknowledgement *ack2 = [[VTAcknowledgement alloc] initWithTitle:@"ack2" text:@""];
+    VTAcknowledgement *ack1 = [[VTAcknowledgement alloc] initWithTitle:@"ack1" text:@"" license:nil];
+    VTAcknowledgement *ack2 = [[VTAcknowledgement alloc] initWithTitle:@"ack2" text:@"" license:nil];
     viewController.acknowledgements = @[ack1, ack2];
 
     XCTAssertEqual([viewController tableView:viewController.tableView numberOfRowsInSection:0], 2,

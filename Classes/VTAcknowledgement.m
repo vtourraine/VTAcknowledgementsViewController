@@ -39,12 +39,14 @@
 
 - (instancetype)initWithTitle:(NSString *)title
                          text:(NSString *)text
+                      license:(NSString *)license
 {
     self = [super init];
 
     if (self) {
         _title = title;
         _text = text;
+        _license = license;
     }
 
     return self;
