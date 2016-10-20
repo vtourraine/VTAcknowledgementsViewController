@@ -211,22 +211,6 @@ static const CGFloat VTFooterBottomMargin = 20;
 #if TARGET_OS_TV
     self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
 #endif
-    
-    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
-        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                  target:self
-                                                                                  action:@selector(dismissViewController:)];
-#if !TARGET_OS_TV
-        self.navigationItem.leftBarButtonItem = doneItem;
-#else
-        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
-        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                                    target:self
-                                                                                    action:nil];
-        spacerItem.width = 90.0;
-        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
-#endif
-    }
 }
 
 - (UIFont *)headerFooterFont
@@ -324,6 +308,18 @@ static const CGFloat VTFooterBottomMargin = 20;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
+        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewController:)];
+#if !TARGET_OS_TV
+        self.navigationItem.leftBarButtonItem = doneItem;
+#else
+        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
+        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        spacerItem.width = 90.0;
+        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
+#endif
+    }
 
     [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow
                                   animated:animated];
