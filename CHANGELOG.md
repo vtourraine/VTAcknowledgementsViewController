@@ -1,10 +1,11 @@
 # Changelog
 
-## 1.2 (work in progress)
+## 1.2 (21 October 2016)
 
 - Added `license` property on `VTAcknowledgement`
+- Updated `VTAcknowledgementsViewController` view configuration, by Tobias Tiemerding (honkmaster)
 
-[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.1...master)
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.1...1.2)
 
 
 ## 1.1 (27 May 2016)
