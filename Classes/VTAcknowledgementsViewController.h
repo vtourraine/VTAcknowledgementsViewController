@@ -27,8 +27,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
-@class VTAcknowledgement;
-
+#import "VTAcknowledgementsParser.h"
+#import "VTAcknowledgement.h"
 
 /**
  `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
