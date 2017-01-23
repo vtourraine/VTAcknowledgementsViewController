@@ -171,10 +171,10 @@ static const CGFloat VTFooterBottomMargin = 20;
         if ([bundle.localizations containsObject:language]) {
             bundlePath = [bundle pathForResource:language ofType:@"lproj"];
         }
-        
+
         bundle = [NSBundle bundleWithPath:bundlePath] ?: NSBundle.mainBundle;
     }
-    
+
     defaultString = [bundle localizedStringForKey:key value:defaultString table:nil];
     return [NSBundle.mainBundle localizedStringForKey:key value:defaultString table:nil];
 }
