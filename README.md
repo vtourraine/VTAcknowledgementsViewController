@@ -35,7 +35,7 @@ viewController.headerText = NSLocalizedString(@"We love open source software.", 
 
 ## Customization
 
-If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using fancy build targets), you can initialize the view controller with a custom file name or path.
+If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using custom build targets), you can initialize the view controller with a custom file name or path.
 
 ``` objc
 viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-MyTarget-acknowledgements"];
