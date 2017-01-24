@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 (work in progress)
+
+- Improve bundle handling for dynamic frameworks, by Maximilian Landsmann (@landsi)
+- Improve umbrella header for better Swift support, by Marcus Kida (@kimar)
+
+
 ## 1.2 (21 October 2016)
 
 - Added `license` property on `VTAcknowledgement`
