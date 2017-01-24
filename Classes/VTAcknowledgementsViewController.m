@@ -161,10 +161,10 @@ static const CGFloat VTFooterBottomMargin = 20;
 {
     static NSBundle *bundle = nil;
     if (!bundle) {
-        NSString *bundlePath = [NSBundle.mainBundle pathForResource:@"VTAcknowledgementsViewController" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle bundleForClass:VTAcknowledgementsViewController.class] pathForResource:@"VTAcknowledgementsViewController" ofType:@"bundle"];
         bundle = [NSBundle bundleWithPath:bundlePath];
-
-        NSString *language = NSLocale.preferredLanguages.count? NSLocale.preferredLanguages.firstObject: @"en";
+        
+        NSString *language = NSBundle.mainBundle.preferredLocalizations.firstObject ?: @"en";
         if (![bundle.localizations containsObject:language]) {
             language = [language componentsSeparatedByString:@"-"].firstObject;
         }
