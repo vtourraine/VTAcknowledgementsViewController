@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.1 (work in progress)
+## 1.2.1 (30 January 2017)
 
 - Improve bundle handling for dynamic frameworks, by Maximilian Landsmann (@landsi)
 - Improve umbrella header for better Swift support, by Marcus Kida (@kimar)
