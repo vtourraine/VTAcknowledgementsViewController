@@ -206,6 +206,8 @@ static const CGFloat VTFooterBottomMargin = 20;
         [self configureFooterView];
     }
 
+	self.view.backgroundColor = self.backgroundColor;
+
 #if TARGET_OS_TV
     self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
 #endif
@@ -232,7 +234,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.headerText;
     label.font             = font;
-    label.textColor        = [UIColor grayColor];
+	label.textColor        = self.textColor ?: [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
     label.textAlignment    = NSTextAlignmentCenter;
@@ -255,7 +257,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text             = self.footerText;
     label.font             = font;
-    label.textColor        = [UIColor grayColor];
+	label.textColor        = self.textColor ?: [UIColor grayColor];
     label.backgroundColor  = [UIColor clearColor];
     label.numberOfLines    = 0;
     label.textAlignment    = NSTextAlignmentCenter;
@@ -394,6 +396,11 @@ static const CGFloat VTFooterBottomMargin = 20;
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     cell.textLabel.text = acknowledgement.title;
     cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
+	cell.textLabel.textColor = self.textColor;
+	cell.backgroundColor = self.cellBackgroundColor;
+	UIView *selectedBackgroundView = self.cellSelectedBackgroundColor ? [[UIView alloc] init] : nil;
+	selectedBackgroundView.backgroundColor = self.cellSelectedBackgroundColor;
+	cell.selectedBackgroundView = selectedBackgroundView;
 
     return cell;
 }
@@ -405,6 +412,9 @@ static const CGFloat VTFooterBottomMargin = 20;
 {
     VTAcknowledgement *acknowledgement = self.acknowledgements[indexPath.row];
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:acknowledgement.title text:acknowledgement.text];
+	[viewController view]; //Force the view to load (viewController.textView is loaded)
+	viewController.textView.backgroundColor = self.backgroundColor;
+	viewController.textView.textColor = self.textColor;
 
     [self.navigationController pushViewController:viewController animated:YES];
 }
