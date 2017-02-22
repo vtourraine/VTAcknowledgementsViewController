@@ -18,8 +18,15 @@
 		1FDD9DBA1A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */; };
 		1FDD9DBC1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */; };
 		1FDD9DBE1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */; };
+		7D33381C66840559EF19D079 /* libPods-VTAck TV App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8417B7157DE967556F6EDA4A /* libPods-VTAck TV App.a */; };
 		866152BE610C41C515A9AD7C /* libPods-VTAck Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3943CA5413122C5F4F21B1EF /* libPods-VTAck Tests.a */; };
 		CB8F4084F5CD4C6042866F19 /* libPods-VTAck App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */; };
+		D779DC451E5D88F6006D91C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC441E5D88F6006D91C9 /* main.m */; };
+		D779DC481E5D88F6006D91C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC471E5D88F6006D91C9 /* AppDelegate.m */; };
+		D779DC4B1E5D88F6006D91C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC4A1E5D88F6006D91C9 /* ViewController.m */; };
+		D779DC4E1E5D88F6006D91C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D779DC4C1E5D88F6006D91C9 /* Main.storyboard */; };
+		D779DC501E5D88F6006D91C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D779DC4F1E5D88F6006D91C9 /* Assets.xcassets */; };
+		D779DC551E5D89C0006D91C9 /* Pods-VTAck App-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +60,21 @@
 		1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-acknowledgements.plist"; path = "Resources/Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		36F7D048A9F4B71701C7DE13 /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3943CA5413122C5F4F21B1EF /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8417B7157DE967556F6EDA4A /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		969B698AF5490D7F9D095AB0 /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
 		CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50855E43BB804DA4A56444E /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D779DC411E5D88F6006D91C9 /* VTAck TV App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VTAck TV App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D779DC441E5D88F6006D91C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D779DC461E5D88F6006D91C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D779DC471E5D88F6006D91C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D779DC491E5D88F6006D91C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D779DC4A1E5D88F6006D91C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D779DC4D1E5D88F6006D91C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D779DC4F1E5D88F6006D91C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D779DC511E5D88F6006D91C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC74A064F3D61D20EDED115 /* Pods-VTAck TV App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck TV App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App.release.xcconfig"; sourceTree = "<group>"; };
+		EA3DDFED8AE99F39E24A335F /* Pods-VTAck TV App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck TV App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +94,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D779DC3E1E5D88F6006D91C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D33381C66840559EF19D079 /* libPods-VTAck TV App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +112,8 @@
 				969B698AF5490D7F9D095AB0 /* Pods-VTAck App.release.xcconfig */,
 				D50855E43BB804DA4A56444E /* Pods-VTAck Tests.debug.xcconfig */,
 				36F7D048A9F4B71701C7DE13 /* Pods-VTAck Tests.release.xcconfig */,
+				EA3DDFED8AE99F39E24A335F /* Pods-VTAck TV App.debug.xcconfig */,
+				DAC74A064F3D61D20EDED115 /* Pods-VTAck TV App.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -94,6 +123,7 @@
 			children = (
 				1FDD9D7C1A9A757B000BAFF0 /* VTAck App */,
 				1FDD9D961A9A757B000BAFF0 /* VTAck Tests */,
+				D779DC421E5D88F6006D91C9 /* VTAck TV App */,
 				1FDD9D7B1A9A757B000BAFF0 /* Products */,
 				0B8DDF81E374B2207DF4C45A /* Pods */,
 				6FB847954BFF52A38F97CDF6 /* Frameworks */,
@@ -105,6 +135,7 @@
 			children = (
 				1FDD9D7A1A9A757B000BAFF0 /* VTAck App.app */,
 				1FDD9D931A9A757B000BAFF0 /* VTAck Tests.xctest */,
+				D779DC411E5D88F6006D91C9 /* VTAck TV App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,8 +192,32 @@
 			children = (
 				CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */,
 				3943CA5413122C5F4F21B1EF /* libPods-VTAck Tests.a */,
+				8417B7157DE967556F6EDA4A /* libPods-VTAck TV App.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D779DC421E5D88F6006D91C9 /* VTAck TV App */ = {
+			isa = PBXGroup;
+			children = (
+				D779DC461E5D88F6006D91C9 /* AppDelegate.h */,
+				D779DC471E5D88F6006D91C9 /* AppDelegate.m */,
+				D779DC491E5D88F6006D91C9 /* ViewController.h */,
+				D779DC4A1E5D88F6006D91C9 /* ViewController.m */,
+				D779DC4C1E5D88F6006D91C9 /* Main.storyboard */,
+				D779DC4F1E5D88F6006D91C9 /* Assets.xcassets */,
+				D779DC511E5D88F6006D91C9 /* Info.plist */,
+				D779DC431E5D88F6006D91C9 /* Supporting Files */,
+			);
+			path = "VTAck TV App";
+			sourceTree = "<group>";
+		};
+		D779DC431E5D88F6006D91C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D779DC441E5D88F6006D91C9 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDD9D9D1A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck App" */;
 			buildPhases = (
-				6FE768C502131F1146D31701 /* 📦 Check Pods Manifest.lock */,
+				6FE768C502131F1146D31701 /* [CP] Check Pods Manifest.lock */,
 				1FDD9D761A9A757A000BAFF0 /* Sources */,
 				1FDD9D771A9A757A000BAFF0 /* Frameworks */,
 				1FDD9D781A9A757A000BAFF0 /* Resources */,
-				6EDE8AAD5FDF2E8259F8F3F1 /* 📦 Embed Pods Frameworks */,
-				E43555AE255952008F3B2D0E /* 📦 Copy Pods Resources */,
+				6EDE8AAD5FDF2E8259F8F3F1 /* [CP] Embed Pods Frameworks */,
+				E43555AE255952008F3B2D0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FDD9DA01A9A757B000BAFF0 /* Build configuration list for PBXNativeTarget "VTAck Tests" */;
 			buildPhases = (
-				2574779AE3D724E1AEBBA764 /* 📦 Check Pods Manifest.lock */,
+				2574779AE3D724E1AEBBA764 /* [CP] Check Pods Manifest.lock */,
 				1FDD9D8F1A9A757B000BAFF0 /* Sources */,
 				1FDD9D901A9A757B000BAFF0 /* Frameworks */,
 				1FDD9D911A9A757B000BAFF0 /* Resources */,
-				6C0A48F28E957E3DA1D2173F /* 📦 Embed Pods Frameworks */,
-				6ACB69C16B3F875163B419C1 /* 📦 Copy Pods Resources */,
+				6C0A48F28E957E3DA1D2173F /* [CP] Embed Pods Frameworks */,
+				6ACB69C16B3F875163B419C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +263,26 @@
 			productName = "VTAck TestsTests";
 			productReference = 1FDD9D931A9A757B000BAFF0 /* VTAck Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D779DC401E5D88F6006D91C9 /* VTAck TV App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D779DC541E5D88F6006D91C9 /* Build configuration list for PBXNativeTarget "VTAck TV App" */;
+			buildPhases = (
+				C3B75053E4398FE5E70EADC5 /* [CP] Check Pods Manifest.lock */,
+				D779DC3D1E5D88F6006D91C9 /* Sources */,
+				D779DC3E1E5D88F6006D91C9 /* Frameworks */,
+				D779DC3F1E5D88F6006D91C9 /* Resources */,
+				9D3774F046895E2EC088C54D /* [CP] Embed Pods Frameworks */,
+				6B7BEA0EA73043F18B63E722 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VTAck TV App";
+			productName = "VTAck TV App";
+			productReference = D779DC411E5D88F6006D91C9 /* VTAck TV App.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,6 +299,10 @@
 					1FDD9D921A9A757B000BAFF0 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 1FDD9D791A9A757A000BAFF0;
+					};
+					D779DC401E5D88F6006D91C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -242,6 +321,7 @@
 			targets = (
 				1FDD9D791A9A757A000BAFF0 /* VTAck App */,
 				1FDD9D921A9A757B000BAFF0 /* VTAck Tests */,
+				D779DC401E5D88F6006D91C9 /* VTAck TV App */,
 			);
 		};
 /* End PBXProject section */
@@ -265,32 +345,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D779DC3F1E5D88F6006D91C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779DC501E5D88F6006D91C9 /* Assets.xcassets in Resources */,
+				D779DC4E1E5D88F6006D91C9 /* Main.storyboard in Resources */,
+				D779DC551E5D89C0006D91C9 /* Pods-VTAck App-acknowledgements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2574779AE3D724E1AEBBA764 /* 📦 Check Pods Manifest.lock */ = {
+		2574779AE3D724E1AEBBA764 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6ACB69C16B3F875163B419C1 /* 📦 Copy Pods Resources */ = {
+		6ACB69C16B3F875163B419C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,14 +388,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C0A48F28E957E3DA1D2173F /* 📦 Embed Pods Frameworks */ = {
+		6B7BEA0EA73043F18B63E722 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0A48F28E957E3DA1D2173F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +418,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EDE8AAD5FDF2E8259F8F3F1 /* 📦 Embed Pods Frameworks */ = {
+		6EDE8AAD5FDF2E8259F8F3F1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,29 +433,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FE768C502131F1146D31701 /* 📦 Check Pods Manifest.lock */ = {
+		6FE768C502131F1146D31701 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E43555AE255952008F3B2D0E /* 📦 Copy Pods Resources */ = {
+		9D3774F046895E2EC088C54D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B75053E4398FE5E70EADC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E43555AE255952008F3B2D0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +517,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D779DC3D1E5D88F6006D91C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779DC4B1E5D88F6006D91C9 /* ViewController.m in Sources */,
+				D779DC481E5D88F6006D91C9 /* AppDelegate.m in Sources */,
+				D779DC451E5D88F6006D91C9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -397,6 +542,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1FDD9DA61A9A766D000BAFF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D779DC4C1E5D88F6006D91C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D779DC4D1E5D88F6006D91C9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -545,6 +698,45 @@
 			};
 			name = Release;
 		};
+		D779DC521E5D88F6006D91C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3DDFED8AE99F39E24A335F /* Pods-VTAck TV App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "VTAck TV App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studioamanga.VTAck-TV-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		D779DC531E5D88F6006D91C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC74A064F3D61D20EDED115 /* Pods-VTAck TV App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "VTAck TV App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studioamanga.VTAck-TV-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,6 +766,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D779DC541E5D88F6006D91C9 /* Build configuration list for PBXNativeTarget "VTAck TV App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D779DC521E5D88F6006D91C9 /* Debug */,
+				D779DC531E5D88F6006D91C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

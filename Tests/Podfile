@@ -8,3 +8,6 @@ target 'VTAck Tests' do
   pod 'VTAcknowledgementsViewController', :path => '../'
 end
 
+target 'VTAck TV App' do
+    pod 'VTAcknowledgementsViewController', :path => '../'
+end
