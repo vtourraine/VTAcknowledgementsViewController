@@ -61,6 +61,30 @@
  */
 @property (nonatomic, copy, nullable) IBInspectable NSString *acknowledgementsPlistName;
 
+/**
+ The color to use for textual elements, such as the header text, footer text, and acknowledgement detail text.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *textColor;
+
+/**
+ The background color to be used by the acknowledgements table and acknowledgements detail text view.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *backgroundColor;
+
+/**
+ The text color to use for the acknowledgements table cells.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *cellTextColor;
+
+/**
+ The background color to use for the acknowledgements table cells.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *cellBackgroundColor;
+
+/**
+ The background color to use for the acknowledgements table cells, in the selected state.
+ */
+@property (nonatomic, strong, nullable) IBInspectable UIColor *cellSelectedBackgroundColor;
 
 /**
  Creates an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
