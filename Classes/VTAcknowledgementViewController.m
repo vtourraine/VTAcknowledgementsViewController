@@ -32,9 +32,9 @@
 
 @implementation VTAcknowledgementViewController
 
-- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text
-{
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text {
     self = [super init];
+
     if (self) {
         self.title = title;
         self.text  = text;
@@ -43,8 +43,7 @@
     return self;
 }
 
-- (void)loadView
-{
+- (void)loadView {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
     if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
         textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
@@ -53,14 +52,14 @@
         textView.font = [UIFont systemFontOfSize:17];
     }
     textView.alwaysBounceVertical = YES;
-    textView.text                 = self.text;
+    textView.text = self.text;
 #if !TARGET_OS_TV
-    textView.editable             = NO;
-    textView.dataDetectorTypes    = UIDataDetectorTypeLink;
+    textView.editable = NO;
+    textView.dataDetectorTypes = UIDataDetectorTypeLink;
 #else
     // Allow scrolling on tvOS
     textView.userInteractionEnabled = YES;
-    textView.selectable             = YES;
+    textView.selectable = YES;
     textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
     if ([textView respondsToSelector:@selector(setTextContainerInset:)]) {
@@ -78,8 +77,7 @@
 }
 
 #if TARGET_OS_TV
-- (UIView *)preferredFocusedView
-{
+- (UIView *)preferredFocusedView {
     return self.textView;
 }
 #endif

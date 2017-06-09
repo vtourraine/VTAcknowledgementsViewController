@@ -38,13 +38,11 @@
 
 @implementation VTAcknowledgementsParser
 
-- (instancetype)init
-{
+- (instancetype)init {
     @throw nil;
 }
 
-- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath
-{
+- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath {
     self = [super init];
 
     if (self) {
@@ -64,10 +62,7 @@
 
         NSMutableArray <VTAcknowledgement *> *acknowledgements = [NSMutableArray array];
         for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-            VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc]
-                                                  initWithTitle:preferenceSpecifier[@"Title"]
-                                                  text:preferenceSpecifier[@"FooterText"]
-                                                  license:preferenceSpecifier[@"License"]];
+            VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:preferenceSpecifier[@"Title"] text:preferenceSpecifier[@"FooterText"] license:preferenceSpecifier[@"License"]];
             [acknowledgements addObject:acknowledgement];
         }
 
