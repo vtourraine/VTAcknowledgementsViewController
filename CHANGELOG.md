@@ -1,9 +1,19 @@
 # Changelog
 
+## 1.3
+
+- Support “readable content guide” on `VTAcknowledgementViewController`
+- Fix iPhone X layout
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2.1...HEAD)
+
+
 ## 1.2.1 (30 January 2017)
 
 - Improve bundle handling for dynamic frameworks, by Maximilian Landsmann (@landsi)
 - Improve umbrella header for better Swift support, by Marcus Kida (@kimar)
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2...1.2.1)
 
 
 ## 1.2 (21 October 2016)

@@ -35,22 +35,19 @@
 
 - (void)testLoadTextViewAsMainViewWithTextContent {
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:@"T1" text:@"text"];
-    UITextView *textView = (UITextView *)viewController.view;
+    [viewController viewDidLoad];
 
-    XCTAssertTrue([textView isKindOfClass:UITextView.class],
-                   @"should load a text view as the main view");
-    XCTAssertEqualObjects(textView.text, @"text",
-                          @"should set the text view text with the text content value from the initializer");
-    XCTAssertTrue(textView.isSelectable);
-    XCTAssertTrue(textView.isScrollEnabled);
-    XCTAssertFalse(textView.isEditable);
-    XCTAssertEqual(textView.dataDetectorTypes, UIDataDetectorTypeLink);
+    XCTAssertNotNil(viewController.textView, @"should load a text view as the main view");
+    XCTAssertEqualObjects(viewController.textView.text, @"text", @"should set the text view text with the text content value from the initializer");
+    XCTAssertTrue(viewController.textView.isSelectable);
+    XCTAssertTrue(viewController.textView.isScrollEnabled);
+    XCTAssertFalse(viewController.textView.isEditable);
+    XCTAssertEqual(viewController.textView.dataDetectorTypes, UIDataDetectorTypeLink);
 }
 
 - (void)testConfigureTitle {
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:@"T2" text:@"text"];
-    XCTAssertEqualObjects(viewController.title, @"T2",
-                          @"should set its title with the value from the initializer");
+    XCTAssertEqualObjects(viewController.title, @"T2", @"should set its title with the value from the initializer");
 }
 
 @end
