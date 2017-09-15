@@ -1,12 +1,12 @@
 # Changelog
 
-## 1.3
+## 1.3 (15 September 2017)
 
 - Support “readable content guide” on `VTAcknowledgementViewController`
 - Fix iPhone X layout
-- Update `VTAcknowledgement` public interface to mark `init` method as unavailable
+- Update `VTAcknowledgement` public interface to explicitly mark `init` method as unavailable
 
-[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2.1...HEAD)
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.2.1...1.3)
 
 
 ## 1.2.1 (30 January 2017)
