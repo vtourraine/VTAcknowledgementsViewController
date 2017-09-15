@@ -23,12 +23,6 @@
 
 #import "VTAcknowledgement.h"
 
-@interface VTAcknowledgement ()
-
-- (instancetype)init NS_UNAVAILABLE;
-
-@end
-
 
 @implementation VTAcknowledgement
 

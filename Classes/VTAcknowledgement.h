@@ -49,6 +49,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy, nullable) NSString *license;
 
+/**
+ No `init` support, in order to enforce nonnull title and text properties.
+
+ Please use `initWithTitle:text:license:` instead.
+ */
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  Initializes an acknowledgement with a title and a body text.
