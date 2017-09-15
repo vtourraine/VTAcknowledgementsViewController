@@ -36,6 +36,7 @@
 - (void)testLoadTextViewAsMainViewWithTextContent {
     VTAcknowledgementViewController *viewController = [[VTAcknowledgementViewController alloc] initWithTitle:@"T1" text:@"text"];
     [viewController viewDidLoad];
+    [viewController viewDidLayoutSubviews];
 
     XCTAssertNotNil(viewController.textView, @"should load a text view as the main view");
     XCTAssertEqualObjects(viewController.textView.text, @"text", @"should set the text view text with the text content value from the initializer");

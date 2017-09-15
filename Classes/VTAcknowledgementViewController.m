@@ -55,7 +55,6 @@
     }
     textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     textView.alwaysBounceVertical = YES;
-    textView.text = self.text;
 #if !TARGET_OS_TV
     textView.editable = NO;
     textView.dataDetectorTypes = UIDataDetectorTypeLink;
@@ -65,7 +64,6 @@
     textView.selectable = YES;
     textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
-    textView.contentOffset = CGPointZero;
 
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:textView];
@@ -82,6 +80,13 @@
         // For iOS 7 and iOS 8
         textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
     }
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+    // Need to set the textView text after the layout is completed, so that the content inset and offset properties can be adjusted automatically.
+    self.textView.text = self.text;
 }
 
 #if TARGET_OS_TV
