@@ -57,9 +57,7 @@ viewController.footerText = NSLocalizedString(@"Powered by CocoaPods.org", nil);
 If you need to include licenses that are not part of the generated `plist`, or if you don’t want to use the generated `plist` at all, you can easily create new `VTAcknowledgement` instances, and add them to the acknowledgements array of the controller.
 
 ``` objc
-VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] init];
-customLicense.title = NSLocalizedString(@"...", nil);
-customLicense.text  = NSLocalizedString(@"...", nil);
+VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] initWithTitle:NSLocalizedString(@"...", nil) text:NSLocalizedString(@"...", nil) license:nil];
 
 viewController.acknowledgements = @[customLicense];
 ```
