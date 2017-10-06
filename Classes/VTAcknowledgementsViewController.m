@@ -70,7 +70,15 @@ static const CGFloat VTFooterBottomMargin = 20;
 + (NSString *)defaultAcknowledgementsPlistPath {
     NSString *targetName = [NSBundle mainBundle].infoDictionary[@"CFBundleName"];
     NSString *expectedPlistName = [NSString stringWithFormat:@"Pods-%@-acknowledgements", targetName];
-    return [self acknowledgementsPlistPathForName:expectedPlistName];
+    NSString *expectedPlistPath = [self acknowledgementsPlistPathForName:expectedPlistName];
+
+    if ([[NSFileManager defaultManager] fileExistsAtPath:expectedPlistPath] == YES) {
+        return expectedPlistPath;
+    }
+    else {
+        // Legacy file name
+        return [self acknowledgementsPlistPathForName:@"Pods-acknowledgements"];
+    }
 }
 
 + (instancetype)acknowledgementsViewController {
