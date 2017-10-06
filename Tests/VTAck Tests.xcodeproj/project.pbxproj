@@ -175,8 +175,7 @@
 				1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */,
 				1FDD9D971A9A757B000BAFF0 /* Supporting Files */,
 			);
-			name = "VTAck Tests";
-			path = "VTAck TestsTests";
+			path = "VTAck Tests";
 			sourceTree = "<group>";
 		};
 		1FDD9D971A9A757B000BAFF0 /* Supporting Files */ = {
