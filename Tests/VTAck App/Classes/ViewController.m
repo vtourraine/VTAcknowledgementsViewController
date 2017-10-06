@@ -27,8 +27,20 @@
 
 @implementation ViewController
 
-- (IBAction)pushAckViewController:(id)sender {
+- (IBAction)pushAckViewControllerWithDefaultFileName:(id)sender {
+    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithExplicitFileName:(id)sender {
     VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-VTAck App-acknowledgements"];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithHardcodedData:(id)sender {
+    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
+    VTAcknowledgement *ack = [[VTAcknowledgement alloc] initWithTitle:@"Test Title" text:@"Test content..." license:nil];
+    viewController.acknowledgements = @[ack];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

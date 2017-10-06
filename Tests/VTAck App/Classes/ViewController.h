@@ -25,7 +25,9 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)pushAckViewController:(id)sender;
+- (IBAction)pushAckViewControllerWithDefaultFileName:(id)sender;
+- (IBAction)pushAckViewControllerWithExplicitFileName:(id)sender;
+- (IBAction)pushAckViewControllerWithHardcodedData:(id)sender;
 
 @end
 

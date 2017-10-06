@@ -1,6 +1,8 @@
 # VTAcknowledgementsViewController
 
-_Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/). Now also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
+_Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for [CocoaPods](http://cocoapods.org/)._
+
+_Now also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
 ![Platform iOS](https://img.shields.io/cocoapods/p/VTAcknowledgementsViewController.svg)
 [![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
@@ -34,7 +36,7 @@ viewController.headerText = NSLocalizedString(@"We love open source software.", 
 
 ## Customization
 
-If your `.plist` file is named something other than `Pods-acknowledgements.plist` (_e.g._ if you’re using custom build targets), you can initialize the view controller with a custom file name or path.
+By default, the controller will try to guess the name of your `.plist` file, based on the bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`. If that doesn’t match the file you’re looking for, you can initialize the view controller with a custom file name or path.
 
 ``` objc
 viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-MyTarget-acknowledgements"];

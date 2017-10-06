@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4 (work in progress)
+
+- Update `VTAcknowledgementsViewController` default `acknowledgementsViewController` initializer with plist file name based on bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`)
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.3...HEAD)
+
+
 ## 1.3 (15 September 2017)
 
 - Support “readable content guide” on `VTAcknowledgementViewController`
