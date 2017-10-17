@@ -1,5 +1,5 @@
 PODS:
-  - VTAcknowledgementsViewController (1.2.1)
+  - VTAcknowledgementsViewController (1.3)
 
 DEPENDENCIES:
   - VTAcknowledgementsViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VTAcknowledgementsViewController: e1de80f2c0ce31cc7e1c6f1c8aaeec2770371f09
+  VTAcknowledgementsViewController: 6ab35c5e821adc9a25fcee0dca6f052e2c888d1a
 
 PODFILE CHECKSUM: 380ea602810c9306b8bfb1458afbdbb307ab7ddc
 

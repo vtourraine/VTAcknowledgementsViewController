@@ -1,6 +1,6 @@
 {
   "name": "VTAcknowledgementsViewController",
-  "version": "1.2.1",
+  "version": "1.3",
   "license": "MIT",
   "summary": "Ready to use “Acknowledgements”/“Licenses”/“Credits” view controller for CocoaPods.",
   "screenshots": [
@@ -14,13 +14,13 @@
   "social_media_url": "https://twitter.com/vtourraine",
   "source": {
     "git": "https://github.com/vtourraine/VTAcknowledgementsViewController.git",
-    "tag": "1.2.1"
+    "tag": "1.3"
   },
   "source_files": "Classes/*.{h,m}",
   "resources": "VTAcknowledgementsViewController.bundle",
   "requires_arc": true,
   "platforms": {
-    "ios": "5.0",
+    "ios": "8.0",
     "tvos": "9.0"
   }
 }
