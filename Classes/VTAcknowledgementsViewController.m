@@ -333,7 +333,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 #if !TARGET_OS_TV
     NSURL *URL = [NSURL URLWithString:VTCocoaPodsURLString];
 
-    if ([SFSafariViewController class]) {
+    if (@available(iOS 9.0, *)) {
         SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];
         [self presentViewController:viewController animated:YES completion:nil];
     }
