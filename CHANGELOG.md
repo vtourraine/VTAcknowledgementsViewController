@@ -4,6 +4,7 @@
 
 - Update `VTAcknowledgementsViewController` default `acknowledgementsViewController` initializer with plist file name based on bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`)
 - Update deployment target to iOS 8.0
+- Fix “Semantic Issue” warnings about API availability
 
 [Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.3...HEAD)
 
