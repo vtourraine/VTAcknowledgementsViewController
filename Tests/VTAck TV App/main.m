@@ -3,7 +3,7 @@
 //  VTAck TV App
 //
 //  Created by Vincent Tourraine on 22/02/2017.
-//  Copyright © 2017 Vincent Tourraine. All rights reserved.
+//  Copyright © 2018 Vincent Tourraine. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
