@@ -74,8 +74,7 @@ If you need to further customize the appearance or behavior of this pod, feel fr
 
 ## Also compatible with tvOS
 
-<img alt="Apple TV screenshot 1" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-01.png" width="300px">
-<img alt="Apple TV screenshot 2" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-02.png" width="300px">
+<img alt="Apple TV screenshot 1" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-01.png" width="300px"> <img alt="Apple TV screenshot 2" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-02.png" width="300px">
 
 
 ## Requirements
