@@ -72,14 +72,16 @@ The controller title is a localized value for “acknowledgements” (12 languag
 If you need to further customize the appearance or behavior of this pod, feel free to subclass its classes.
 
 
-## Also compatible with tvOS
+## Apple TV
+
+VTAcknowledgementsViewController is also compatible with tvOS for Apple TV apps.
 
 <img alt="Apple TV screenshot 1" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-01.png" width="300px"> <img alt="Apple TV screenshot 2" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-02.png" width="300px">
 
 
 ## Requirements
 
-VTAcknowledgementsViewController supports iOS 8.0 and above, and requires Xcode 9.0 and above. If you need lower requirements, look for an [older version of this repository](https://github.com/vtourraine/VTAcknowledgementsViewController/releases).
+VTAcknowledgementsViewController supports iOS 8.0 or tvOS 9.0 and above, and requires Xcode 9.0 and above. If you need lower requirements, look for an [older version of this repository](https://github.com/vtourraine/VTAcknowledgementsViewController/releases).
 
 
 ## Credits
