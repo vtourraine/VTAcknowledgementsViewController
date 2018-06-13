@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1 (work in progress)
+
+- Fix text view inset on `VTAcknowledgementViewController` (support layout margins, safe area insets)
+- Remove support for “readable content guide” on `VTAcknowledgementViewController`
+
+
 ## 1.4 (25 January 2018)
 
 - Update `VTAcknowledgementsViewController` default `acknowledgementsViewController` initializer with plist file name based on bundle name (`Pods-#BUNDLE-NAME#-acknowledgements.plist`)

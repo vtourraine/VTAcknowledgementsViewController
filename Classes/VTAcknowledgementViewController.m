@@ -29,6 +29,9 @@
 
 @end
 
+const CGFloat VTTopBottomDefaultMargin = 20;
+const CGFloat VTLeftRightDefaultMargin = 10;
+
 
 @implementation VTAcknowledgementViewController
 
@@ -64,28 +67,40 @@
     textView.selectable = YES;
     textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
-
+    textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, VTLeftRightDefaultMargin, VTTopBottomDefaultMargin, VTLeftRightDefaultMargin);
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:textView];
 
     self.textView = textView;
-
-    if (@available(iOS 9.0, *)) {
-        textView.translatesAutoresizingMaskIntoConstraints = NO;
-
-        UILayoutGuide *marginsGuide = self.view.readableContentGuide;
-        [NSLayoutConstraint activateConstraints:@[[textView.topAnchor constraintEqualToAnchor:marginsGuide.topAnchor], [textView.bottomAnchor constraintEqualToAnchor:marginsGuide.bottomAnchor], [textView.leadingAnchor constraintEqualToAnchor:marginsGuide.leadingAnchor], [textView.trailingAnchor constraintEqualToAnchor:marginsGuide.trailingAnchor]]];
-    }
-    else {
-        textView.textContainerInset = UIEdgeInsetsMake(12, 10, 12, 10);
-    }
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
+    [self updateTextViewInsets:self.textView];
+
     // Need to set the textView text after the layout is completed, so that the content inset and offset properties can be adjusted automatically.
     self.textView.text = self.text;
+}
+
+- (void)viewSafeAreaInsetsDidChange {
+    [super viewSafeAreaInsetsDidChange];
+
+    [self updateTextViewInsets:self.textView];
+}
+
+- (void)viewLayoutMarginsDidChange {
+    [super viewLayoutMarginsDidChange];
+
+    [self updateTextViewInsets:self.textView];
+}
+
+- (void)updateTextViewInsets:(UITextView *)textView {
+    if (@available(iOS 11.0, tvOS 11.0, *)) {
+        textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.safeAreaInsets.left + self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.safeAreaInsets.right + self.view.layoutMargins.right);
+    } else {
+        textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.layoutMargins.right);
+    }
 }
 
 #if TARGET_OS_TV
