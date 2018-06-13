@@ -21,6 +21,7 @@
 		7D33381C66840559EF19D079 /* libPods-VTAck TV App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8417B7157DE967556F6EDA4A /* libPods-VTAck TV App.a */; };
 		866152BE610C41C515A9AD7C /* libPods-VTAck Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3943CA5413122C5F4F21B1EF /* libPods-VTAck Tests.a */; };
 		CB8F4084F5CD4C6042866F19 /* libPods-VTAck App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */; };
+		D729067820D1092E00A2C188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D729067620D1092E00A2C188 /* LaunchScreen.storyboard */; };
 		D779DC451E5D88F6006D91C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC441E5D88F6006D91C9 /* main.m */; };
 		D779DC481E5D88F6006D91C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC471E5D88F6006D91C9 /* AppDelegate.m */; };
 		D779DC4B1E5D88F6006D91C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC4A1E5D88F6006D91C9 /* ViewController.m */; };
@@ -64,6 +65,7 @@
 		969B698AF5490D7F9D095AB0 /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
 		CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50855E43BB804DA4A56444E /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D729067720D1092E00A2C188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "VTAck App/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		D779DC411E5D88F6006D91C9 /* VTAck TV App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VTAck TV App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779DC441E5D88F6006D91C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D779DC461E5D88F6006D91C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				1FDD9DAB1A9A7674000BAFF0 /* ViewController.h */,
 				1FDD9DAC1A9A7674000BAFF0 /* ViewController.m */,
 				1FDD9DA51A9A766D000BAFF0 /* Main.storyboard */,
+				D729067620D1092E00A2C188 /* LaunchScreen.storyboard */,
 				1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */,
 				1FDD9DBD1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist */,
 				1FDD9DB71A9A7928000BAFF0 /* Images.xcassets */,
@@ -333,6 +336,7 @@
 				1FDD9DB81A9A7928000BAFF0 /* Images.xcassets in Resources */,
 				1FDD9DA81A9A766D000BAFF0 /* Main.storyboard in Resources */,
 				1FDD9DBC1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist in Resources */,
+				D729067820D1092E00A2C188 /* LaunchScreen.storyboard in Resources */,
 				1FDD9DBE1A9A7D3F000BAFF0 /* Pods-acknowledgements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +565,14 @@
 				1FDD9DA61A9A766D000BAFF0 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D729067620D1092E00A2C188 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D729067720D1092E00A2C188 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		D779DC4C1E5D88F6006D91C9 /* Main.storyboard */ = {
