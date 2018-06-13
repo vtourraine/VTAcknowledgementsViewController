@@ -83,12 +83,6 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     self.textView.text = self.text;
 }
 
-- (void)viewSafeAreaInsetsDidChange {
-    [super viewSafeAreaInsetsDidChange];
-
-    [self updateTextViewInsets:self.textView];
-}
-
 - (void)viewLayoutMarginsDidChange {
     [super viewLayoutMarginsDidChange];
 
@@ -96,11 +90,7 @@ const CGFloat VTLeftRightDefaultMargin = 10;
 }
 
 - (void)updateTextViewInsets:(UITextView *)textView {
-    if (@available(iOS 11.0, tvOS 11.0, *)) {
-        textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.safeAreaInsets.left + self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.safeAreaInsets.right + self.view.layoutMargins.right);
-    } else {
-        textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.layoutMargins.right);
-    }
+    textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.layoutMargins.right);
 }
 
 #if TARGET_OS_TV
