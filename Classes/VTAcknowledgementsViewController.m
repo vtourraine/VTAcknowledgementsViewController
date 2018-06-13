@@ -42,25 +42,6 @@ static const CGFloat VTLabelMargin = 20;
 static const CGFloat VTFooterBottomMargin = 20;
 
 
-@interface VTAcknowledgementsViewController ()
-
-+ (NSString *)acknowledgementsPlistPathForName:(NSString *)name;
-+ (NSString *)defaultAcknowledgementsPlistPath;
-+ (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)defaultString;
-+ (NSString *)localizedCocoaPodsFooterText;
-
-- (void)configureHeaderView;
-- (void)configureFooterView;
-- (UIFont *)headerFooterFont;
-- (CGFloat)heightForLabelWithText:(NSString *)labelText andWidth:(CGFloat)labelWidth;
-
-- (IBAction)dismissViewController:(id)sender;
-- (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath;
-- (void)openCocoaPodsWebsite:(id)sender;
-
-@end
-
-
 @implementation VTAcknowledgementsViewController
 
 + (NSString *)acknowledgementsPlistPathForName:(NSString *)name {
