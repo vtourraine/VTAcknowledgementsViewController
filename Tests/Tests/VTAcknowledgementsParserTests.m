@@ -34,6 +34,10 @@
 
 @implementation VTAcknowledgementsParserTests
 
+- (void)testDoesNotSupportDefaultInitialization {
+    XCTAssertThrows([VTAcknowledgementsParser new]);
+}
+
 - (void)testBasicParsing {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-acknowledgements" ofType:@"plist"];
     VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:path];

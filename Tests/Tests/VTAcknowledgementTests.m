@@ -33,6 +33,10 @@
 
 @implementation VTAcknowledgementTests
 
+- (void)testDoesNotSupportDefaultInitialization {
+    XCTAssertThrows([VTAcknowledgement new]);
+}
+
 - (void)testInitialization {
     VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:@"Abc" text:@"def." license:@"GhI"];
 
