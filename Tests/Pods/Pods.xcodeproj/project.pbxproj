@@ -60,17 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03450B7923C7D9AD745661D524C26339 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck Tests.a"; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03450B7923C7D9AD745661D524C26339 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC1BCBF7FA971421B1A8A34C9BB0D24 /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0C88FEA55046479EEFA5B62D19F3A230 /* Pods-VTAck TV App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck TV App-acknowledgements.plist"; sourceTree = "<group>"; };
 		0DAFFAEB080F8A8EAC2A1867E238A7B4 /* VTAcknowledgementsViewController-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VTAcknowledgementsViewController-iOS.xcconfig"; sourceTree = "<group>"; };
 		178423A1B238A4224C7DC02BABB042B8 /* VTAcknowledgementsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsParser.m; path = Classes/VTAcknowledgementsParser.m; sourceTree = "<group>"; };
-		2A6CBE0921FA718EEF4E7F5DEBB3E9B9 /* libVTAcknowledgementsViewController-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-tvOS.a"; path = "libVTAcknowledgementsViewController-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6CBE0921FA718EEF4E7F5DEBB3E9B9 /* libVTAcknowledgementsViewController-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVTAcknowledgementsViewController-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2D782050E0614F432EB3A1D96CC05E43 /* VTAcknowledgementsViewController-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VTAcknowledgementsViewController-iOS-prefix.pch"; sourceTree = "<group>"; };
-		32F0A339F7389A54226D7E6536874C9B /* libVTAcknowledgementsViewController-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-iOS.a"; path = "libVTAcknowledgementsViewController-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F0A339F7389A54226D7E6536874C9B /* libVTAcknowledgementsViewController-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVTAcknowledgementsViewController-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		358CB098D4FFD2EFEC59958F27301E2F /* VTAcknowledgementViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementViewController.m; path = Classes/VTAcknowledgementViewController.m; sourceTree = "<group>"; };
-		4E7D7240FC5230374CA6B253EF3592DF /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck App.a"; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7D7240FC5230374CA6B253EF3592DF /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7FC413AD08067585EF672E237E0C82 /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
 		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5BC55B7BE4F49E58E9450A204D6FC6B2 /* Pods-VTAck Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		8052CB9EF70FE7DE6EE6BBB550C02A1F /* VTAcknowledgementsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsParser.h; path = Classes/VTAcknowledgementsParser.h; sourceTree = "<group>"; };
 		81F98A0F899DFE4EC57C6317B017D67A /* VTAcknowledgementsViewController-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VTAcknowledgementsViewController-tvOS-dummy.m"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-dummy.m"; sourceTree = "<group>"; };
 		8F92C023FE3ACF68AA9EA001A825F16C /* VTAcknowledgementsViewController-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F20324B2D8DB1FEDD3A16042A1920B6 /* VTAcknowledgement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgement.m; path = Classes/VTAcknowledgement.m; sourceTree = "<group>"; };
 		A0400B7F552D64BBEB81646500B11384 /* VTAcknowledgement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgement.h; path = Classes/VTAcknowledgement.h; sourceTree = "<group>"; };
 		A11DA95194298318461F7B7E455C64D3 /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		C9F6732C15E54063ADEF13FAA7A9E15E /* Pods-VTAck Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB8F2CDBFAE4E544FA6AB8D86A13DAC9 /* VTAcknowledgementsViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = VTAcknowledgementsViewController.bundle; sourceTree = "<group>"; };
 		DB39B37FAA76A93E9388EBD79129982E /* Pods-VTAck Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-resources.sh"; sourceTree = "<group>"; };
-		E09C06E022D9563C7EE138E4DA8D5162 /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck TV App.a"; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09C06E022D9563C7EE138E4DA8D5162 /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70FB112A2E759CE7B56E91F02FC1121 /* Pods-VTAck App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E8B95936DAED45139CB1298D648EBFFC /* VTAcknowledgementsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsViewController.m; path = Classes/VTAcknowledgementsViewController.m; sourceTree = "<group>"; };
 		E95B24E723F45912563077F838F3C0AB /* Pods-VTAck App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -421,7 +421,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -631,6 +631,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -638,6 +639,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -730,6 +732,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -737,6 +740,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
