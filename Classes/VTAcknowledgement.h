@@ -34,19 +34,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface VTAcknowledgement : NSObject
 
-/**
- The acknowledgement title (for instance the pod’s name).
- */
+/// The acknowledgement title (for instance the pod’s name).
 @property (nonatomic, copy) NSString *title;
 
-/**
- The acknowledgement body text (for instance the pod’s license).
- */
+/// The acknowledgement body text (for instance the pod’s license).
 @property (nonatomic, copy) NSString *text;
 
-/**
- The acknowledgement license text (for instance the pod’s license type).
- */
+/// The acknowledgement license text (for instance the pod’s license type).
 @property (nonatomic, copy, nullable) NSString *license;
 
 /**

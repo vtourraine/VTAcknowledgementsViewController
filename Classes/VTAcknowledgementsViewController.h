@@ -36,27 +36,26 @@
  */
 @interface VTAcknowledgementsViewController : UITableViewController
 
-/**
- Array of `VTAcknowledgement`.
- */
+/// Array of `VTAcknowledgement`.
 @property (nonatomic, strong, nullable) NSArray <VTAcknowledgement *> *acknowledgements;
 
 /**
- Header text to be displayed above the list of the acknowledgements. 
- It needs to get set before `viewDidLoad` gets called.
- Its value can be defined in the header of the plist file.
+ Header text to be displayed above the list of the acknowledgements.
+
+ It needs to get set before `viewDidLoad` gets called. Its value can be defined in the header of the plist file.
  */
 @property (nonatomic, copy, nullable) IBInspectable NSString *headerText;
 
 /**
  Footer text to be displayed below the list of the acknowledgements.
- It needs to get set before `viewDidLoad` gets called.
- Its value can be defined in the header of the plist file.
+
+ It needs to get set before `viewDidLoad` gets called. Its value can be defined in the header of the plist file.
  */
 @property (nonatomic, copy, nullable) IBInspectable NSString *footerText;
 
 /**
  Acknowledgements plist file name whose contents to be loaded.
+
  It expects to get set by "User Defined Runtime Attributes" in Interface Builder.
  */
 @property (nonatomic, copy, nullable) IBInspectable NSString *acknowledgementsPlistName;

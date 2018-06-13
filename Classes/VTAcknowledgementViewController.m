@@ -40,7 +40,7 @@ const CGFloat VTLeftRightDefaultMargin = 10;
 
     if (self) {
         self.title = title;
-        self.text  = text;
+        self.text = text;
     }
 
     return self;
@@ -93,10 +93,8 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.layoutMargins.right);
 }
 
-#if TARGET_OS_TV
 - (UIView *)preferredFocusedView {
     return self.textView;
 }
-#endif
 
 @end

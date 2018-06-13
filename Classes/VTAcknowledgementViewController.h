@@ -28,14 +28,11 @@
 #endif
 
 /**
- `VTAcknowledgementViewController` is a subclass of `UIViewController` that displays
- a single acknowledgement.
+ `VTAcknowledgementViewController` is a subclass of `UIViewController` that displays a single acknowledgement.
  */
 @interface VTAcknowledgementViewController : UIViewController
 
-/**
- The main text view.
- */
+/// The main text view.
 @property (nonatomic, weak, nullable) UITextView *textView;
 
 /**

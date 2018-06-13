@@ -36,19 +36,13 @@
  */
 @interface VTAcknowledgementsParser : NSObject
 
-/**
- The header parsed from the plist file.
- */
+/// The header parsed from the plist file.
 @property (readonly, copy, nullable) NSString *header;
 
-/**
- The footer parsed from the plist file.
- */
+/// The footer parsed from the plist file.
 @property (readonly, copy, nullable) NSString *footer;
 
-/**
- The acknowledgements parsed from the plist file.
- */
+/// The acknowledgements parsed from the plist file.
 @property (readonly, copy, nullable) NSArray <VTAcknowledgement *> *acknowledgements;
 
 
