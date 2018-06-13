@@ -315,16 +315,18 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 
-    if (self.headerText) {
-        [self configureHeaderView];
-    }
+    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        if (self.headerText) {
+            [self configureHeaderView];
+        }
 
-    if (self.footerText) {
-        [self configureFooterView];
-    }
+        if (self.footerText) {
+            [self configureFooterView];
+        }
+    }];
 }
 
 #pragma mark - Actions

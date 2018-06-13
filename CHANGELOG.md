@@ -3,6 +3,7 @@
 ## 1.4.1 (work in progress)
 
 - Fix text view inset on `VTAcknowledgementViewController` (support layout margins, safe area insets)
+- Update deprecated method
 - Remove support for “readable content guide” on `VTAcknowledgementViewController`
 
 
