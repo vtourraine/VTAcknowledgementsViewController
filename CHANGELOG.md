@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.4.1 (work in progress)
+## 1.4.1 (25 June 2018)
 
 - Fix text view inset on `VTAcknowledgementViewController` (support layout margins, safe area insets)
 - Update deprecated method
