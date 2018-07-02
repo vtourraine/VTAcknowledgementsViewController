@@ -7,7 +7,6 @@ _Now also available in Swift with [AcknowList](https://github.com/vtourraine/Ack
 ![Platform iOS](https://img.shields.io/cocoapods/p/VTAcknowledgementsViewController.svg)
 [![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/VTAcknowledgementsViewController.svg)](https://cocoapods.org/pods/VTAcknowledgementsViewController)
-[![CocoaPods documentation](https://img.shields.io/cocoapods/metrics/doc-percent/VTAcknowledgementsViewController.svg)](http://cocoadocs.org/docsets/VTAcknowledgementsViewController)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vtourraine/VTAcknowledgementsViewController/raw/master/LICENSE)
 
 <img alt="iPhone screenshot 1" src="https://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-X-01.png" width="300px"> <img alt="iPhone screenshot 2" src="https://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-X-02.png" width="300px">
