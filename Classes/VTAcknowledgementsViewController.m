@@ -131,6 +131,8 @@ static const CGFloat VTFooterBottomMargin = 20;
     }];
 
     self.acknowledgements = acknowledgements;
+	
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 #pragma mark - Localization
@@ -206,6 +208,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     label.numberOfLines = 0;
     label.textAlignment = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    label.adjustsFontForContentSizeCategory = YES;
 
     CGRect headerFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(label.frame) + 2 * VTLabelMargin);
     UIView *headerView = [[UIView alloc] initWithFrame:headerFrame];
@@ -229,6 +232,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     label.textAlignment = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     label.userInteractionEnabled = YES;
+    label.adjustsFontForContentSizeCategory = YES;
 
     if ([self.footerText rangeOfString:[NSURL URLWithString:VTCocoaPodsURLString].host].location != NSNotFound) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCocoaPodsWebsite:)];
