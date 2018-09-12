@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5 (work in progress)
+
+- Filter out manual line wrapping from licenses text
+
+
 ## 1.4.1 (25 June 2018)
 
 - Fix text view inset on `VTAcknowledgementViewController` (support layout margins, safe area insets)

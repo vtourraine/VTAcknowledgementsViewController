@@ -28,6 +28,12 @@
 		D779DC4E1E5D88F6006D91C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D779DC4C1E5D88F6006D91C9 /* Main.storyboard */; };
 		D779DC501E5D88F6006D91C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D779DC4F1E5D88F6006D91C9 /* Assets.xcassets */; };
 		D779DC551E5D89C0006D91C9 /* Pods-VTAck App-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD9DBB1A9A7CEE000BAFF0 /* Pods-VTAck App-acknowledgements.plist */; };
+		D7A2E4DB214909940010F801 /* Pods-acknowledgements-LineBreakFilterTesting.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4DA214909940010F801 /* Pods-acknowledgements-LineBreakFilterTesting.plist */; };
+		D7A2E4E221490A540010F801 /* LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4DD21490A540010F801 /* LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt */; };
+		D7A2E4E321490A540010F801 /* LineBreakFilterTesting-GroundTruth-Charts.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4DE21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Charts.txt */; };
+		D7A2E4E421490A540010F801 /* LineBreakFilterTesting-GroundTruth-Alamofire.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4DF21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Alamofire.txt */; };
+		D7A2E4E521490A540010F801 /* LineBreakFilterTesting-GroundTruth-pop.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4E021490A540010F801 /* LineBreakFilterTesting-GroundTruth-pop.txt */; };
+		D7A2E4E621490A540010F801 /* LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A2E4E121490A540010F801 /* LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		D779DC4D1E5D88F6006D91C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D779DC4F1E5D88F6006D91C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D779DC511E5D88F6006D91C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A2E4DA214909940010F801 /* Pods-acknowledgements-LineBreakFilterTesting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-acknowledgements-LineBreakFilterTesting.plist"; path = "VTAck Tests/Pods-acknowledgements-LineBreakFilterTesting.plist"; sourceTree = SOURCE_ROOT; };
+		D7A2E4DD21490A540010F801 /* LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt"; sourceTree = "<group>"; };
+		D7A2E4DE21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Charts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LineBreakFilterTesting-GroundTruth-Charts.txt"; sourceTree = "<group>"; };
+		D7A2E4DF21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Alamofire.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LineBreakFilterTesting-GroundTruth-Alamofire.txt"; sourceTree = "<group>"; };
+		D7A2E4E021490A540010F801 /* LineBreakFilterTesting-GroundTruth-pop.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LineBreakFilterTesting-GroundTruth-pop.txt"; sourceTree = "<group>"; };
+		D7A2E4E121490A540010F801 /* LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt"; sourceTree = "<group>"; };
 		DAC74A064F3D61D20EDED115 /* Pods-VTAck TV App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck TV App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App.release.xcconfig"; sourceTree = "<group>"; };
 		EA3DDFED8AE99F39E24A335F /* Pods-VTAck TV App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck TV App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +188,7 @@
 				148FE77F1C10483600228898 /* VTAcknowledgementsParserTests.m */,
 				1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */,
 				1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */,
+				D7A2E4DC214909EE0010F801 /* Resources */,
 				1FDD9D971A9A757B000BAFF0 /* Supporting Files */,
 			);
 			path = "VTAck Tests";
@@ -220,6 +233,19 @@
 				D779DC441E5D88F6006D91C9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A2E4DC214909EE0010F801 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2E4DA214909940010F801 /* Pods-acknowledgements-LineBreakFilterTesting.plist */,
+				D7A2E4DF21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Alamofire.txt */,
+				D7A2E4DE21490A540010F801 /* LineBreakFilterTesting-GroundTruth-Charts.txt */,
+				D7A2E4E021490A540010F801 /* LineBreakFilterTesting-GroundTruth-pop.txt */,
+				D7A2E4E121490A540010F801 /* LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt */,
+				D7A2E4DD21490A540010F801 /* LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +371,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A2E4E621490A540010F801 /* LineBreakFilterTesting-GroundTruth-TPKeyboardAvoiding.txt in Resources */,
+				D7A2E4DB214909940010F801 /* Pods-acknowledgements-LineBreakFilterTesting.plist in Resources */,
+				D7A2E4E321490A540010F801 /* LineBreakFilterTesting-GroundTruth-Charts.txt in Resources */,
+				D7A2E4E221490A540010F801 /* LineBreakFilterTesting-GroundTruth-TYPFontAwesome.txt in Resources */,
+				D7A2E4E421490A540010F801 /* LineBreakFilterTesting-GroundTruth-Alamofire.txt in Resources */,
+				D7A2E4E521490A540010F801 /* LineBreakFilterTesting-GroundTruth-pop.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

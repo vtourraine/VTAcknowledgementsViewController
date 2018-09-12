@@ -60,4 +60,21 @@
     XCTAssertNil(parser.acknowledgements);
 }
 
+- (void)testFilterLineBreaks {
+    NSBundle *bundle = [NSBundle bundleForClass:self.class];
+    NSString *path = [bundle pathForResource:@"Pods-acknowledgements-LineBreakFilterTesting" ofType:@"plist"];
+    VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:path];
+
+    XCTAssertEqual(parser.acknowledgements.count, 5);
+
+    for (VTAcknowledgement *acknowledgement in parser.acknowledgements) {
+        NSString *groundTruthPath = [bundle pathForResource:[NSString stringWithFormat:@"LineBreakFilterTesting-GroundTruth-%@", acknowledgement.title] ofType:@"txt"];
+        XCTAssertNotNil(groundTruthPath);
+        NSString *groundTruth = [NSString stringWithContentsOfFile:groundTruthPath encoding:NSUTF8StringEncoding error:nil];
+        XCTAssertNotNil(groundTruth);
+
+        XCTAssertEqualObjects(acknowledgement.text, groundTruth);
+    }
+}
+
 @end
