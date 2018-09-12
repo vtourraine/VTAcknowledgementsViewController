@@ -31,8 +31,7 @@
 
 
 /**
- `VTAcknowledgementsParser` is a subclass of `NSObject` that parses a CocoaPods
- acknowledgements plist file.
+ `VTAcknowledgementsParser` is a subclass of `NSObject` that parses a CocoaPods acknowledgements plist file.
  */
 @interface VTAcknowledgementsParser : NSObject
 

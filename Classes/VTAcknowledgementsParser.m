@@ -62,7 +62,7 @@
 
         NSMutableArray <VTAcknowledgement *> *acknowledgements = [NSMutableArray array];
         for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-            VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:preferenceSpecifier[@"Title"] text:preferenceSpecifier[@"FooterText"] license:preferenceSpecifier[@"License"]];
+            VTAcknowledgement *acknowledgement = [VTAcknowledgementsParser acknowledgementFromPreferenceSpecifier:preferenceSpecifier];
             [acknowledgements addObject:acknowledgement];
         }
 
@@ -72,6 +72,13 @@
     }
 
     return self;
+}
+
++ (nonnull VTAcknowledgement *)acknowledgementFromPreferenceSpecifier:(nonnull NSDictionary *)preferenceSpecifier {
+    NSString *title = preferenceSpecifier[@"Title"];
+    NSString *text = preferenceSpecifier[@"FooterText"];
+    NSString *license = preferenceSpecifier[@"License"];
+    return [[VTAcknowledgement alloc] initWithTitle:title text:text license:license];
 }
 
 @end
