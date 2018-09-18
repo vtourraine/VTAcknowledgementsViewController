@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.5 (work in progress)
+## 1.5 (18 September 2018)
 
 - Filter out manual line wrapping from licenses text
 
