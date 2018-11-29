@@ -206,6 +206,9 @@ static const CGFloat VTFooterBottomMargin = 20;
     label.numberOfLines = 0;
     label.textAlignment = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    if (@available(iOS 10.0, *)) {
+        label.adjustsFontForContentSizeCategory = YES;
+    }
 
     CGRect headerFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(label.frame) + 2 * VTLabelMargin);
     UIView *headerView = [[UIView alloc] initWithFrame:headerFrame];
@@ -229,6 +232,9 @@ static const CGFloat VTFooterBottomMargin = 20;
     label.textAlignment = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     label.userInteractionEnabled = YES;
+    if (@available(iOS 10.0, *)) {
+        label.adjustsFontForContentSizeCategory = YES;
+    }
 
     if ([self.footerText rangeOfString:[NSURL URLWithString:VTCocoaPodsURLString].host].location != NSNotFound) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCocoaPodsWebsite:)];
