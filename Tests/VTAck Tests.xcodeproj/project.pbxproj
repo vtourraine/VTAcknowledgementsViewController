@@ -259,7 +259,6 @@
 				1FDD9D761A9A757A000BAFF0 /* Sources */,
 				1FDD9D771A9A757A000BAFF0 /* Frameworks */,
 				1FDD9D781A9A757A000BAFF0 /* Resources */,
-				6EDE8AAD5FDF2E8259F8F3F1 /* [CP] Embed Pods Frameworks */,
 				E43555AE255952008F3B2D0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -279,7 +278,6 @@
 				1FDD9D8F1A9A757B000BAFF0 /* Sources */,
 				1FDD9D901A9A757B000BAFF0 /* Frameworks */,
 				1FDD9D911A9A757B000BAFF0 /* Resources */,
-				6C0A48F28E957E3DA1D2173F /* [CP] Embed Pods Frameworks */,
 				6ACB69C16B3F875163B419C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -300,7 +298,6 @@
 				D779DC3D1E5D88F6006D91C9 /* Sources */,
 				D779DC3E1E5D88F6006D91C9 /* Frameworks */,
 				D779DC3F1E5D88F6006D91C9 /* Resources */,
-				9D3774F046895E2EC088C54D /* [CP] Embed Pods Frameworks */,
 				6B7BEA0EA73043F18B63E722 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -422,7 +419,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VTAcknowledgementsViewController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -440,41 +437,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VTAcknowledgementsViewController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C0A48F28E957E3DA1D2173F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6EDE8AAD5FDF2E8259F8F3F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck App/Pods-VTAck App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6FE768C502131F1146D31701 /* [CP] Check Pods Manifest.lock */ = {
@@ -493,21 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D3774F046895E2EC088C54D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VTAck TV App/Pods-VTAck TV App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3B75053E4398FE5E70EADC5 /* [CP] Check Pods Manifest.lock */ = {
@@ -539,7 +491,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VTAcknowledgementsViewController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

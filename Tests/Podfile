@@ -1,13 +1,16 @@
 source 'https://github.com/CocoaPods/Specs'
 
 target 'VTAck App' do
+  platform :ios, '8.0'
   pod 'VTAcknowledgementsViewController', :path => '../'
 end
 
 target 'VTAck Tests' do
+  platform :ios, '8.0'
   pod 'VTAcknowledgementsViewController', :path => '../'
 end
 
 target 'VTAck TV App' do
-    pod 'VTAcknowledgementsViewController', :path => '../'
+  platform :tvos, '9.0'
+  pod 'VTAcknowledgementsViewController', :path => '../'
 end
