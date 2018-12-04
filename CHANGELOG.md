@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.5.1 (work in progress)
+## 1.5.1 (4 December 2018)
 
 - Improve Dynamic Type support, by @kiancheong
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.5...1.5.1)
 
 
 ## 1.5 (18 September 2018)
