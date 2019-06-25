@@ -1,7 +1,7 @@
 //
 // VTAcknowledgementsParserTests.m
 //
-// Copyright (c) 2013-2018 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2019 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -49,7 +49,7 @@
 
     VTAcknowledgement *acknowledgement = parser.acknowledgements.firstObject;
     XCTAssertEqualObjects(acknowledgement.title, @"VTAcknowledgementsViewController");
-    XCTAssertTrue([acknowledgement.text hasPrefix:@"Copyright (c) 2013-2016 Vincent Tourraine (http://www.vtourraine.net)"]);
+    XCTAssertTrue([acknowledgement.text hasPrefix:@"Copyright (c) 2013-2019 Vincent Tourraine (http://www.vtourraine.net)"]);
 }
 
 - (void)testParsingFailure {
