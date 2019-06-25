@@ -68,7 +68,6 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     textView.panGestureRecognizer.allowedTouchTypes = @[@(UITouchTypeIndirect)];
 #endif
     textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, VTLeftRightDefaultMargin, VTTopBottomDefaultMargin, VTLeftRightDefaultMargin);
-    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:textView];
 
     self.textView = textView;
