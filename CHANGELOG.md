@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.2 (work in progress)
+
+- Improve Dark Mode support
+
+
 ## 1.5.1 (4 December 2018)
 
 - Improve Dynamic Type support, by @kiancheong

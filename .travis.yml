@@ -2,7 +2,7 @@ language: objective-c
 xcode_workspace: Tests/VTAck Tests.xcworkspace
 xcode_scheme: VTAck Tests
 xcode_sdk: iphonesimulator
-osx_image: xcode9
+osx_image: xcode11
 
 script:
- - xcodebuild test -workspace "Tests/VTAck Tests.xcworkspace" -scheme "VTAck Tests" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.0' ONLY_ACTIVE_ARCH=NO
+ - xcodebuild test -workspace "Tests/VTAck Tests.xcworkspace" -scheme "VTAck Tests" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.0' ONLY_ACTIVE_ARCH=NO
