@@ -182,6 +182,49 @@ static const CGFloat VTFooterBottomMargin = 20;
 #endif
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
+        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewController:)];
+#if !TARGET_OS_TV
+        self.navigationItem.leftBarButtonItem = doneItem;
+#else
+        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
+        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        spacerItem.width = 90.0;
+        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
+#endif
+    }
+
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    if (self.acknowledgements.count == 0) {
+        NSLog(@"** VTAcknowledgementsViewController Warning **");
+        NSLog(@"No acknowledgements found.");
+        NSLog(@"This probably means that you didn’t import the `Pods-acknowledgements.plist` to your main target.");
+        NSLog(@"Please take a look at https://github.com/vtourraine/VTAcknowledgementsViewController for instructions.");
+    }
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+
+    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        if (self.headerText) {
+            [self configureHeaderView];
+        }
+
+        if (self.footerText) {
+            [self configureFooterView];
+        }
+    }];
+}
+
 - (UIFont *)headerFooterFont {
     return [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
 }
@@ -258,49 +301,6 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 
     return ceilf(labelHeight);
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
-        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewController:)];
-#if !TARGET_OS_TV
-        self.navigationItem.leftBarButtonItem = doneItem;
-#else
-        // Add a spacer item because the leftBarButtonItem is misplaced on tvOS (doesn't obey the HIG)
-        UIBarButtonItem *spacerItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        spacerItem.width = 90.0;
-        self.navigationItem.leftBarButtonItems = @[spacerItem, doneItem];
-#endif
-    }
-
-    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
-    if (self.acknowledgements.count == 0) {
-        NSLog(@"** VTAcknowledgementsViewController Warning **");
-        NSLog(@"No acknowledgements found.");
-        NSLog(@"This probably means that you didn’t import the `Pods-acknowledgements.plist` to your main target.");
-        NSLog(@"Please take a look at https://github.com/vtourraine/VTAcknowledgementsViewController for instructions.");
-    }
-}
-
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-
-    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        if (self.headerText) {
-            [self configureHeaderView];
-        }
-
-        if (self.footerText) {
-            [self configureFooterView];
-        }
-    }];
 }
 
 #pragma mark - Actions
