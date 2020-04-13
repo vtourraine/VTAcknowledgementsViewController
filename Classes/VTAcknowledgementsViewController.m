@@ -183,25 +183,24 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (UIFont *)headerFooterFont {
-    if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
-        return [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
-    }
-    else {
-        return [UIFont systemFontOfSize:12];
-    }
+    return [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
 }
 
-- (void)configureHeaderView {
-    UIFont *font = [self headerFooterFont];
-    CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    CGFloat labelHeight = [self heightForLabelWithText:self.headerText andWidth:labelWidth];
+- (UILabel *)headerFooterLabelWithText:(NSString *)text {
+    UIFont *font = self.headerFooterFont;
+    CGFloat width = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
+    CGFloat height = [self heightForLabelWithText:text andWidth:width];
+    CGRect frame = CGRectMake(VTLabelMargin, VTLabelMargin, width, height);
 
-    CGRect labelFrame = CGRectMake(VTLabelMargin, VTLabelMargin, labelWidth, labelHeight);
-
-    UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
-    label.text = self.headerText;
+    UILabel *label = [[UILabel alloc] initWithFrame:frame];
+    label.text = text;
     label.font = font;
-    label.textColor = [UIColor grayColor];
+    if (@available(iOS 13.0, *)) {
+        label.textColor = [UIColor secondaryLabelColor];
+    }
+    else {
+        label.textColor = [UIColor grayColor];
+    }
     label.numberOfLines = 0;
     label.textAlignment = NSTextAlignmentCenter;
     label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
@@ -209,6 +208,11 @@ static const CGFloat VTFooterBottomMargin = 20;
         label.adjustsFontForContentSizeCategory = YES;
     }
 
+    return label;
+}
+
+- (void)configureHeaderView {
+    UILabel *label = [self headerFooterLabelWithText:self.headerText];
     CGRect headerFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(label.frame) + 2 * VTLabelMargin);
     UIView *headerView = [[UIView alloc] initWithFrame:headerFrame];
     [headerView addSubview:label];
@@ -216,27 +220,12 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (void)configureFooterView {
-    UIFont *font = [self headerFooterFont];
-    CGFloat labelWidth = CGRectGetWidth(self.view.frame) - 2 * VTLabelMargin;
-    CGFloat labelHeight = [self heightForLabelWithText:self.footerText andWidth:labelWidth];
-
-    CGRect labelFrame = CGRectMake(VTLabelMargin, 0, labelWidth, labelHeight);
-
-    UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
-    label.text = self.footerText;
-    label.font = font;
-    label.textColor = [UIColor grayColor];
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    label.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-    label.userInteractionEnabled = YES;
-    if (@available(iOS 10.0, *)) {
-        label.adjustsFontForContentSizeCategory = YES;
-    }
+    UILabel *label = [self headerFooterLabelWithText:self.footerText];
 
     if ([self.footerText rangeOfString:[NSURL URLWithString:VTCocoaPodsURLString].host].location != NSNotFound) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCocoaPodsWebsite:)];
         [label addGestureRecognizer:tapGestureRecognizer];
+        label.userInteractionEnabled = YES;
     }
 
     CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame) + VTFooterBottomMargin);
