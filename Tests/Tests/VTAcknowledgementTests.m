@@ -1,7 +1,7 @@
 //
 // VTAcknowledgementTests.m
 //
-// Copyright (c) 2013-2019 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2020 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
