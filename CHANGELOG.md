@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.5.2 (work in progress)
+## 1.5.2 (15 April 2020)
 
 - Improve Dark Mode support
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.5.1...1.5.2)
 
 
 ## 1.5.1 (4 December 2018)
