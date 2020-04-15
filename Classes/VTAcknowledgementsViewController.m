@@ -238,7 +238,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.text = text;
     label.font = font;
-    if (@available(iOS 13.0, *)) {
+    if (@available(iOS 13.0, tvOS 13.0, *)) {
         label.textColor = [UIColor secondaryLabelColor];
     }
     else {
