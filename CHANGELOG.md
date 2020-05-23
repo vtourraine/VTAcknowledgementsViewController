@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6 (work in progress)
+
+- Open any URL in header and footer
+
+
 ## 1.5.2 (15 April 2020)
 
 - Improve Dark Mode support

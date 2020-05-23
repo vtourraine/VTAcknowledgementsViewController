@@ -86,17 +86,14 @@
     [viewController viewDidLoad];
 
     XCTAssertNotNil(viewController.tableView.tableHeaderView);
+    XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
+    XCTAssertEqual(viewController.tableView.tableHeaderView.subviews.count, 1);
 
-    UILabel *headerLabel;
-    for (UIView *subview in viewController.tableView.tableHeaderView.subviews) {
-        if ([subview isKindOfClass:UILabel.class]) {
-            headerLabel = (UILabel *)subview;
-            break;
-        }
-    }
-
-    XCTAssertNotNil(headerLabel);
+    UILabel *headerLabel = viewController.tableView.tableHeaderView.subviews.firstObject;
+    XCTAssertTrue([headerLabel isKindOfClass:UILabel.class]);
     XCTAssertEqualObjects(headerLabel.text, @"bla");
+    XCTAssertFalse(headerLabel.userInteractionEnabled);
+    XCTAssertEqual(headerLabel.gestureRecognizers.count, 0);
 }
 
 - (void)testConfigureFooterText {
@@ -106,17 +103,31 @@
     [viewController viewDidLoad];
 
     XCTAssertNotNil(viewController.tableView.tableFooterView);
+    XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
+    XCTAssertEqual(viewController.tableView.tableFooterView.subviews.count, 1);
 
-    UILabel *footerLabel;
-    for (UIView *subview in viewController.tableView.tableFooterView.subviews) {
-        if ([subview isKindOfClass:UILabel.class]) {
-            footerLabel = (UILabel *)subview;
-            break;
-        }
-    }
-
-    XCTAssertNotNil(footerLabel);
+    UILabel *footerLabel = viewController.tableView.tableFooterView.subviews.firstObject;
+    XCTAssertTrue([footerLabel isKindOfClass:UILabel.class]);
     XCTAssertEqualObjects(footerLabel.text, @"123abc");
+    XCTAssertFalse(footerLabel.userInteractionEnabled);
+    XCTAssertEqual(footerLabel.gestureRecognizers.count, 0);
+}
+
+- (void)testTappableLinksInHeaderAndFooter {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
+    viewController.headerText = @"bla https://developer.apple.com";
+
+    [viewController viewDidLoad];
+
+    XCTAssertNotNil(viewController.tableView.tableHeaderView);
+    XCTAssertTrue(viewController.tableView.tableHeaderView.userInteractionEnabled);
+
+    UILabel *headerLabel = viewController.tableView.tableHeaderView.subviews.firstObject;
+    XCTAssertNotNil(headerLabel);
+    XCTAssertTrue([headerLabel isKindOfClass:UILabel.class]);
+    XCTAssertEqualObjects(headerLabel.text, @"bla https://developer.apple.com");
+    XCTAssertTrue(headerLabel.userInteractionEnabled);
+    XCTAssertEqual(headerLabel.gestureRecognizers.count, 1);
 }
 
 @end

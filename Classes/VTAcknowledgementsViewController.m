@@ -133,6 +133,12 @@ static const CGFloat VTFooterBottomMargin = 20;
     self.acknowledgements = acknowledgements;
 }
 
+- (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
+    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    return firstLink.URL;
+}
+
 #pragma mark - Localization
 
 + (NSString *)localizedStringForKey:(NSString *)key withDefault:(NSString *)defaultString {
@@ -251,6 +257,13 @@ static const CGFloat VTFooterBottomMargin = 20;
         label.adjustsFontForContentSizeCategory = YES;
     }
 
+    NSURL *firstLink = [self firstLinkInText:text];
+    if (firstLink) {
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openLink:)];
+        [label addGestureRecognizer:tapGestureRecognizer];
+        label.userInteractionEnabled = YES;
+    }
+
     return label;
 }
 
@@ -258,22 +271,16 @@ static const CGFloat VTFooterBottomMargin = 20;
     UILabel *label = [self headerFooterLabelWithText:self.headerText];
     CGRect headerFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(label.frame) + 2 * VTLabelMargin);
     UIView *headerView = [[UIView alloc] initWithFrame:headerFrame];
+    headerView.userInteractionEnabled = label.userInteractionEnabled;
     [headerView addSubview:label];
     self.tableView.tableHeaderView = headerView;
 }
 
 - (void)configureFooterView {
     UILabel *label = [self headerFooterLabelWithText:self.footerText];
-
-    if ([self.footerText rangeOfString:[NSURL URLWithString:VTCocoaPodsURLString].host].location != NSNotFound) {
-        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCocoaPodsWebsite:)];
-        [label addGestureRecognizer:tapGestureRecognizer];
-        label.userInteractionEnabled = YES;
-    }
-
     CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame) + VTFooterBottomMargin);
     UIView *footerView = [[UIView alloc] initWithFrame:footerFrame];
-    footerView.userInteractionEnabled = YES;
+    footerView.userInteractionEnabled = label.userInteractionEnabled;
     [footerView addSubview:label];
     label.frame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
     self.tableView.tableFooterView = footerView;
@@ -305,9 +312,14 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 #pragma mark - Actions
 
-- (void)openCocoaPodsWebsite:(id)sender {
+- (void)openLink:(UIGestureRecognizer *)sender {
 #if !TARGET_OS_TV
-    NSURL *URL = [NSURL URLWithString:VTCocoaPodsURLString];
+    if (![sender.view isKindOfClass:UILabel.class]) {
+        return;
+    }
+
+    NSString *text = [(UILabel *)sender.view text];
+    NSURL *URL = [self firstLinkInText:text];
 
     if (@available(iOS 9.0, *)) {
         SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];

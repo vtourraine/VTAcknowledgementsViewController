@@ -41,6 +41,7 @@
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
     VTAcknowledgement *ack = [[VTAcknowledgement alloc] initWithTitle:@"Test Title" text:@"Test content..." license:nil];
     viewController.acknowledgements = @[ack];
+    viewController.headerText = @"Visit: https://developer.apple.com";
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
