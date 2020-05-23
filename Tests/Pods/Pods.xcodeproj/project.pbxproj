@@ -55,19 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03450B7923C7D9AD745661D524C26339 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck Tests.a"; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		080A2EF543E02035FE789E9470A8CDD5 /* VTAcknowledgementsViewController.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = VTAcknowledgementsViewController.podspec.json; sourceTree = "<group>"; };
+		03450B7923C7D9AD745661D524C26339 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080A2EF543E02035FE789E9470A8CDD5 /* VTAcknowledgementsViewController.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = VTAcknowledgementsViewController.podspec.json; sourceTree = "<group>"; };
 		0BC1BCBF7FA971421B1A8A34C9BB0D24 /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0C88FEA55046479EEFA5B62D19F3A230 /* Pods-VTAck TV App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck TV App-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A6CBE0921FA718EEF4E7F5DEBB3E9B9 /* libVTAcknowledgementsViewController-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-tvOS.a"; path = "libVTAcknowledgementsViewController-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6CBE0921FA718EEF4E7F5DEBB3E9B9 /* libVTAcknowledgementsViewController-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVTAcknowledgementsViewController-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0169DC4C4A2B7BA1893180BC247D83 /* VTAcknowledgementsViewController-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VTAcknowledgementsViewController-tvOS-dummy.m"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-dummy.m"; sourceTree = "<group>"; };
 		3056598729B1FCB09A42B88936236DE5 /* VTAcknowledgementViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementViewController.h; path = Classes/VTAcknowledgementViewController.h; sourceTree = "<group>"; };
-		32F0A339F7389A54226D7E6536874C9B /* libVTAcknowledgementsViewController-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-iOS.a"; path = "libVTAcknowledgementsViewController-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F0A339F7389A54226D7E6536874C9B /* libVTAcknowledgementsViewController-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVTAcknowledgementsViewController-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41362AD64A91E3C80F39D1C2FFF6B291 /* VTAcknowledgementsViewController-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.xcconfig"; sourceTree = "<group>"; };
 		470E50A26139FD3892991FA34CD9DC61 /* VTAcknowledgementsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsParser.m; path = Classes/VTAcknowledgementsParser.m; sourceTree = "<group>"; };
-		4E7D7240FC5230374CA6B253EF3592DF /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck App.a"; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7D7240FC5230374CA6B253EF3592DF /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7FC413AD08067585EF672E237E0C82 /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
-		565F0273D38AAAC29803AC96A750842E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		565F0273D38AAAC29803AC96A750842E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BC55B7BE4F49E58E9450A204D6FC6B2 /* Pods-VTAck Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-frameworks.sh"; sourceTree = "<group>"; };
 		66BD9C52363748F5EEC7F6441279EE31 /* Pods-VTAck TV App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck TV App.debug.xcconfig"; sourceTree = "<group>"; };
 		749B1465F79C249317FF365234B1C027 /* Pods-VTAck App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck App-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		8121B48705CFAA1518DFE3206D1D399E /* VTAcknowledgementsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsParser.h; path = Classes/VTAcknowledgementsParser.h; sourceTree = "<group>"; };
 		865800DA8F008FBAA5AFC23DBB23751A /* VTAcknowledgementsViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = VTAcknowledgementsViewController.bundle; sourceTree = "<group>"; };
 		8D0E6C44636DC685B73F045C923042E0 /* VTAcknowledgementViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementViewController.m; path = Classes/VTAcknowledgementViewController.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		984939AD384951EAC90CB996CD4B31D8 /* VTAcknowledgementsViewController-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VTAcknowledgementsViewController-tvOS-prefix.pch"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		A11DA95194298318461F7B7E455C64D3 /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3CEDCC1A7FDC683FA212CCD4CCF2AD7 /* Pods-VTAck TV App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck TV App-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		C10B3D2038F564969F51BF54FEA71B96 /* Pods-VTAck TV App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck TV App-resources.sh"; sourceTree = "<group>"; };
 		C9F6732C15E54063ADEF13FAA7A9E15E /* Pods-VTAck Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB39B37FAA76A93E9388EBD79129982E /* Pods-VTAck Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-resources.sh"; sourceTree = "<group>"; };
-		DD0986C21BA2C275B3F2A0A225D52F55 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
-		E09C06E022D9563C7EE138E4DA8D5162 /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck TV App.a"; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0986C21BA2C275B3F2A0A225D52F55 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		E09C06E022D9563C7EE138E4DA8D5162 /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5728C24D13195D6AD546B18F8301D48 /* VTAcknowledgementsViewController-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VTAcknowledgementsViewController-iOS-prefix.pch"; sourceTree = "<group>"; };
 		E66E23EAF5AF2DB05F81B76AAEB169B1 /* VTAcknowledgementsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsViewController.h; path = Classes/VTAcknowledgementsViewController.h; sourceTree = "<group>"; };
 		E70FB112A2E759CE7B56E91F02FC1121 /* Pods-VTAck App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck App-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -429,14 +429,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = DCB0281DA84001B6C9D819FD2A3866C5 /* Products */;
@@ -637,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -688,8 +690,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -746,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
