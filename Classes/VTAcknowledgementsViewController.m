@@ -64,7 +64,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 + (instancetype)acknowledgementsViewController {
     NSString *path = self.defaultAcknowledgementsPlistPath;
-    return [[self.class alloc] initWithAcknowledgementsPlistPath:path];
+    return [[self.class alloc] initWithPath:path];
 }
 
 - (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath {
