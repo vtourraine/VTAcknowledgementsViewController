@@ -3,6 +3,7 @@
 ## 1.6 (work in progress)
 
 - Open any URL in header and footer
+- Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
 
 
 ## 1.5.2 (15 April 2020)
