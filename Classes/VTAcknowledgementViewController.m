@@ -50,12 +50,7 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     [super viewDidLoad];
 
     UITextView *textView = [[UITextView alloc] initWithFrame:self.view.bounds];
-    if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
-        textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    }
-    else {
-        textView.font = [UIFont systemFontOfSize:17];
-    }
+    textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     textView.alwaysBounceVertical = YES;
 #if !TARGET_OS_TV

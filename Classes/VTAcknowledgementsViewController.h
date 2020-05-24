@@ -30,6 +30,8 @@
 #import "VTAcknowledgementsParser.h"
 #import "VTAcknowledgement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
  a list of acknowledgements.
@@ -74,7 +76,7 @@
 
  @return The localized title.
  */
-+ (nonnull NSString *)localizedTitle;
++ (NSString *)localizedTitle;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
@@ -92,6 +94,8 @@
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (nullable instancetype)initWithFileNamed:(nonnull NSString *)acknowledgementsFileName;
+- (nullable instancetype)initWithFileNamed:(NSString *)acknowledgementsFileName;
 
 @end
+
+NS_ASSUME_NONNULL_END

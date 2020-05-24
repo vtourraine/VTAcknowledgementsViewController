@@ -27,6 +27,8 @@
 #import <Foundation/Foundation.h>
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class VTAcknowledgement;
 
 
@@ -52,6 +54,8 @@
 
  @return A newly created `VTAcknowledgementsParser` instance.
  */
-- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath NS_DESIGNATED_INITIALIZER;
 
 @end
+
+NS_ASSUME_NONNULL_END

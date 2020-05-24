@@ -27,6 +27,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  `VTAcknowledgementViewController` is a subclass of `UIViewController` that displays a single acknowledgement.
  */
@@ -43,6 +45,8 @@
 
  @return A newly created `VTAcknowledgementViewController` instance.
  */
-- (nullable instancetype)initWithTitle:(nonnull NSString *)title text:(nonnull NSString *)text;
+- (nullable instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @end
+
+NS_ASSUME_NONNULL_END

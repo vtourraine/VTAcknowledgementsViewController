@@ -282,22 +282,9 @@ static const CGFloat VTFooterBottomMargin = 20;
     UIFont *font = self.headerFooterFont;
     CGFloat labelHeight;
 
-    if ([labelText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
-        NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
-        CGRect labelBounds = [labelText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX) options:options attributes:@{NSFontAttributeName: font} context:nil];
-        labelHeight = CGRectGetHeight(labelBounds);
-    }
-    else {
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-#if !TARGET_OS_TV
-        CGSize size = [labelText sizeWithFont:font constrainedToSize:(CGSize){labelWidth, CGFLOAT_MAX}];
-#else
-        CGSize size = CGSizeMake(labelWidth, font.pointSize); // This is probably wrong logically, but it works/looks fine on tvOS
-#endif
-#pragma GCC diagnostic pop
-        labelHeight = size.height;
-    }
+    NSStringDrawingOptions options = (NSLineBreakByWordWrapping | NSStringDrawingUsesLineFragmentOrigin);
+    CGRect labelBounds = [labelText boundingRectWithSize:CGSizeMake(labelWidth, CGFLOAT_MAX) options:options attributes:@{NSFontAttributeName: font} context:nil];
+    labelHeight = CGRectGetHeight(labelBounds);
 
     return ceilf(labelHeight);
 }
