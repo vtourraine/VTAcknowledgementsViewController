@@ -55,7 +55,7 @@ viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path];
 If you need to include licenses that are not part of the generated `plist` file, or if you don’t want to use the generated `plist` at all, you can easily create new `VTAcknowledgement` instances, and set them as the acknowledgements array of the controller.
 
 ``` objc
-VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] initWithTitle:NSLocalizedString(@"...", nil) text:NSLocalizedString(@"...", nil) license:nil];
+VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] initWithTitle:@"..." text:@"..." license:nil];
 
 viewController.acknowledgements = @[customLicense];
 ```
@@ -63,15 +63,15 @@ viewController.acknowledgements = @[customLicense];
 The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values.
 
 ``` objc
-viewController.headerText = NSLocalizedString(@"We love open source software.", nil);
-viewController.footerText = NSLocalizedString(@"Powered by CocoaPods.org", nil);
+viewController.headerText = @"We love open source software.";
+viewController.footerText = @"Powered by CocoaPods.org";
 ```
 
 The controller title is a localized value for “acknowledgements”. You might want to use this localized value for the button presenting the controller.
 
 ``` objc
-[button setTitle:[VTAcknowledgementsViewController localizedTitle]
-        forState:UIControlStateNormal];
+NSString *localizedTitle = [VTAcknowledgementsViewController localizedTitle]; 
+[button setTitle:localizedTitle forState:UIControlStateNormal];
 ```
 
 If you need to further customize the appearance or behavior of this pod, feel free to subclass its classes.
