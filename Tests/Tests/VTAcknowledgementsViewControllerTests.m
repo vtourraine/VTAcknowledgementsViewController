@@ -84,7 +84,7 @@
     viewController.headerText = @"bla";
 
     [viewController viewDidLoad];
-    [viewController viewWillAppear:YES];
+    [viewController viewWillAppear:NO];
 
     XCTAssertNotNil(viewController.tableView.tableHeaderView);
     XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
@@ -102,7 +102,7 @@
     viewController.footerText = @"123abc";
 
     [viewController viewDidLoad];
-    [viewController viewWillAppear:YES];
+    [viewController viewWillAppear:NO];
 
     XCTAssertNotNil(viewController.tableView.tableFooterView);
     XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
