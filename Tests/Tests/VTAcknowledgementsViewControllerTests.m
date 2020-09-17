@@ -84,6 +84,7 @@
     viewController.headerText = @"bla";
 
     [viewController viewDidLoad];
+    [viewController viewWillAppear:YES];
 
     XCTAssertNotNil(viewController.tableView.tableHeaderView);
     XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
@@ -101,6 +102,7 @@
     viewController.footerText = @"123abc";
 
     [viewController viewDidLoad];
+    [viewController viewWillAppear:YES];
 
     XCTAssertNotNil(viewController.tableView.tableFooterView);
     XCTAssertFalse(viewController.tableView.tableHeaderView.userInteractionEnabled);
@@ -118,6 +120,7 @@
     viewController.headerText = @"bla https://developer.apple.com";
 
     [viewController viewDidLoad];
+    [viewController viewWillAppear:YES];
 
     XCTAssertNotNil(viewController.tableView.tableHeaderView);
     XCTAssertTrue(viewController.tableView.tableHeaderView.userInteractionEnabled);
