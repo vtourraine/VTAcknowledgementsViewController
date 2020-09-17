@@ -84,6 +84,7 @@
     viewController.headerText = @"bla";
 
     [viewController viewDidLoad];
+    [viewController viewWillAppear:NO];
 
     XCTAssertNotNil(viewController.tableView.tableHeaderView);
 
@@ -104,6 +105,7 @@
     viewController.footerText = @"123abc";
 
     [viewController viewDidLoad];
+    [viewController viewWillAppear:NO];
 
     XCTAssertNotNil(viewController.tableView.tableFooterView);
 
