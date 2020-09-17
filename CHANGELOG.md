@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.3 (17 September 2020)
+
+- Fix header/footer layout when building with iOS 14 SDK
+
+
 ## 1.5.2 (15 April 2020)
 
 - Improve Dark Mode support
