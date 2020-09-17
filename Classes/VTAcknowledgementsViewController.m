@@ -167,14 +167,6 @@ static const CGFloat VTFooterBottomMargin = 20;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    if (self.headerText) {
-        [self configureHeaderView];
-    }
-
-    if (self.footerText) {
-        [self configureFooterView];
-    }
-
 #if TARGET_OS_TV
     self.view.layoutMargins = UIEdgeInsetsMake(60.0, 90.0, 60.0, 90.0); // Margins from tvOS HIG
 #endif
@@ -182,6 +174,14 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+
+    if (self.headerText) {
+        [self configureHeaderView];
+    }
+
+    if (self.footerText) {
+        [self configureFooterView];
+    }
 
     if (self.presentingViewController && self == [self.navigationController.viewControllers firstObject]) {
         UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissViewController:)];

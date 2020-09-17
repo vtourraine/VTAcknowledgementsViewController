@@ -4,6 +4,7 @@
 
 - Open any URL in header and footer
 - Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
+- Fix header/footer layout when building with iOS 14 SDK
 
 
 ## 1.5.2 (15 April 2020)
