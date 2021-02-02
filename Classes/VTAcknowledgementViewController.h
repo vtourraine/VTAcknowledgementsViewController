@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return A newly created `VTAcknowledgementViewController` instance.
  */
-- (nullable instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text;
 
 @end
 

@@ -1,9 +1,11 @@
 # Changelog
 
-## 1.6 (work in progress)
+## 2.0 (work in progress)
 
 - Open any URL in header and footer
+- Add `initWithAcknowledgements:` initializer on `VTAcknowledgementsViewController`
 - Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
+- Update `UIViewController` subclasses initializers nullability annotations to match UIKit methods
 
 
 ## 1.5.3 (17 September 2020)
