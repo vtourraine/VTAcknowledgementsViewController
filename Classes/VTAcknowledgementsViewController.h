@@ -33,8 +33,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
-a list of acknowledgements.
+ `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays a list of acknowledgements.
  */
 @interface VTAcknowledgementsViewController : UITableViewController
 
@@ -62,21 +61,21 @@ a list of acknowledgements.
  */
 @property (nonatomic, copy, nullable) IBInspectable NSString *acknowledgementsPlistName;
 
-
 /**
- Creates an acknowledgements view controller with the content of the `Pods-acknowledgements.plist`.
+ Creates an acknowledgements view controller with the content of the `Pods-#target#-acknowledgements.plist`.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-+ (nullable instancetype)acknowledgementsViewController NS_SWIFT_NAME(acknowledgementsViewController());
++ (instancetype)acknowledgementsViewController NS_SWIFT_NAME(acknowledgementsViewController());
 
 /**
- The localized version of “Acknowledgements”.
- You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
+ Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
 
- @return The localized title.
+ @param acknowledgements The array of `VTAcknowledgement`.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
  */
-+ (NSString *)localizedTitle;
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements NS_DESIGNATED_INITIALIZER;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
@@ -85,7 +84,7 @@ a list of acknowledgements.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (nullable instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath;
+- (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).
@@ -94,7 +93,15 @@ a list of acknowledgements.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (nullable instancetype)initWithFileNamed:(NSString *)acknowledgementsFileName;
+- (instancetype)initWithFileNamed:(NSString *)acknowledgementsFileName;
+
+/**
+ The localized version of “Acknowledgements”.
+ You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
+
+ @return The localized title.
+ */
++ (NSString *)localizedTitle;
 
 @end
 

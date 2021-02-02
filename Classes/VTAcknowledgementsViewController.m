@@ -40,8 +40,16 @@ static NSString *const VTCellIdentifier = @"Cell";
 static const CGFloat VTLabelMargin = 20;
 static const CGFloat VTFooterBottomMargin = 20;
 
+@interface VTAcknowledgementsViewController ()
+
+- (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER;
+
+@end
 
 @implementation VTAcknowledgementsViewController
+
+#pragma mark - Initialization
 
 + (nullable NSString *)acknowledgementsPlistPathForName:(NSString *)name {
     return [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
@@ -59,38 +67,50 @@ static const CGFloat VTFooterBottomMargin = 20;
     return [[self.class alloc] initWithPath:path];
 }
 
-- (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath {
+- (instancetype)initWithStyle:(UITableViewStyle)style {
+    self = [self initWithAcknowledgements:@[]];
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    return self;
+}
+
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements {
     self = [super initWithStyle:UITableViewStyleGrouped];
 
     if (self) {
-        [self commonInitWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
+        self.title = self.class.localizedTitle;
+        self.acknowledgements = acknowledgements;
     }
 
     return self;
 }
 
-- (nullable instancetype)initWithFileNamed:(nonnull NSString *)acknowledgementsFileName {
+- (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath {
+    self = [self initWithAcknowledgements:@[]];
+
+    if (self) {
+        if (acknowledgementsPlistPath) {
+            [self loadFromAcknowledgementsPlistPath:acknowledgementsPlistPath];
+        }
+    }
+
+    return self;
+}
+
+- (instancetype)initWithFileNamed:(nonnull NSString *)acknowledgementsFileName {
     NSString *path = [[NSBundle mainBundle] pathForResource:acknowledgementsFileName ofType:@"plist"];
     return [self initWithPath:path];
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-
-    NSString *path;
-    if (self.acknowledgementsPlistName) {
-        path = [self.class acknowledgementsPlistPathForName:self.acknowledgementsPlistName];
-    }
-    else {
-        path = self.class.defaultAcknowledgementsPlistPath;
-    }
-
-    [self commonInitWithAcknowledgementsPlistPath:path];
-}
-
-- (void)commonInitWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath {
-    self.title = self.class.localizedTitle;
-
+- (void)loadFromAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath {
     VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
 
     if ([parser.header isEqualToString:VTDefaultHeaderText]) {
@@ -109,17 +129,13 @@ static const CGFloat VTFooterBottomMargin = 20;
 
     NSMutableArray *acknowledgements = [parser.acknowledgements mutableCopy];
 
-    [acknowledgements sortUsingComparator:^NSComparisonResult(VTAcknowledgement *obj1, VTAcknowledgement *obj2) {
-        return [obj1.title compare:obj2.title options:kNilOptions range:NSMakeRange(0, obj1.title.length) locale:[NSLocale currentLocale]];
-    }];
+    if (acknowledgements) {
+        [acknowledgements sortUsingComparator:^NSComparisonResult(VTAcknowledgement *obj1, VTAcknowledgement *obj2) {
+            return [obj1.title compare:obj2.title options:kNilOptions range:NSMakeRange(0, obj1.title.length) locale:[NSLocale currentLocale]];
+        }];
 
-    self.acknowledgements = acknowledgements;
-}
-
-- (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
-    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    return firstLink.URL;
+        self.acknowledgements = acknowledgements;
+    }
 }
 
 #pragma mark - Localization
@@ -214,6 +230,24 @@ static const CGFloat VTFooterBottomMargin = 20;
     }];
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+
+    NSString *path;
+    if (self.acknowledgementsPlistName) {
+        path = [self.class acknowledgementsPlistPathForName:self.acknowledgementsPlistName];
+    }
+    else {
+        path = self.class.defaultAcknowledgementsPlistPath;
+    }
+
+    if (path) {
+        [self loadFromAcknowledgementsPlistPath:path];
+    }
+}
+
+#pragma mark - Configuration
+
 - (UIFont *)headerFooterFont {
     return [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
 }
@@ -279,6 +313,15 @@ static const CGFloat VTFooterBottomMargin = 20;
 
     return ceilf(labelHeight);
 }
+
+#pragma mark - Data
+
+- (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
+    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    return firstLink.URL;
+}
+
 
 #pragma mark - Actions
 
