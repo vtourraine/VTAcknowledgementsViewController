@@ -62,8 +62,8 @@
 
 - (void)testLoadAcknowledgementsWithDefaultFileName {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
-    XCTAssertEqual(viewController.acknowledgements.count, 1,
-                         @"should load the one acknowledgement from the default file (Pods-acknowledgements.plist)");
+    XCTAssertEqual(viewController.acknowledgements.count, 3,
+                         @"should load the 3 acknowledgements from the default file (Pods-VTAck App-acknowledgements.plist)");
 }
 
 - (void)testConfigureTableViewBasedOnAcknowledgements {
