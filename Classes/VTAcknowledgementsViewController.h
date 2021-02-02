@@ -1,7 +1,7 @@
 //
 // VTAcknowledgementsViewController.h
 //
-// Copyright (c) 2013-2020 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2021 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  `VTAcknowledgementsViewController` is a subclass of `UITableViewController` that displays
- a list of acknowledgements.
+a list of acknowledgements.
  */
 @interface VTAcknowledgementsViewController : UITableViewController
 
