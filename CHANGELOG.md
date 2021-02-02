@@ -4,6 +4,7 @@
 
 - Open any URL in header and footer
 - Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
+- Remove legacy CocoaPods format support
 
 
 ## 1.5.3 (17 September 2020)
