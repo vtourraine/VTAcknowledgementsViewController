@@ -68,22 +68,37 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
-    self = [self initWithAcknowledgements:@[]];
+    self = [self initWithAcknowledgements:@[] style:style];
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
+
+    if (self) {
+        self.acknowledgements = @[];
+    }
+
     return self;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+    if (self) {
+        self.acknowledgements = @[];
+    }
+
     return self;
 }
 
 - (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements {
-    self = [super initWithStyle:UITableViewStyleGrouped];
+    self = [self initWithAcknowledgements:acknowledgements style:UITableViewStyleGrouped];
+    return self;
+}
+
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements style:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
 
     if (self) {
         self.title = self.class.localizedTitle;
