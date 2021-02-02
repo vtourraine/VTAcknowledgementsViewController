@@ -38,11 +38,24 @@
 }
 
 - (IBAction)pushAckViewControllerWithHardcodedData:(id)sender {
-    VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
     VTAcknowledgement *ack = [[VTAcknowledgement alloc] initWithTitle:@"Test Title" text:@"Test content..." license:nil];
-    viewController.acknowledgements = @[ack];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[ack]];
     viewController.headerText = @"Visit: https://developer.apple.com";
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithPlainStyle:(id)sender {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-VTAck App-acknowledgements" ofType:@"plist"];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path style:UITableViewStylePlain];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)pushAckViewControllerWithInsetGroupedStyle:(id)sender {
+    if (@available(iOS 13.0, *)) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-VTAck App-acknowledgements" ofType:@"plist"];
+        VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path style:UITableViewStyleInsetGrouped];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end

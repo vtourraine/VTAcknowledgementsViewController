@@ -97,6 +97,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath;
 
 /**
+ Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path) and a custom table view style.
+
+ @param acknowledgementsPlistPath The path to the acknowledgements `.plist` file.
+ @param style A constant that specifies the style of table view that the controller object is to manage.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
+ */
+- (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath style:(UITableViewStyle)style;
+
+/**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).
 
  @param acknowledgementsFileName The file name for the acknowledgements `.plist` file from the main bundle.

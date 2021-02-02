@@ -109,7 +109,12 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath {
-    self = [self initWithAcknowledgements:@[]];
+    self = [self initWithPath:acknowledgementsPlistPath style:UITableViewStyleGrouped];
+    return self;
+}
+
+- (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath style:(UITableViewStyle)style {
+    self = [self initWithAcknowledgements:@[] style:style];
 
     if (self) {
         if (acknowledgementsPlistPath) {
