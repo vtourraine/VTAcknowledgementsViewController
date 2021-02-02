@@ -3,6 +3,7 @@
 ## 1.6 (work in progress)
 
 - Open any URL in header and footer
+- Update deployment target to iOS 9
 - Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
 - Remove legacy CocoaPods format support
 

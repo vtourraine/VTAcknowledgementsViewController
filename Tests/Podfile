@@ -1,12 +1,12 @@
-source 'https://github.com/CocoaPods/Specs'
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'VTAck App' do
-  platform :ios, '8.0'
+  platform :ios, '9.0'
   pod 'VTAcknowledgementsViewController', :path => '../'
 end
 
 target 'VTAck Tests' do
-  platform :ios, '8.0'
+  platform :ios, '9.0'
   pod 'VTAcknowledgementsViewController', :path => '../'
 end
 

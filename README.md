@@ -84,7 +84,7 @@ VTAcknowledgementsViewController is also compatible with tvOS for Apple TV apps.
 
 ## Requirements
 
-VTAcknowledgementsViewController supports iOS 8.0 or tvOS 9.0 and above, and requires Xcode 11.0 and above. If you need lower requirements, look for an [older version of this repository](https://github.com/vtourraine/VTAcknowledgementsViewController/releases).
+VTAcknowledgementsViewController supports iOS 9.0 or tvOS 9.0 and above, and requires Xcode 11.0 and above. If you need lower requirements, look for an [older version of this repository](https://github.com/vtourraine/VTAcknowledgementsViewController/releases).
 
 ## Credits
 

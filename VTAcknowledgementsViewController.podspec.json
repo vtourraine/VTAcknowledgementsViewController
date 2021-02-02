@@ -20,7 +20,7 @@
   "resources": "VTAcknowledgementsViewController.bundle",
   "requires_arc": true,
   "platforms": {
-    "ios": "8.0",
+    "ios": "9.0",
     "tvos": "9.0"
   }
 }

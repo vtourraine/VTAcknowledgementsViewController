@@ -27,8 +27,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "VTAcknowledgementsParser.h"
-#import "VTAcknowledgement.h"
+#import <VTAcknowledgementsParser.h>
+#import <VTAcknowledgement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
