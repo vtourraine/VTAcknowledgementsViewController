@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2439E27396D2710DE906A51114E59B50 /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 706893A8DF2065024850632F3AD312B6 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28AB1F3B30E16027DECC0D53E1CA7319 /* VTAcknowledgementsViewController-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D0253B7260FA0BF089B3590FDBA637 /* VTAcknowledgementsViewController-tvOS-dummy.m */; };
-		3AD04255A3C950010BB048987391D82C /* VTLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B447C4970190D9526E0CD23B5A05FF /* VTLocalization.m */; };
-		3D5B2FAD7CEA1D796331382917F86D45 /* VTAcknowledgementsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A22EE8E2AB589A10F63C2F26202381 /* VTAcknowledgementsParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		432AC33E390600CF6DF328B2E5647143 /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 706893A8DF2065024850632F3AD312B6 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		505C4BB461C40C9CD1FF4ED902AE3E8A /* VTAcknowledgementsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 650D3F8CEBDA7D4CCB02EE65ADE7D880 /* VTAcknowledgementsParser.m */; };
-		59231B45FB519E3736D21D7D17AD6ED9 /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C135C4598C6F7ECD08CEFEC3694A9C1D /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		59F031CA649C1C7BB15FA8394F50D11B /* VTLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B447C4970190D9526E0CD23B5A05FF /* VTLocalization.m */; };
-		68624E67FBB7A44FDE65935358D96DA7 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 3996100ACF422084731A32DE4CD7DE6B /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		78F6882EA9D27D3E56D51EB652C4A36B /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 746A9ED296AA15024177F69AD02F9FD1 /* VTAcknowledgement.m */; };
+		0A1EE47B172344DEE859E81969EA5319 /* VTLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4017F74944E0459E88BFD70606E1C068 /* VTLocalization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EDF2987A11A6E98C71DA3AECABBC384 /* VTLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4017F74944E0459E88BFD70606E1C068 /* VTLocalization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4425E4A074171C20EC714E979D920D6D /* VTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C79A41B6EDC3A1BA8165409C6EAC74 /* VTParser.m */; };
+		45C0A655AF0BC79C084C35DC8888730E /* VTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B8B402013F71D39819A831E6FFC33A /* VTParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4D89F1E2417D8E001FE0CDBBB7338B6B /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C8151D48051E409A05665D30E3B83 /* VTAcknowledgementsViewController.m */; };
+		5075075792044A768E53C416B0B62BB3 /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE78C7B80F8A7385E6E24A251BFF31 /* VTAcknowledgementViewController.m */; };
+		85CC6583C69B99B64699571C11AE38A3 /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 75120EF0255154AA35AB70D61BF0B63A /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8DB5AB68D3FC5A4D98E4305A5625E177 /* Pods-VTAck Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05834321B10088C41E1884FF82E33576 /* Pods-VTAck Tests-dummy.m */; };
-		8FC2890DDABB397CA2A8DB5F7762B769 /* VTAcknowledgementsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A22EE8E2AB589A10F63C2F26202381 /* VTAcknowledgementsParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A1873DB7A2054DD335D48380D2696C66 /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C135C4598C6F7ECD08CEFEC3694A9C1D /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B405FFE46DA66E516EB70001108D4B50 /* VTAcknowledgementsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 650D3F8CEBDA7D4CCB02EE65ADE7D880 /* VTAcknowledgementsParser.m */; };
-		B61369618346811D58EC70C5727018F4 /* VTAcknowledgementsViewController-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EBF57A708DBBEE8130A320B27A60B /* VTAcknowledgementsViewController-iOS-dummy.m */; };
+		973ACFF572302354DD54ABB2945E5371 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C7302249B453DB9946EDC2E36F961 /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99055CEB0EC08C86903484063AD30C94 /* VTAcknowledgementsViewController-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE5459FB78776C5DE3724E7EFFF1D8 /* VTAcknowledgementsViewController-iOS-dummy.m */; };
+		99CA0EDC0102FA219BAB589458998D55 /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E70C28A9A93E6AB1945C008CE9A93 /* VTAcknowledgement.m */; };
+		B0C555C8076DA0639C550112B18E52A0 /* VTAcknowledgementsViewController-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0018A679DFAC91E811CCBBD8DFC0152 /* VTAcknowledgementsViewController-tvOS-dummy.m */; };
+		B28A1F5E45FF181F2231F3CFD85EFB44 /* VTLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = B270D1E88D82B8A655AEC9A81B9B856B /* VTLocalization.m */; };
+		B36F9314F16ACC8E8E8CAC2D8734A935 /* VTLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = B270D1E88D82B8A655AEC9A81B9B856B /* VTLocalization.m */; };
+		B3DE1FE645A267EF21BAEB62762D8B3F /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 75120EF0255154AA35AB70D61BF0B63A /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B801D3B7D6B58671A22636BD5BB53845 /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C2639ACBA878EA1124C33752D02C02 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD32E02DE5253A6D04A80E69E3CD26F5 /* Pods-VTAck TV App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F935DF442BD4F7A8DA9DD869C4BF22 /* Pods-VTAck TV App-dummy.m */; };
-		C0A0F11FE6CDCA034B2AA3377F9CA824 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 3996100ACF422084731A32DE4CD7DE6B /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C5FC0EC2341830669CDF085D973220DA /* VTLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = D38BAD5C1D530190CB284723CE940C5C /* VTLocalization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C341FAC48D20EC679F5AF70E76A41887 /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C8151D48051E409A05665D30E3B83 /* VTAcknowledgementsViewController.m */; };
+		C795AFDA1C4253FC183CF573F3EBD9F3 /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E70C28A9A93E6AB1945C008CE9A93 /* VTAcknowledgement.m */; };
 		CE4970C2FBD7A4DD4137683665D233B6 /* Pods-VTAck App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E156AB51638E225083CC5CE7B7930585 /* Pods-VTAck App-dummy.m */; };
-		D35A9107B0823B6C2A95C38C2FF713D3 /* VTLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = D38BAD5C1D530190CB284723CE940C5C /* VTLocalization.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EBE543EAA951B101C0711307EE43D895 /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3030591F10FD9C01BE120686A16C3693 /* VTAcknowledgementViewController.m */; };
-		F1CE5B474E7E48B83164EDAC0C570971 /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE78A99C93D4230E6375E0D1E7BFF62B /* VTAcknowledgementsViewController.m */; };
-		F780F47928AD22BE0F1B2E7D72614C3E /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 746A9ED296AA15024177F69AD02F9FD1 /* VTAcknowledgement.m */; };
-		F9787F2F2982810734A76B2A5B2D8473 /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3030591F10FD9C01BE120686A16C3693 /* VTAcknowledgementViewController.m */; };
-		FD4A71CB6E73459A187EAB74C4D716E0 /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE78A99C93D4230E6375E0D1E7BFF62B /* VTAcknowledgementsViewController.m */; };
+		D31FB9842FA1A4735DBF51FF9E711BA0 /* VTAcknowledgementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE78C7B80F8A7385E6E24A251BFF31 /* VTAcknowledgementViewController.m */; };
+		D3779950070D6AC43F308899E78A6C98 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C7302249B453DB9946EDC2E36F961 /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4BA1B7F5B2265D552D4F70670971D84 /* VTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B8B402013F71D39819A831E6FFC33A /* VTParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4D326CF070E9E92366FB0D7D85A7B3B /* VTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C79A41B6EDC3A1BA8165409C6EAC74 /* VTParser.m */; };
+		F964291A99E5FE4EFF6E4253DB634E4C /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C2639ACBA878EA1124C33752D02C02 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,51 +60,51 @@
 
 /* Begin PBXFileReference section */
 		05834321B10088C41E1884FF82E33576 /* Pods-VTAck Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck Tests-dummy.m"; sourceTree = "<group>"; };
-		08D0253B7260FA0BF089B3590FDBA637 /* VTAcknowledgementsViewController-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VTAcknowledgementsViewController-tvOS-dummy.m"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-dummy.m"; sourceTree = "<group>"; };
-		0A843C153DF722FBB3616A0D416937BA /* VTAcknowledgementsViewController-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VTAcknowledgementsViewController-tvOS-prefix.pch"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-prefix.pch"; sourceTree = "<group>"; };
-		1242C7103EB4BF91B128F2D73D1053EA /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.debug.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0CDE5459FB78776C5DE3724E7EFFF1D8 /* VTAcknowledgementsViewController-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VTAcknowledgementsViewController-iOS-dummy.m"; sourceTree = "<group>"; };
 		12B785EEC95C7D4DEF97748A88FCFF4D /* Pods-VTAck App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.debug.xcconfig"; sourceTree = "<group>"; };
 		14BAD2C7FE70E321C0A6390CF0B40E19 /* Pods-VTAck Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck Tests-resources.sh"; sourceTree = "<group>"; };
+		193C9BA900F241A2310397185081CEE4 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		1EBA6CC1C6BB6B9D42E4B8E14BD01A67 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.release.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		20F935DF442BD4F7A8DA9DD869C4BF22 /* Pods-VTAck TV App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck TV App-dummy.m"; sourceTree = "<group>"; };
-		243C2189135DAFB602F7824ABCD0E7A0 /* VTAcknowledgementsViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = VTAcknowledgementsViewController.bundle; sourceTree = "<group>"; };
 		299A466F008428B14BFAD5E41F9B5442 /* Pods-VTAck TV App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck TV App.release.xcconfig"; sourceTree = "<group>"; };
 		2AEC15D022632C6B62C69D8444221F1C /* libPods-VTAck TV App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck TV App.a"; path = "libPods-VTAck TV App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDC211490B9A1650D7D228482CD8056 /* Pods-VTAck Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3030591F10FD9C01BE120686A16C3693 /* VTAcknowledgementViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementViewController.m; path = Classes/VTAcknowledgementViewController.m; sourceTree = "<group>"; };
-		36B447C4970190D9526E0CD23B5A05FF /* VTLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTLocalization.m; path = Classes/VTLocalization.m; sourceTree = "<group>"; };
-		3996100ACF422084731A32DE4CD7DE6B /* VTAcknowledgement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgement.h; path = Classes/VTAcknowledgement.h; sourceTree = "<group>"; };
+		2F7E8C742BAB4146E1D3EA64EF2C47ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3ECD796212F3B941953A9B65F4D9D152 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VTAcknowledgementsViewController-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4017F74944E0459E88BFD70606E1C068 /* VTLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTLocalization.h; path = Classes/VTLocalization.h; sourceTree = "<group>"; };
+		4D3C8151D48051E409A05665D30E3B83 /* VTAcknowledgementsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsViewController.m; path = Classes/VTAcknowledgementsViewController.m; sourceTree = "<group>"; };
 		52A87863AD053469AE362DD6C6B6FE28 /* Pods-VTAck App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck App-resources.sh"; sourceTree = "<group>"; };
+		5AA489563B164257B359215D3193CC76 /* VTAcknowledgementsViewController-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VTAcknowledgementsViewController-tvOS-prefix.pch"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		5DB568C5FDF2C1DF752528128611F7BA /* Pods-VTAck App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck App.release.xcconfig"; sourceTree = "<group>"; };
+		5EB27DE61044BF02D4D390703B3B8BEE /* VTAcknowledgementsViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = VTAcknowledgementsViewController.bundle; sourceTree = "<group>"; };
 		5EC25DA0BD6FF4F6DF0B6880B6614C7E /* Pods-VTAck App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F02688D45E33F662DF3E31940A921E3 /* Pods-VTAck TV App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck TV App-acknowledgements.plist"; sourceTree = "<group>"; };
-		650D3F8CEBDA7D4CCB02EE65ADE7D880 /* VTAcknowledgementsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsParser.m; path = Classes/VTAcknowledgementsParser.m; sourceTree = "<group>"; };
+		69C79A41B6EDC3A1BA8165409C6EAC74 /* VTParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTParser.m; path = Classes/VTParser.m; sourceTree = "<group>"; };
 		6B54C2CAD49FEF408D66B574F5303866 /* libPods-VTAck Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck Tests.a"; path = "libPods-VTAck Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		706893A8DF2065024850632F3AD312B6 /* VTAcknowledgementViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementViewController.h; path = Classes/VTAcknowledgementViewController.h; sourceTree = "<group>"; };
 		71FC046D1B89C819C9A39D9BD34E6622 /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7328898119A15EB5103647E4DF1CCEEC /* Pods-VTAck TV App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck TV App.debug.xcconfig"; sourceTree = "<group>"; };
-		746A9ED296AA15024177F69AD02F9FD1 /* VTAcknowledgement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgement.m; path = Classes/VTAcknowledgement.m; sourceTree = "<group>"; };
-		7FC61CBF624E9170750507D29225416F /* VTAcknowledgementsViewController.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = VTAcknowledgementsViewController.podspec.json; sourceTree = "<group>"; };
-		894DD254A76C8DD50B681B00122A6F34 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.release.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		8C6EBF57A708DBBEE8130A320B27A60B /* VTAcknowledgementsViewController-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VTAcknowledgementsViewController-iOS-dummy.m"; sourceTree = "<group>"; };
+		75120EF0255154AA35AB70D61BF0B63A /* VTAcknowledgementsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsViewController.h; path = Classes/VTAcknowledgementsViewController.h; sourceTree = "<group>"; };
+		82C2639ACBA878EA1124C33752D02C02 /* VTAcknowledgementViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementViewController.h; path = Classes/VTAcknowledgementViewController.h; sourceTree = "<group>"; };
+		8A5EE17E0335008D28AF66C9262CC5C3 /* VTAcknowledgementsViewController.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = VTAcknowledgementsViewController.podspec.json; sourceTree = "<group>"; };
 		9D5439DCFA506499D6697CA8AE9BD542 /* libVTAcknowledgementsViewController-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-iOS.a"; path = "libVTAcknowledgementsViewController-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A653B37CEAC005DB089811582D67F9AB /* Pods-VTAck TV App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck TV App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AACC96282EE7137E12DC1CF43B5865E7 /* VTAcknowledgementsViewController-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VTAcknowledgementsViewController-iOS-prefix.pch"; sourceTree = "<group>"; };
+		B0B8B402013F71D39819A831E6FFC33A /* VTParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTParser.h; path = Classes/VTParser.h; sourceTree = "<group>"; };
+		B270D1E88D82B8A655AEC9A81B9B856B /* VTLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTLocalization.m; path = Classes/VTLocalization.m; sourceTree = "<group>"; };
 		B7DAE0410126484B09FF220E36886155 /* Pods-VTAck Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VTAck Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B83C27BB673143CA6693D14B92E0A8BF /* Pods-VTAck App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VTAck App-acknowledgements.plist"; sourceTree = "<group>"; };
-		C135C4598C6F7ECD08CEFEC3694A9C1D /* VTAcknowledgementsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsViewController.h; path = Classes/VTAcknowledgementsViewController.h; sourceTree = "<group>"; };
-		C572A1B8294456604FB1FA02A8C91479 /* VTAcknowledgementsViewController-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VTAcknowledgementsViewController-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BC4F4A3BD6AAF74C1D5CEBE3FC47530A /* VTAcknowledgementsViewController-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VTAcknowledgementsViewController-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C5B2B68E924D49407DFAD8BA5A30923F /* VTAcknowledgementsViewController-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VTAcknowledgementsViewController-iOS-prefix.pch"; sourceTree = "<group>"; };
 		C767C55B518EF0E20B8F994FB2968168 /* libVTAcknowledgementsViewController-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVTAcknowledgementsViewController-tvOS.a"; path = "libVTAcknowledgementsViewController-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9BEAF77853282CD73F9DBCB5E320316 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VTAcknowledgementsViewController-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D38BAD5C1D530190CB284723CE940C5C /* VTLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTLocalization.h; path = Classes/VTLocalization.h; sourceTree = "<group>"; };
+		CD9C7302249B453DB9946EDC2E36F961 /* VTAcknowledgement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgement.h; path = Classes/VTAcknowledgement.h; sourceTree = "<group>"; };
+		D0018A679DFAC91E811CCBBD8DFC0152 /* VTAcknowledgementsViewController-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VTAcknowledgementsViewController-tvOS-dummy.m"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS-dummy.m"; sourceTree = "<group>"; };
 		D5AB765935CBCAE46F283D70681BE675 /* Pods-VTAck Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VTAck Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7A22EE8E2AB589A10F63C2F26202381 /* VTAcknowledgementsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsParser.h; path = Classes/VTAcknowledgementsParser.h; sourceTree = "<group>"; };
 		D9C56F013583C3EF9CBE0BE8123E33E4 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VTAck App.a"; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB16FE4DF20E28ECD9104FDD7D08F47A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DD4E70C28A9A93E6AB1945C008CE9A93 /* VTAcknowledgement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgement.m; path = Classes/VTAcknowledgement.m; sourceTree = "<group>"; };
 		E156AB51638E225083CC5CE7B7930585 /* Pods-VTAck App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VTAck App-dummy.m"; sourceTree = "<group>"; };
 		E7EBF941CADC446E7875C1B92BD5F49D /* Pods-VTAck TV App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VTAck TV App-resources.sh"; sourceTree = "<group>"; };
-		EBBD8114CDA916CB25DCF2713676014F /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
-		EE78A99C93D4230E6375E0D1E7BFF62B /* VTAcknowledgementsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsViewController.m; path = Classes/VTAcknowledgementsViewController.m; sourceTree = "<group>"; };
+		EA507A58D9DACD21ADFAEFD660AEC40E /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "VTAcknowledgementsViewController-tvOS.debug.xcconfig"; path = "../VTAcknowledgementsViewController-tvOS/VTAcknowledgementsViewController-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F4DE78C7B80F8A7385E6E24A251BFF31 /* VTAcknowledgementViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementViewController.m; path = Classes/VTAcknowledgementViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +146,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E485E851A66573BE7BFF9D4B230DF9 /* VTAcknowledgementsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C7302249B453DB9946EDC2E36F961 /* VTAcknowledgement.h */,
+				DD4E70C28A9A93E6AB1945C008CE9A93 /* VTAcknowledgement.m */,
+				5EB27DE61044BF02D4D390703B3B8BEE /* VTAcknowledgementsViewController.bundle */,
+				75120EF0255154AA35AB70D61BF0B63A /* VTAcknowledgementsViewController.h */,
+				4D3C8151D48051E409A05665D30E3B83 /* VTAcknowledgementsViewController.m */,
+				82C2639ACBA878EA1124C33752D02C02 /* VTAcknowledgementViewController.h */,
+				F4DE78C7B80F8A7385E6E24A251BFF31 /* VTAcknowledgementViewController.m */,
+				4017F74944E0459E88BFD70606E1C068 /* VTLocalization.h */,
+				B270D1E88D82B8A655AEC9A81B9B856B /* VTLocalization.m */,
+				B0B8B402013F71D39819A831E6FFC33A /* VTParser.h */,
+				69C79A41B6EDC3A1BA8165409C6EAC74 /* VTParser.m */,
+				3FB218194ABE328B8A886960ED26B5EB /* Pod */,
+				BDB8AC185DD12FD210A5352138CF9A9B /* Support Files */,
+			);
+			name = VTAcknowledgementsViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		31D48ED31099C5EBA9C268510FA91EE0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D0D17B2A42A7A3D20FD937EC3F5201A4 /* VTAcknowledgementsViewController */,
+				18E485E851A66573BE7BFF9D4B230DF9 /* VTAcknowledgementsViewController */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -168,12 +189,12 @@
 			path = "Target Support Files/Pods-VTAck App";
 			sourceTree = "<group>";
 		};
-		40137C2D82E1477F741950568D743730 /* Pod */ = {
+		3FB218194ABE328B8A886960ED26B5EB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EBBD8114CDA916CB25DCF2713676014F /* LICENSE.md */,
-				DB16FE4DF20E28ECD9104FDD7D08F47A /* README.md */,
-				7FC61CBF624E9170750507D29225416F /* VTAcknowledgementsViewController.podspec.json */,
+				193C9BA900F241A2310397185081CEE4 /* LICENSE.md */,
+				2F7E8C742BAB4146E1D3EA64EF2C47ED /* README.md */,
+				8A5EE17E0335008D28AF66C9262CC5C3 /* VTAcknowledgementsViewController.podspec.json */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -192,22 +213,6 @@
 			path = "Target Support Files/Pods-VTAck Tests";
 			sourceTree = "<group>";
 		};
-		9F6A65B20840CE2776AE67F2A2A1F8AB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8C6EBF57A708DBBEE8130A320B27A60B /* VTAcknowledgementsViewController-iOS-dummy.m */,
-				AACC96282EE7137E12DC1CF43B5865E7 /* VTAcknowledgementsViewController-iOS-prefix.pch */,
-				C9BEAF77853282CD73F9DBCB5E320316 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */,
-				C572A1B8294456604FB1FA02A8C91479 /* VTAcknowledgementsViewController-iOS.release.xcconfig */,
-				08D0253B7260FA0BF089B3590FDBA637 /* VTAcknowledgementsViewController-tvOS-dummy.m */,
-				0A843C153DF722FBB3616A0D416937BA /* VTAcknowledgementsViewController-tvOS-prefix.pch */,
-				1242C7103EB4BF91B128F2D73D1053EA /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */,
-				894DD254A76C8DD50B681B00122A6F34 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Tests/Pods/Target Support Files/VTAcknowledgementsViewController-iOS";
-			sourceTree = "<group>";
-		};
 		B05962CF35CEEE947836201AFEB0188C /* Pods-VTAck TV App */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +225,22 @@
 			);
 			name = "Pods-VTAck TV App";
 			path = "Target Support Files/Pods-VTAck TV App";
+			sourceTree = "<group>";
+		};
+		BDB8AC185DD12FD210A5352138CF9A9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE5459FB78776C5DE3724E7EFFF1D8 /* VTAcknowledgementsViewController-iOS-dummy.m */,
+				C5B2B68E924D49407DFAD8BA5A30923F /* VTAcknowledgementsViewController-iOS-prefix.pch */,
+				3ECD796212F3B941953A9B65F4D9D152 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */,
+				BC4F4A3BD6AAF74C1D5CEBE3FC47530A /* VTAcknowledgementsViewController-iOS.release.xcconfig */,
+				D0018A679DFAC91E811CCBBD8DFC0152 /* VTAcknowledgementsViewController-tvOS-dummy.m */,
+				5AA489563B164257B359215D3193CC76 /* VTAcknowledgementsViewController-tvOS-prefix.pch */,
+				EA507A58D9DACD21ADFAEFD660AEC40E /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */,
+				1EBA6CC1C6BB6B9D42E4B8E14BD01A67 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Tests/Pods/Target Support Files/VTAcknowledgementsViewController-iOS";
 			sourceTree = "<group>";
 		};
 		C2B6E0D741DAB0292528C1902FB5238E /* Targets Support Files */ = {
@@ -241,27 +262,6 @@
 				E74085DC2C061BFEF468DFEFE83A3014 /* Products */,
 				C2B6E0D741DAB0292528C1902FB5238E /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0D17B2A42A7A3D20FD937EC3F5201A4 /* VTAcknowledgementsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3996100ACF422084731A32DE4CD7DE6B /* VTAcknowledgement.h */,
-				746A9ED296AA15024177F69AD02F9FD1 /* VTAcknowledgement.m */,
-				D7A22EE8E2AB589A10F63C2F26202381 /* VTAcknowledgementsParser.h */,
-				650D3F8CEBDA7D4CCB02EE65ADE7D880 /* VTAcknowledgementsParser.m */,
-				243C2189135DAFB602F7824ABCD0E7A0 /* VTAcknowledgementsViewController.bundle */,
-				C135C4598C6F7ECD08CEFEC3694A9C1D /* VTAcknowledgementsViewController.h */,
-				EE78A99C93D4230E6375E0D1E7BFF62B /* VTAcknowledgementsViewController.m */,
-				706893A8DF2065024850632F3AD312B6 /* VTAcknowledgementViewController.h */,
-				3030591F10FD9C01BE120686A16C3693 /* VTAcknowledgementViewController.m */,
-				D38BAD5C1D530190CB284723CE940C5C /* VTLocalization.h */,
-				36B447C4970190D9526E0CD23B5A05FF /* VTLocalization.m */,
-				40137C2D82E1477F741950568D743730 /* Pod */,
-				9F6A65B20840CE2776AE67F2A2A1F8AB /* Support Files */,
-			);
-			name = VTAcknowledgementsViewController;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -286,18 +286,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		346C8D163F56E12C022AF2BF8C9AE679 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68624E67FBB7A44FDE65935358D96DA7 /* VTAcknowledgement.h in Headers */,
-				3D5B2FAD7CEA1D796331382917F86D45 /* VTAcknowledgementsParser.h in Headers */,
-				A1873DB7A2054DD335D48380D2696C66 /* VTAcknowledgementsViewController.h in Headers */,
-				432AC33E390600CF6DF328B2E5647143 /* VTAcknowledgementViewController.h in Headers */,
-				C5FC0EC2341830669CDF085D973220DA /* VTLocalization.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		482D7DD622F1042D33D1BE573B915A68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +300,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		802ED72576E2661EB9104C10BFD534B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3779950070D6AC43F308899E78A6C98 /* VTAcknowledgement.h in Headers */,
+				85CC6583C69B99B64699571C11AE38A3 /* VTAcknowledgementsViewController.h in Headers */,
+				B801D3B7D6B58671A22636BD5BB53845 /* VTAcknowledgementViewController.h in Headers */,
+				2EDF2987A11A6E98C71DA3AECABBC384 /* VTLocalization.h in Headers */,
+				F4BA1B7F5B2265D552D4F70670971D84 /* VTParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82B7FA823642AFDFC65809C84A03D352 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,15 +319,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBB92DE9AB3B54219A5B88814B155578 /* Headers */ = {
+		C7E680F48914D857A32B8B00B8D6851B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0A0F11FE6CDCA034B2AA3377F9CA824 /* VTAcknowledgement.h in Headers */,
-				8FC2890DDABB397CA2A8DB5F7762B769 /* VTAcknowledgementsParser.h in Headers */,
-				59231B45FB519E3736D21D7D17AD6ED9 /* VTAcknowledgementsViewController.h in Headers */,
-				2439E27396D2710DE906A51114E59B50 /* VTAcknowledgementViewController.h in Headers */,
-				D35A9107B0823B6C2A95C38C2FF713D3 /* VTLocalization.h in Headers */,
+				973ACFF572302354DD54ABB2945E5371 /* VTAcknowledgement.h in Headers */,
+				B3DE1FE645A267EF21BAEB62762D8B3F /* VTAcknowledgementsViewController.h in Headers */,
+				F964291A99E5FE4EFF6E4253DB634E4C /* VTAcknowledgementViewController.h in Headers */,
+				0A1EE47B172344DEE859E81969EA5319 /* VTLocalization.h in Headers */,
+				45C0A655AF0BC79C084C35DC8888730E /* VTParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,8 +374,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C92895CD0CC17DBECCC576EC8002221E /* Build configuration list for PBXNativeTarget "VTAcknowledgementsViewController-iOS" */;
 			buildPhases = (
-				FBB92DE9AB3B54219A5B88814B155578 /* Headers */,
-				6B2C9510DF0B2FDFFBA3385E6940EE8E /* Sources */,
+				C7E680F48914D857A32B8B00B8D6851B /* Headers */,
+				04287919B8CA2BE9607C6F4769D1DEFF /* Sources */,
 				E9EB9D28D060A770C245C9875D025279 /* Frameworks */,
 			);
 			buildRules = (
@@ -391,8 +391,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4C07873FE9225F92BC6BB82E1E12090 /* Build configuration list for PBXNativeTarget "VTAcknowledgementsViewController-tvOS" */;
 			buildPhases = (
-				346C8D163F56E12C022AF2BF8C9AE679 /* Headers */,
-				9023EB07DB1D71458748E8F12696FDE2 /* Sources */,
+				802ED72576E2661EB9104C10BFD534B0 /* Headers */,
+				9B1306963E45B13D31B4EEFD4EEF90AB /* Sources */,
 				1ACEA90C96209C1DD273F1E2445D7079 /* Frameworks */,
 			);
 			buildRules = (
@@ -454,24 +454,24 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04287919B8CA2BE9607C6F4769D1DEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA0EDC0102FA219BAB589458998D55 /* VTAcknowledgement.m in Sources */,
+				99055CEB0EC08C86903484063AD30C94 /* VTAcknowledgementsViewController-iOS-dummy.m in Sources */,
+				C341FAC48D20EC679F5AF70E76A41887 /* VTAcknowledgementsViewController.m in Sources */,
+				D31FB9842FA1A4735DBF51FF9E711BA0 /* VTAcknowledgementViewController.m in Sources */,
+				B28A1F5E45FF181F2231F3CFD85EFB44 /* VTLocalization.m in Sources */,
+				F4D326CF070E9E92366FB0D7D85A7B3B /* VTParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27DF2B2B61F98D9BAFAB84B01CD48F65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD32E02DE5253A6D04A80E69E3CD26F5 /* Pods-VTAck TV App-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B2C9510DF0B2FDFFBA3385E6940EE8E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78F6882EA9D27D3E56D51EB652C4A36B /* VTAcknowledgement.m in Sources */,
-				505C4BB461C40C9CD1FF4ED902AE3E8A /* VTAcknowledgementsParser.m in Sources */,
-				B61369618346811D58EC70C5727018F4 /* VTAcknowledgementsViewController-iOS-dummy.m in Sources */,
-				F1CE5B474E7E48B83164EDAC0C570971 /* VTAcknowledgementsViewController.m in Sources */,
-				F9787F2F2982810734A76B2A5B2D8473 /* VTAcknowledgementViewController.m in Sources */,
-				59F031CA649C1C7BB15FA8394F50D11B /* VTLocalization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,16 +483,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9023EB07DB1D71458748E8F12696FDE2 /* Sources */ = {
+		9B1306963E45B13D31B4EEFD4EEF90AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F780F47928AD22BE0F1B2E7D72614C3E /* VTAcknowledgement.m in Sources */,
-				B405FFE46DA66E516EB70001108D4B50 /* VTAcknowledgementsParser.m in Sources */,
-				28AB1F3B30E16027DECC0D53E1CA7319 /* VTAcknowledgementsViewController-tvOS-dummy.m in Sources */,
-				FD4A71CB6E73459A187EAB74C4D716E0 /* VTAcknowledgementsViewController.m in Sources */,
-				EBE543EAA951B101C0711307EE43D895 /* VTAcknowledgementViewController.m in Sources */,
-				3AD04255A3C950010BB048987391D82C /* VTLocalization.m in Sources */,
+				C795AFDA1C4253FC183CF573F3EBD9F3 /* VTAcknowledgement.m in Sources */,
+				B0C555C8076DA0639C550112B18E52A0 /* VTAcknowledgementsViewController-tvOS-dummy.m in Sources */,
+				4D89F1E2417D8E001FE0CDBBB7338B6B /* VTAcknowledgementsViewController.m in Sources */,
+				5075075792044A768E53C416B0B62BB3 /* VTAcknowledgementViewController.m in Sources */,
+				B36F9314F16ACC8E8E8CAC2D8734A935 /* VTLocalization.m in Sources */,
+				4425E4A074171C20EC714E979D920D6D /* VTParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +591,7 @@
 		};
 		45EAC9FF6EEC22DFC0084276559550AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9BEAF77853282CD73F9DBCB5E320316 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */;
+			baseConfigurationReference = 3ECD796212F3B941953A9B65F4D9D152 /* VTAcknowledgementsViewController-iOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -613,7 +613,7 @@
 		};
 		65A5181CD2C118AACC95DB0C99937D80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C572A1B8294456604FB1FA02A8C91479 /* VTAcknowledgementsViewController-iOS.release.xcconfig */;
+			baseConfigurationReference = BC4F4A3BD6AAF74C1D5CEBE3FC47530A /* VTAcknowledgementsViewController-iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -636,7 +636,7 @@
 		};
 		7A684B813F8DDE20AE1FDAEEDBAC8616 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 894DD254A76C8DD50B681B00122A6F34 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */;
+			baseConfigurationReference = 1EBA6CC1C6BB6B9D42E4B8E14BD01A67 /* VTAcknowledgementsViewController-tvOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -810,7 +810,7 @@
 		};
 		C8D3EE358D3E4D1A6D516061E937A647 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1242C7103EB4BF91B128F2D73D1053EA /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */;
+			baseConfigurationReference = EA507A58D9DACD21ADFAEFD660AEC40E /* VTAcknowledgementsViewController-tvOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

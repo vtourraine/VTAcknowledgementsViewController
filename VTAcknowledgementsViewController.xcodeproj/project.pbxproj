@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		148FE7C51C10804700228898 /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BD1C10804700228898 /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		148FE7C61C10804700228898 /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7BE1C10804700228898 /* VTAcknowledgement.m */; };
-		148FE7C71C10804700228898 /* VTAcknowledgementsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BF1C10804700228898 /* VTAcknowledgementsParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		148FE7C81C10804700228898 /* VTAcknowledgementsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C01C10804700228898 /* VTAcknowledgementsParser.m */; };
+		148FE7C71C10804700228898 /* VTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BF1C10804700228898 /* VTParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148FE7C81C10804700228898 /* VTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C01C10804700228898 /* VTParser.m */; };
 		148FE7C91C10804700228898 /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7C11C10804700228898 /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		148FE7CA1C10804700228898 /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C21C10804700228898 /* VTAcknowledgementsViewController.m */; };
 		148FE7CB1C10804700228898 /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7C31C10804700228898 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,8 +18,8 @@
 		148FE7CE1C10805E00228898 /* VTAcknowledgementsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 148FE7CD1C10805E00228898 /* VTAcknowledgementsViewController.bundle */; };
 		5DE842771CEC6E8500799BDC /* VTAcknowledgement.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BD1C10804700228898 /* VTAcknowledgement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DE842781CEC6E8500799BDC /* VTAcknowledgement.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7BE1C10804700228898 /* VTAcknowledgement.m */; };
-		5DE842791CEC6E8500799BDC /* VTAcknowledgementsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BF1C10804700228898 /* VTAcknowledgementsParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DE8427A1CEC6E8500799BDC /* VTAcknowledgementsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C01C10804700228898 /* VTAcknowledgementsParser.m */; };
+		5DE842791CEC6E8500799BDC /* VTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7BF1C10804700228898 /* VTParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE8427A1CEC6E8500799BDC /* VTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C01C10804700228898 /* VTParser.m */; };
 		5DE8427B1CEC6E8500799BDC /* VTAcknowledgementsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7C11C10804700228898 /* VTAcknowledgementsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DE8427C1CEC6E8500799BDC /* VTAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FE7C21C10804700228898 /* VTAcknowledgementsViewController.m */; };
 		5DE8427D1CEC6E8500799BDC /* VTAcknowledgementViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 148FE7C31C10804700228898 /* VTAcknowledgementViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,8 +36,8 @@
 		148FE7A41C107F8600228898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148FE7BD1C10804700228898 /* VTAcknowledgement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgement.h; path = Classes/VTAcknowledgement.h; sourceTree = SOURCE_ROOT; };
 		148FE7BE1C10804700228898 /* VTAcknowledgement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgement.m; path = Classes/VTAcknowledgement.m; sourceTree = SOURCE_ROOT; };
-		148FE7BF1C10804700228898 /* VTAcknowledgementsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsParser.h; path = Classes/VTAcknowledgementsParser.h; sourceTree = SOURCE_ROOT; };
-		148FE7C01C10804700228898 /* VTAcknowledgementsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsParser.m; path = Classes/VTAcknowledgementsParser.m; sourceTree = SOURCE_ROOT; };
+		148FE7BF1C10804700228898 /* VTParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTParser.h; path = Classes/VTParser.h; sourceTree = SOURCE_ROOT; };
+		148FE7C01C10804700228898 /* VTParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTParser.m; path = Classes/VTParser.m; sourceTree = SOURCE_ROOT; };
 		148FE7C11C10804700228898 /* VTAcknowledgementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementsViewController.h; path = Classes/VTAcknowledgementsViewController.h; sourceTree = SOURCE_ROOT; };
 		148FE7C21C10804700228898 /* VTAcknowledgementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTAcknowledgementsViewController.m; path = Classes/VTAcknowledgementsViewController.m; sourceTree = SOURCE_ROOT; };
 		148FE7C31C10804700228898 /* VTAcknowledgementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTAcknowledgementViewController.h; path = Classes/VTAcknowledgementViewController.h; sourceTree = SOURCE_ROOT; };
@@ -98,8 +98,8 @@
 			children = (
 				148FE7BD1C10804700228898 /* VTAcknowledgement.h */,
 				148FE7BE1C10804700228898 /* VTAcknowledgement.m */,
-				148FE7BF1C10804700228898 /* VTAcknowledgementsParser.h */,
-				148FE7C01C10804700228898 /* VTAcknowledgementsParser.m */,
+				148FE7BF1C10804700228898 /* VTParser.h */,
+				148FE7C01C10804700228898 /* VTParser.m */,
 				148FE7C11C10804700228898 /* VTAcknowledgementsViewController.h */,
 				148FE7C21C10804700228898 /* VTAcknowledgementsViewController.m */,
 				148FE7C31C10804700228898 /* VTAcknowledgementViewController.h */,
@@ -122,7 +122,7 @@
 				148FE7CB1C10804700228898 /* VTAcknowledgementViewController.h in Headers */,
 				148FE7C91C10804700228898 /* VTAcknowledgementsViewController.h in Headers */,
 				D7527F2B25CBEC0000378FB8 /* VTLocalization.h in Headers */,
-				148FE7C71C10804700228898 /* VTAcknowledgementsParser.h in Headers */,
+				148FE7C71C10804700228898 /* VTParser.h in Headers */,
 				148FE7C51C10804700228898 /* VTAcknowledgement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +134,7 @@
 				5DE8427B1CEC6E8500799BDC /* VTAcknowledgementsViewController.h in Headers */,
 				5DE8427D1CEC6E8500799BDC /* VTAcknowledgementViewController.h in Headers */,
 				D7527F2C25CBEC0000378FB8 /* VTLocalization.h in Headers */,
-				5DE842791CEC6E8500799BDC /* VTAcknowledgementsParser.h in Headers */,
+				5DE842791CEC6E8500799BDC /* VTParser.h in Headers */,
 				5DE842771CEC6E8500799BDC /* VTAcknowledgement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +241,7 @@
 				148FE7C61C10804700228898 /* VTAcknowledgement.m in Sources */,
 				148FE7CA1C10804700228898 /* VTAcknowledgementsViewController.m in Sources */,
 				D7527F2D25CBEC0000378FB8 /* VTLocalization.m in Sources */,
-				148FE7C81C10804700228898 /* VTAcknowledgementsParser.m in Sources */,
+				148FE7C81C10804700228898 /* VTParser.m in Sources */,
 				148FE7CC1C10804700228898 /* VTAcknowledgementViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +253,7 @@
 				5DE842781CEC6E8500799BDC /* VTAcknowledgement.m in Sources */,
 				5DE8427C1CEC6E8500799BDC /* VTAcknowledgementsViewController.m in Sources */,
 				D7527F2E25CBEC0000378FB8 /* VTLocalization.m in Sources */,
-				5DE8427A1CEC6E8500799BDC /* VTAcknowledgementsParser.m in Sources */,
+				5DE8427A1CEC6E8500799BDC /* VTParser.m in Sources */,
 				5DE8427E1CEC6E8500799BDC /* VTAcknowledgementViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

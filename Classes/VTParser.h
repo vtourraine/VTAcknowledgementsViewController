@@ -1,5 +1,5 @@
 //
-// VTAcknowledgementsParser.h
+// VTParser.h
 //
 // Copyright (c) 2013-2021 Vincent Tourraine (http://www.vtourraine.net)
 //
@@ -33,9 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- `VTAcknowledgementsParser` is a subclass of `NSObject` that parses a CocoaPods acknowledgements plist file.
+ `VTParser` is a subclass of `NSObject` that parses a CocoaPods acknowledgements plist file.
  */
-@interface VTAcknowledgementsParser : NSObject
+@interface VTParser : NSObject
 
 /// The header parsed from the plist file.
 @property (readonly, copy, nullable) NSString *header;

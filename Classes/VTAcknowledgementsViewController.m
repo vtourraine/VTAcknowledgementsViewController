@@ -111,7 +111,7 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (void)loadFromAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath {
-    VTAcknowledgementsParser *parser = [[VTAcknowledgementsParser alloc] initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
+    VTParser *parser = [[VTParser alloc] initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
 
     if ([parser.header isEqualToString:VTDefaultHeaderText]) {
         self.headerText = nil;
