@@ -59,7 +59,7 @@ viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgeme
 
 ## Customization
 
-The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values.
+The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values. If these texts contain a link, the view is tappable, and opens a browser with the URL.
 
 ``` objc
 viewController.headerText = @"We love open source software.";

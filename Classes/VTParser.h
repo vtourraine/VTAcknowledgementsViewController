@@ -56,6 +56,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath NS_DESIGNATED_INITIALIZER;
 
+/**
+ Finds the first link (URL) in a given string.
+
+ @param text The string to parse.
+
+ @return The first link found, or `nil` if no link can be found.
+ */
++ (nullable NSURL *)firstLinkInText:(nonnull NSString *)text;
+
 @end
 
 NS_ASSUME_NONNULL_END

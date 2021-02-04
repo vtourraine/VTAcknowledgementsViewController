@@ -263,7 +263,7 @@ static const CGFloat VTFooterBottomMargin = 20;
         label.adjustsFontForContentSizeCategory = YES;
     }
 
-    NSURL *firstLink = [self firstLinkInText:text];
+    NSURL *firstLink = [VTParser firstLinkInText:text];
     if (firstLink) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openLink:)];
         [label addGestureRecognizer:tapGestureRecognizer];
@@ -303,15 +303,6 @@ static const CGFloat VTFooterBottomMargin = 20;
     return ceilf(labelHeight);
 }
 
-#pragma mark - Data
-
-- (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
-    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    return firstLink.URL;
-}
-
-
 #pragma mark - Actions
 
 - (void)openLink:(UIGestureRecognizer *)sender {
@@ -321,7 +312,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 
     NSString *text = [(UILabel *)sender.view text];
-    NSURL *URL = [self firstLinkInText:text];
+    NSURL *URL = [VTParser firstLinkInText:text];
 
     if (@available(iOS 9.0, *)) {
         SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];
