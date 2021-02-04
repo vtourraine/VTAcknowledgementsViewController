@@ -8,6 +8,8 @@
 - Add `initWithPath:style` initializer on `VTAcknowledgementsViewController`
 - Update `UIViewController` subclasses initializers nullability annotations to match UIKit methods
 - Update deployment target to iOS 9
+- Refactor localization to dedicated class
+- Rename `VTAcknowledgementsParser` to `VTParser`
 - Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
 - Remove legacy CocoaPods format support
 

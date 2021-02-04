@@ -26,6 +26,7 @@
 
 #import <VTAcknowledgementsViewController.h>
 #import <VTAcknowledgement.h>
+#import <VTLocalization.h>
 
 @interface VTAcknowledgementsViewControllerTests : XCTestCase
 
@@ -36,7 +37,7 @@
 
 - (void)testGeneralInitialization {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
-    XCTAssertNotNil(viewController.title);
+    XCTAssertEqualObjects(viewController.title, [VTLocalization localizedTitle]);
 }
 
 - (void)testInitializationWithGroupedTableViewStyleByDefault {

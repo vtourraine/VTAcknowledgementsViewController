@@ -70,7 +70,7 @@ viewController.footerText = @"Powered by CocoaPods.org";
 The controller title is a localized value for “acknowledgements”. You might want to use this localized value for the button presenting the controller.
 
 ``` objc
-NSString *localizedTitle = [VTAcknowledgementsViewController localizedTitle]; 
+NSString *localizedTitle = [VTLocalization localizedTitle]; 
 [button setTitle:localizedTitle forState:UIControlStateNormal];
 ```
 

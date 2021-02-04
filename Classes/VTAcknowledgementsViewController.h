@@ -27,7 +27,7 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import <VTAcknowledgementsParser.h>
+#import <VTParser.h>
 #import <VTAcknowledgement.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -114,14 +114,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
 - (instancetype)initWithFileNamed:(NSString *)acknowledgementsFileName;
-
-/**
- The localized version of “Acknowledgements”.
- You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
-
- @return The localized title.
- */
-+ (NSString *)localizedTitle;
 
 @end
 
