@@ -22,6 +22,7 @@
 		866152BE610C41C515A9AD7C /* libPods-VTAck Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3943CA5413122C5F4F21B1EF /* libPods-VTAck Tests.a */; };
 		CB8F4084F5CD4C6042866F19 /* libPods-VTAck App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */; };
 		D729067820D1092E00A2C188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D729067620D1092E00A2C188 /* LaunchScreen.storyboard */; };
+		D7527F3E25CBEE6300378FB8 /* VTLocalizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7527F3D25CBEE6300378FB8 /* VTLocalizationTests.m */; };
 		D779DC451E5D88F6006D91C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC441E5D88F6006D91C9 /* main.m */; };
 		D779DC481E5D88F6006D91C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC471E5D88F6006D91C9 /* AppDelegate.m */; };
 		D779DC4B1E5D88F6006D91C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D779DC4A1E5D88F6006D91C9 /* ViewController.m */; };
@@ -72,6 +73,7 @@
 		CD9B9EB96C6CC53C6DC4AB43 /* libPods-VTAck App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VTAck App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50855E43BB804DA4A56444E /* Pods-VTAck Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTAck Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTAck Tests/Pods-VTAck Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D729067720D1092E00A2C188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "VTAck App/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		D7527F3D25CBEE6300378FB8 /* VTLocalizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VTLocalizationTests.m; path = Tests/VTLocalizationTests.m; sourceTree = SOURCE_ROOT; };
 		D779DC411E5D88F6006D91C9 /* VTAck TV App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VTAck TV App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D779DC441E5D88F6006D91C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D779DC461E5D88F6006D91C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				148FE77F1C10483600228898 /* VTAcknowledgementsParserTests.m */,
 				1FDD9DB91A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m */,
 				1F6CD01A1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m */,
+				D7527F3D25CBEE6300378FB8 /* VTLocalizationTests.m */,
 				D7A2E4DC214909EE0010F801 /* Resources */,
 				1FDD9D971A9A757B000BAFF0 /* Supporting Files */,
 			);
@@ -517,6 +520,7 @@
 			files = (
 				146BC0EE1C11E98D008D3C23 /* VTAcknowledgementTests.m in Sources */,
 				1FDD9DBA1A9A7B9A000BAFF0 /* VTAcknowledgementsViewControllerTests.m in Sources */,
+				D7527F3E25CBEE6300378FB8 /* VTLocalizationTests.m in Sources */,
 				1F6CD01B1A9BB139002D28DC /* VTAcknowledgementViewControllerTests.m in Sources */,
 				148FE7801C10483600228898 /* VTAcknowledgementsParserTests.m in Sources */,
 			);

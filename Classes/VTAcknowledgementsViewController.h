@@ -95,14 +95,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithFileNamed:(NSString *)acknowledgementsFileName;
 
-/**
- The localized version of “Acknowledgements”.
- You can use this value for the button presenting the `VTAcknowledgementsViewController`, for instance.
-
- @return The localized title.
- */
-+ (NSString *)localizedTitle;
-
 @end
 
 NS_ASSUME_NONNULL_END
