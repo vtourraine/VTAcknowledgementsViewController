@@ -9,7 +9,7 @@ Acknowledgements screen displaying a list of licences, for example from [CocoaPo
 
 _Also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
-<img alt="iPhone screenshot 1" src="https://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-X-01.png" width="300px"> <img alt="iPhone screenshot 2" src="https://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/iPhone-X-02.png" width="300px">
+![VTAcknowledgementsViewController screenshots](VTAcknowledgementsViewController.png)
 
 ## Features
 
