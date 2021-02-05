@@ -77,4 +77,14 @@
     }
 }
 
+- (void)testFindLink {
+    NSURL *url = [VTParser firstLinkInText:@"test cocoapods.org"];
+    XCTAssertEqualObjects(url, [NSURL URLWithString:@"http://cocoapods.org"]);
+}
+
+- (void)testFindNoLink {
+    NSURL *url = [VTParser firstLinkInText:@"test"];
+    XCTAssertNil(url);
+}
+
 @end

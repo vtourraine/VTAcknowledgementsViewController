@@ -68,22 +68,37 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
-    self = [self initWithAcknowledgements:@[]];
+    self = [self initWithAcknowledgements:@[] style:style];
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
+
+    if (self) {
+        self.acknowledgements = @[];
+    }
+
     return self;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+    if (self) {
+        self.acknowledgements = @[];
+    }
+
     return self;
 }
 
 - (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements {
-    self = [super initWithStyle:UITableViewStyleGrouped];
+    self = [self initWithAcknowledgements:acknowledgements style:UITableViewStyleGrouped];
+    return self;
+}
+
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements style:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
 
     if (self) {
         self.title = [VTLocalization localizedTitle];
@@ -94,7 +109,12 @@ static const CGFloat VTFooterBottomMargin = 20;
 }
 
 - (instancetype)initWithPath:(NSString *)acknowledgementsPlistPath {
-    self = [self initWithAcknowledgements:@[]];
+    self = [self initWithPath:acknowledgementsPlistPath style:UITableViewStyleGrouped];
+    return self;
+}
+
+- (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath style:(UITableViewStyle)style {
+    self = [self initWithAcknowledgements:@[] style:style];
 
     if (self) {
         if (acknowledgementsPlistPath) {
@@ -243,7 +263,7 @@ static const CGFloat VTFooterBottomMargin = 20;
         label.adjustsFontForContentSizeCategory = YES;
     }
 
-    NSURL *firstLink = [self firstLinkInText:text];
+    NSURL *firstLink = [VTParser firstLinkInText:text];
     if (firstLink) {
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openLink:)];
         [label addGestureRecognizer:tapGestureRecognizer];
@@ -283,15 +303,6 @@ static const CGFloat VTFooterBottomMargin = 20;
     return ceilf(labelHeight);
 }
 
-#pragma mark - Data
-
-- (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
-    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    return firstLink.URL;
-}
-
-
 #pragma mark - Actions
 
 - (void)openLink:(UIGestureRecognizer *)sender {
@@ -301,7 +312,7 @@ static const CGFloat VTFooterBottomMargin = 20;
     }
 
     NSString *text = [(UILabel *)sender.view text];
-    NSURL *URL = [self firstLinkInText:text];
+    NSURL *URL = [VTParser firstLinkInText:text];
 
     if (@available(iOS 9.0, *)) {
         SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];

@@ -4,6 +4,8 @@
 
 - Open any URL in header and footer
 - Add `initWithAcknowledgements:` initializer on `VTAcknowledgementsViewController`
+- Add `initWithAcknowledgements:style` initializer on `VTAcknowledgementsViewController`
+- Add `initWithPath:style` initializer on `VTAcknowledgementsViewController`
 - Update `UIViewController` subclasses initializers nullability annotations to match UIKit methods
 - Update deployment target to iOS 9
 - Refactor localization to dedicated class

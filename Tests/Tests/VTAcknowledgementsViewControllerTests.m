@@ -40,6 +40,16 @@
     XCTAssertEqualObjects(viewController.title, [VTLocalization localizedTitle]);
 }
 
+- (void)testInitializationWithGroupedTableViewStyleByDefault {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[]];
+    XCTAssertEqual(viewController.tableView.style, UITableViewStyleGrouped);
+}
+
+- (void)testInitializationWithCustomTableViewStyle {
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[] style:UITableViewStylePlain];
+    XCTAssertEqual(viewController.tableView.style, UITableViewStylePlain);
+}
+
 - (void)testInitializationWithFileName {
     VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithFileNamed:@"Pods-acknowledgements"];
     XCTAssertNotNil(viewController.acknowledgements);
@@ -53,16 +63,14 @@
 
 - (void)testLoadAcknowledgementsWithDefaultFileName {
     VTAcknowledgementsViewController *viewController = [VTAcknowledgementsViewController acknowledgementsViewController];
-    XCTAssertEqual(viewController.acknowledgements.count, 1,
-                         @"should load the one acknowledgement from the default file (Pods-acknowledgements.plist)");
+    XCTAssertEqual(viewController.acknowledgements.count, 3,
+                         @"should load the 3 acknowledgements from the default file (Pods-VTAck App-acknowledgements.plist)");
 }
 
 - (void)testConfigureTableViewBasedOnAcknowledgements {
-    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] init];
-
     VTAcknowledgement *ack1 = [[VTAcknowledgement alloc] initWithTitle:@"ack1" text:@"" license:nil];
     VTAcknowledgement *ack2 = [[VTAcknowledgement alloc] initWithTitle:@"ack2" text:@"" license:nil];
-    viewController.acknowledgements = @[ack1, ack2];
+    VTAcknowledgementsViewController *viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[ack1, ack2]];
 
     XCTAssertEqual([viewController tableView:viewController.tableView numberOfRowsInSection:0], 2,
                    @"should have a table view row for each acknowledgement");

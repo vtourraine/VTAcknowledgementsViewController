@@ -100,4 +100,10 @@
     return [singleNewLineFinder stringByReplacingMatchesInString:string options:kNilOptions range:NSMakeRange(0, string.length) withTemplate:@" "];
 }
 
++ (nullable NSURL *)firstLinkInText:(nonnull NSString *)text {
+    NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSTextCheckingResult *firstLink = [linkDetector firstMatchInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    return firstLink.URL;
+}
+
 @end

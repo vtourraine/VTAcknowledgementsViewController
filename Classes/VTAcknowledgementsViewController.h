@@ -69,13 +69,23 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)acknowledgementsViewController NS_SWIFT_NAME(acknowledgementsViewController());
 
 /**
- Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
+ Initializes an acknowledgements view controller with an array of acknowledgements.
 
  @param acknowledgements The array of `VTAcknowledgement`.
 
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
-- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements;
+
+/**
+ Initializes an acknowledgements view controller with an array of acknowledgements and a custom table view style.
+
+ @param acknowledgements The array of `VTAcknowledgement`.
+ @param style A constant that specifies the style of table view that the controller object is to manage.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
+ */
+- (instancetype)initWithAcknowledgements:(NSArray <VTAcknowledgement *> *)acknowledgements style:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path).
@@ -85,6 +95,16 @@ NS_ASSUME_NONNULL_BEGIN
  @return A newly created `VTAcknowledgementsViewController` instance.
  */
 - (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath;
+
+/**
+ Initializes an acknowledgements view controller with the content of an acknowledgements file (by its path) and a custom table view style.
+
+ @param acknowledgementsPlistPath The path to the acknowledgements `.plist` file.
+ @param style A constant that specifies the style of table view that the controller object is to manage.
+
+ @return A newly created `VTAcknowledgementsViewController` instance.
+ */
+- (instancetype)initWithPath:(nullable NSString *)acknowledgementsPlistPath style:(UITableViewStyle)style;
 
 /**
  Initializes an acknowledgements view controller with the content of an acknowledgements file (by its name).

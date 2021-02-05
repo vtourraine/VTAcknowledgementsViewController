@@ -50,17 +50,16 @@ NSString *path = [[NSBundle mainBundle] pathForResource:@"Pods-MyTarget-acknowle
 viewController = [[VTAcknowledgementsViewController alloc] initWithPath:path];
 ```
 
-## Customization
-
-If you need to include licenses that are not part of the generated `plist` file, or if you don’t want to use the generated `plist` at all, you can easily create new `VTAcknowledgement` instances, and set them as the acknowledgements array of the controller.
+If you want to include licenses that are not part of a `plist` file, you can easily create new `VTAcknowledgement` instances, and use them for the acknowledgements array of the controller.
 
 ``` objc
 VTAcknowledgement *customLicense = [[VTAcknowledgement alloc] initWithTitle:@"..." text:@"..." license:nil];
-
-viewController.acknowledgements = @[customLicense];
+viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[customLicense]];
 ```
 
-The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values.
+## Customization
+
+The controller can also display a header and a footer. By default, they are loaded from the generated `plist` file, but you can also directly change the properties values. If these texts contain a link, the view is tappable, and opens a browser with the URL.
 
 ``` objc
 viewController.headerText = @"We love open source software.";
@@ -72,6 +71,12 @@ The controller title is a localized value for “acknowledgements”. You might 
 ``` objc
 NSString *localizedTitle = [VTLocalization localizedTitle]; 
 [button setTitle:localizedTitle forState:UIControlStateNormal];
+```
+
+By default, the `VTAcknowledgementsViewController` uses the “grouped” table view style. You can choose a different style:
+
+``` objc
+viewController = [[VTAcknowledgementsViewController alloc] initWithAcknowledgements:@[] style:UITableViewStylePlain];
 ```
 
 If you need to further customize the appearance or behavior of this pod, feel free to subclass its classes.

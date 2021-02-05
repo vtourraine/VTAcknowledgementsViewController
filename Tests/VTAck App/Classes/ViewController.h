@@ -28,6 +28,8 @@
 - (IBAction)pushAckViewControllerWithDefaultFileName:(id)sender;
 - (IBAction)pushAckViewControllerWithExplicitFileName:(id)sender;
 - (IBAction)pushAckViewControllerWithHardcodedData:(id)sender;
+- (IBAction)pushAckViewControllerWithPlainStyle:(id)sender;
+- (IBAction)pushAckViewControllerWithInsetGroupedStyle:(id)sender;
 
 @end
 
