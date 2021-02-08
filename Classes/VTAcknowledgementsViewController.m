@@ -284,11 +284,18 @@ static const CGFloat VTFooterBottomMargin = 20;
 
 - (void)configureFooterView {
     UILabel *label = [self headerFooterLabelWithText:self.footerText];
-    CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame) + VTFooterBottomMargin);
+    CGFloat labelOriginY = 0;
+
+    if (self.tableView.style == UITableViewStylePlain) {
+        // “Plain” table views need additional margin between the bottom of the last row and the top of the footer label.
+        labelOriginY = VTLabelMargin;
+    }
+
+    CGRect footerFrame = CGRectMake(0, 0, CGRectGetWidth(label.frame), labelOriginY + CGRectGetHeight(label.frame) + VTFooterBottomMargin);
     UIView *footerView = [[UIView alloc] initWithFrame:footerFrame];
     footerView.userInteractionEnabled = label.userInteractionEnabled;
     [footerView addSubview:label];
-    label.frame = CGRectMake(0, 0, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
+    label.frame = CGRectMake(0, labelOriginY, CGRectGetWidth(label.frame), CGRectGetHeight(label.frame));
     self.tableView.tableFooterView = footerView;
 }
 
