@@ -69,6 +69,16 @@
                                     <action selector="pushAckViewControllerWithInsetGroupedStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1hP-hS-TGL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzt-6W-uA7">
+                                <rect key="frame" x="55" y="204" width="263" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push acknowledgements (Storyboard)">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MYl-5m-kis" kind="push" id="Z7I-D5-AUP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -76,7 +86,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855.6521739130435" y="651.67857142857133"/>
+            <point key="canvasLocation" x="1097" y="651"/>
+        </scene>
+        <!--Acknowledgements View Controller-->
+        <scene sceneID="hGl-zk-BcM">
+            <objects>
+                <tableViewController id="MYl-5m-kis" customClass="VTAcknowledgementsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="veZ-hO-e8l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="MYl-5m-kis" id="x9z-hK-0VK"/>
+                            <outlet property="delegate" destination="MYl-5m-kis" id="ioM-A5-quy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iOW-zi-k6W"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="acknowledgementsPlistName" value="Pods-acknowledgements"/>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciU-go-NaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052" y="197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zGb-5N-UVt">

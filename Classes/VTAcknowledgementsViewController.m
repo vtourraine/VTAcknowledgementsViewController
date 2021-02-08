@@ -75,6 +75,7 @@ static const CGFloat VTLabelMargin = 20;
     self = [super initWithCoder:coder];
 
     if (self) {
+        self.title = [VTLocalization localizedTitle];
         self.acknowledgements = @[];
     }
 
@@ -132,17 +133,14 @@ static const CGFloat VTLabelMargin = 20;
 - (void)loadFromAcknowledgementsPlistPath:(NSString *)acknowledgementsPlistPath {
     VTParser *parser = [[VTParser alloc] initWithAcknowledgementsPlistPath:acknowledgementsPlistPath];
 
-    if ([parser.header isEqualToString:VTDefaultHeaderText]) {
-        self.headerText = nil;
-    }
-    else if (![parser.header isEqualToString:@""]) {
+    if (parser.header != nil && parser.header.length > 0 && ![parser.header isEqualToString:VTDefaultHeaderText]) {
         self.headerText = parser.header;
     }
 
     if ([parser.footer isEqualToString:VTDefaultFooterText]) {
         self.footerText = [VTLocalization localizedCocoaPodsFooterText];
     }
-    else if (![parser.footer isEqualToString:@""]) {
+    else if (![parser.footer isEqualToString:@""] && self.footerText == nil) {
         self.footerText = parser.footer;
     }
 
