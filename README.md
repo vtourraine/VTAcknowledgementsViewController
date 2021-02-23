@@ -9,7 +9,7 @@ Acknowledgements screen displaying a list of licenses, for example from [CocoaPo
 
 _Also available in Swift with [AcknowList](https://github.com/vtourraine/AcknowList)._
 
-![VTAcknowledgementsViewController screenshots](VTAcknowledgementsViewController.png)
+![VTAcknowledgementsViewController screenshots](Images/VTAcknowledgementsViewController.png)
 
 ## Features
 
@@ -85,7 +85,7 @@ If you need to further customize the appearance or behavior of this library, fee
 
 VTAcknowledgementsViewController is also compatible with tvOS for Apple TV apps.
 
-<img alt="Apple TV screenshot 1" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-01.png" width="300px"> <img alt="Apple TV screenshot 2" src="http://vtourraine.github.io/VTAcknowledgementsViewController/screenshots/Apple-TV-600px-02.png" width="300px">
+![VTAcknowledgementsViewController Apple TV screenshots](Images/VTAcknowledgementsViewController-Apple-TV.png)
 
 ## Requirements
 
