@@ -2,16 +2,18 @@
 
 ## 2.0 (work in progress)
 
-- Add `initWithAcknowledgements:` initializer on `VTAcknowledgementsViewController`
-- Add `initWithAcknowledgements:style` initializer on `VTAcknowledgementsViewController`
-- Add `initWithPath:style` initializer on `VTAcknowledgementsViewController`
-- Open any URL in header and footer
+- Update `VTAcknowledgementsViewController` to detect URLs in header and footer
+- Update `VTAcknowledgementsViewController` initializers
+    - Add `initWithAcknowledgements:`
+    - Add `initWithAcknowledgements:style`
+    - Add `initWithPath:style`
+    - Remove `initWithAcknowledgementsPlistPath:`
+    - Remove `initWithAcknowledgementsFileNamed:`
 - Update `UIViewController` subclasses initializers nullability annotations to match UIKit methods
-- Update deployment target to iOS 9
-- Refactor localization to dedicated class
+- Add `VTLocalization` to refactor localization methods
 - Rename `VTAcknowledgementsParser` to `VTParser`
-- Remove deprecated `VTAcknowledgementsViewController` initializers (`initWithAcknowledgementsPlistPath:`, `initWithAcknowledgementsFileNamed:`)
 - Remove legacy CocoaPods format support
+- Update deployment target to iOS 9
 
 
 ## 1.5.3 (17 September 2020)
