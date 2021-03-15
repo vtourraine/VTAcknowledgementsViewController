@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0 (work in progress)
+## 2.0 (15 March 2021)
 
 - Update `VTAcknowledgementsViewController` to detect URLs in header and footer
 - Update `VTAcknowledgementsViewController` initializers
@@ -14,6 +14,8 @@
 - Rename `VTAcknowledgementsParser` to `VTParser`
 - Remove legacy CocoaPods format support
 - Update deployment target to iOS 9
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/1.5.3...2.0.0)
 
 
 ## 1.5.3 (17 September 2020)
