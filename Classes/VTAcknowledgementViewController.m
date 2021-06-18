@@ -87,8 +87,4 @@ const CGFloat VTLeftRightDefaultMargin = 10;
     textView.textContainerInset = UIEdgeInsetsMake(VTTopBottomDefaultMargin, self.view.layoutMargins.left, VTTopBottomDefaultMargin, self.view.layoutMargins.right);
 }
 
-- (UIView *)preferredFocusedView {
-    return self.textView;
-}
-
 @end
