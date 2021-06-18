@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 (work in progress)
+
+- Remove deprecated `preferredFocusedView` method for tvOS
+
+
 ## 2.0 (15 March 2021)
 
 - Update `VTAcknowledgementsViewController` to detect URLs in header and footer
