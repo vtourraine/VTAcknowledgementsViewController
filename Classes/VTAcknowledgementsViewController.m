@@ -318,13 +318,8 @@ static const CGFloat VTLabelMargin = 20;
     NSString *text = [(UILabel *)sender.view text];
     NSURL *URL = [VTParser firstLinkInText:text];
 
-    if (@available(iOS 9.0, *)) {
-        SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];
-        [self presentViewController:viewController animated:YES completion:nil];
-    }
-    else {
-        [[UIApplication sharedApplication] openURL:URL];
-    }
+    SFSafariViewController *viewController = [[SFSafariViewController alloc] initWithURL:URL];
+    [self presentViewController:viewController animated:YES completion:nil];
 #endif
 }
 
