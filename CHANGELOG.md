@@ -1,8 +1,11 @@
 # Changelog
 
-## 2.0.1 (work in progress)
+## 2.0.1 (23 June 2021)
 
 - Remove deprecated `preferredFocusedView` method for tvOS
+- Remove unused code
+
+[Full Changelog](https://github.com/vtourraine/VTAcknowledgementsViewController/compare/2.0.0...2.0.1)
 
 
 ## 2.0 (15 March 2021)
