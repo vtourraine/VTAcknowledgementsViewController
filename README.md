@@ -3,7 +3,7 @@
 Acknowledgements screen displaying a list of licenses, for example from [CocoaPods](https://cocoapods.org) dependencies.
 
 ![Platform iOS](https://img.shields.io/cocoapods/p/VTAcknowledgementsViewController.svg)
-[![Build Status](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController.svg?branch=master)](https://travis-ci.org/vtourraine/VTAcknowledgementsViewController)
+[![Build & Test](https://github.com/vtourraine/VTAcknowledgementsViewController/actions/workflows/ios.yml/badge.svg)](https://github.com/vtourraine/VTAcknowledgementsViewController/actions/workflows/ios.yml)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/VTAcknowledgementsViewController.svg)](https://cocoapods.org/pods/VTAcknowledgementsViewController)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vtourraine/VTAcknowledgementsViewController/raw/master/LICENSE)
 
